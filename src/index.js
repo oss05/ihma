@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import Home from './pages/Home';
+import Socio from './pages/Socio';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Socio />
   </React.StrictMode>,
   document.getElementById('root')
 );

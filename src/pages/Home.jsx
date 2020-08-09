@@ -13,7 +13,7 @@ class Home extends React.Component{
             link2="Áreas de Práctica"
             link3="Equipo Legal"
             link4="Clientes"
-            idioma="Es"
+            idioma="En"
             />
 
             <HeroHome 
@@ -21,8 +21,9 @@ class Home extends React.Component{
             heroDescription2="Legal Internacional"
             
             />
-
             <MainHome />
+
+            
             <Footer />
 
         </div>
