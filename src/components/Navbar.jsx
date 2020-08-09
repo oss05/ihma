@@ -14,16 +14,16 @@ class Navbar extends React.Component{
                 <nav className="Navbar__nav">
                     <ul>
                         <li>
-                            <a href=""> <i>|</i> {link1} <i>|</i> </a>
+                            <a href=""> <i>|</i> <span> {link1} </span>  <i>|</i> </a>
                         </li>
                         <li>
-                            <a href=""> <i>|</i> {link2} <i>|</i> </a>
+                            <a href=""> <i>|</i> <span> {link2} </span>  <i>|</i> </a>
                         </li>
                         <li>
-                            <a href=""> <i>|</i> {link3} <i>|</i> </a>
+                            <a href=""> <i>|</i> <span> {link3} </span>  <i>|</i> </a>
                         </li>
                         <li>
-                            <a href=""> <i>|</i> {link4} <i>|</i> </a>
+                            <a href=""> <i>|</i> <span> {link4} </span>  <i>|</i> </a>
                         </li>
                     </ul>
                     <div className="Navbar__nav-language">

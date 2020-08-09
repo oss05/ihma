@@ -38,8 +38,13 @@
 
         & a{
             text-decoration: none;
+        }
+
+        & a span{
             color: $color-grey-medium;
-            font-weight: 500;
+            font-family: $font-unna;
+            font-weight: 700;
+
 
         }
 
@@ -47,6 +52,10 @@
             color: $color-red-ihma;
             font-size: 25px;
             font-weight: bold;
+        }
+
+        &:hover{
+            background-color: rgb(238, 238, 238);
         }
     }
 }
@@ -69,6 +78,6 @@
         border-radius: 50%;
         background-color: $color-gray;
         font-weight: bold;
-
+        cursor: pointer;
     }
 }

@@ -1,0 +1,55 @@
+@import "../../vars.scss";
+@import "../../mixins.scss";
+
+
+.HeroHome{
+    //border: $border-test;
+    width: 100vw;
+    height: 35vh;
+    position: relative;
+}
+
+.HeroHome__textura{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.HeroHome__color{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.HeroHome__logo{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    z-index: 2;
+}
+
+.HeroHome__description{
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    z-index: 2;
+    font-family: $font-unna;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3em;
+}
