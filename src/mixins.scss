@@ -1,0 +1,6 @@
+@mixin basic-flexbox($justify-content,$align-item,$flex-direction){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-item;
+    flex-direction: $flex-direction;
+}

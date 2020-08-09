@@ -1,0 +1,74 @@
+@import "../../vars.scss";
+@import "../../mixins.scss";
+.Navbar{
+    width: 100vw;
+    height: 12vh;
+    background-color: $color-nav;
+    @include basic-flexbox(space-between,center,row);
+
+}
+
+.Navbar__logo{
+    //border: $border-test;
+    margin-left: 2vw;
+    width: 10%;
+    height: 95%;
+
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.Navbar__nav{
+    //border: $border-test;
+    width: 50%;
+    height: 95%;
+    margin-right: 3vh;
+    @include basic-flexbox(center,center,row);
+}
+
+.Navbar__nav ul{
+    //border: $border-test;
+    list-style: none;
+    width: 70%;
+    & li{
+        float: left;
+        margin-right: 2%;
+
+        & a{
+            text-decoration: none;
+            color: $color-grey-medium;
+            font-weight: 500;
+
+        }
+
+        & a i{
+            color: $color-red-ihma;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+}
+
+.Navbar__nav .Navbar__nav-language{
+    //border: $border-test;
+    width: 10%;
+    height: 95%;
+    @include basic-flexbox(center,center,column);
+    & *{
+        margin: 0;
+    }
+
+    & div{
+        // border: $border-test;
+        width: 50%;
+        height: 40%;
+        margin-top: 8%;
+        @include basic-flexbox(center,center,column);
+        border-radius: 50%;
+        background-color: $color-gray;
+        font-weight: bold;
+
+    }
+}
