@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroHome from '../components/HeroHome';
 import MainHome from '../components/MainHome';
+import Footer from '../components/Footer';
 
 
 class Home extends React.Component{
@@ -22,7 +23,7 @@ class Home extends React.Component{
             />
 
             <MainHome />
-
+            <Footer />
 
         </div>
     }
