@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroHome from '../components/HeroHome';
+import MainHome from '../components/MainHome';
+
 
 class Home extends React.Component{
     render(){
@@ -18,6 +20,9 @@ class Home extends React.Component{
             heroDescription2="Legal Internacional"
             
             />
+
+            <MainHome />
+
 
         </div>
     }

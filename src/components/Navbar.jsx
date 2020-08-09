@@ -7,7 +7,7 @@ class Navbar extends React.Component{
     render(){
         const { link1 , link2 , link3 , link4 , idioma } = this.props;
         return (
-            <div className="Navbar">
+            <header className="Navbar">
                 <div className="Navbar__logo"> 
                     <img src={logo} alt="Logo ihma" />
                 </div>
@@ -31,7 +31,7 @@ class Navbar extends React.Component{
                         <div> {idioma} </div>
                     </div>
                 </nav>
-            </div>
+            </header>
         );
     }
 }
