@@ -2,15 +2,16 @@
 @import "../../mixins.scss";
 
 .Socios{
-    //border: $border-test;
+    // border: $border-test;
     width: 100vw;
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 100%;
+    margin-bottom: 10vh;
 }
 
 .Socios__item:nth-of-type(1){
-    //border: $border-test;
+    // border: $border-test;
     width: 100%;
     
     & img{
@@ -20,17 +21,17 @@
 }
 
 .Socios__item:nth-of-type(2){
-    //border: $border-test;
+    // border: $border-test;
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 40vh auto;
 
-    & div:nth-of-type(1){
-        //border: $border-test;
+    & .Socios__item-top{
+        // border: $border-test;
 
         & div{
-            //border: $border-test;
+            // border: $border-test;
             width: 60%;
             height: 90%;
             margin-left: 10%;
@@ -80,6 +81,54 @@
                 }
             }
 
+        }
+    }
+
+    & .Socios__item-bottom{
+        // border: $border-test;
+        
+
+        & div{
+            //border: $border-test;
+            width: 60%;
+            margin-left: 10%;
+            margin-top: 5vh;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: repeat(4,auto);
+
+            & div{
+                all: initial;
+                //border: $border-test;
+                font-family: $font-unna;
+                font-weight: normal;
+                color: $color-grey-meiumLight;
+                
+            }
+
+            & div:nth-child(odd){
+                @include basic-flexbox(flex-end,flex-start,row);
+                padding-right: 15%;
+                font-size: 1.5em;
+                border-right: 2px solid $color-red-ihma;
+                position: relative;
+
+                & span{
+                    //border: $border-test;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    right: -4.5%;
+                    background-color: $color-red-ihma;
+                }
+            }
+
+            & div:nth-child(even){
+                padding: 0 0 10vh 10%;
+                font-family: $font-montserrat;
+                font-size: 1.2em;
+                line-height: 30px;
+            }
         }
     }
 }
