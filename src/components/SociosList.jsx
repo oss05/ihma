@@ -11,12 +11,12 @@ class SociosList extends React.Component{
                         return (
                             <li className="EquipoLegal__about-item" key={nombres.id}>
                                 <div className="EquipoLegal__about-item-img">
-                                    <Link to="/">
+                                    <Link to={'/Equipo-Legal/'+nombres.id}>
                                         <img src={nombres.image} alt="imagen de socio"/>
                                     </Link>
                                 </div>
                                 <div className="EquipoLegal__about-item-name">
-                                    <Link to="/">
+                                    <Link to={'/Equipo-Legal/'+nombres.id}>
                                         <img src={nombres.imgTriangulo} alt="trianguloLink"/>
                                     </Link>
                                         <p> {nombres.nombre} </p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter , Switch , Route } from 'react-router-dom';
 import SociosList from '../components/SociosList';
 import './styles/EquipoLegal.scss';
 import MauricioCamposRedondo from '../img/MauricioCamposRedondo.png';

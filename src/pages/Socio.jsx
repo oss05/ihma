@@ -56,15 +56,6 @@ const pertenece = (
 class Socio extends React.Component{
     render(){
         return (
-            <div>
-                <Navbar
-                link1="Sobre nosotros"
-                link2="Áreas de Práctica"
-                link3="Equipo Legal"
-                link4="Clientes"
-                idioma="En"
-                />
-
                 <Socios 
                 imagenSocio={MauricioCampos}
                 nombreSocio="Mauricio Ibañez Campos"
@@ -84,9 +75,6 @@ class Socio extends React.Component{
                 Private Equity, Workouts, Real Estate,
                 Telecommunications, Transportation, Mining, Energy."
                 />
-
-                <Footer />
-            </div>
         );
     }
 }
