@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Socios from '../components/Socios';
 import MauricioCampos from '../img/MauricioCampos.png';
 

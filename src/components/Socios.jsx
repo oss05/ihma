@@ -5,10 +5,6 @@ import escuadra from '../img/escuadra.png';
 
 class Socios extends React.Component{
     render(){
-        const {imagenSocio , nombreSocio ,
-        estatusSocio , nacSocio , titulacionSocio , 
-        idiomaSocio , emailSocio , educacion ,
-        ExpProf , Miembro , AreaPractica} = this.props;
         return (
             <div className="Socios">
                 <div className="Socios__item">
@@ -17,28 +13,66 @@ class Socios extends React.Component{
                 <div className="Socios__item">
                     <div className="Socios__item-top">
                         <div>
-                            <img src={imagenSocio} alt=""/>
+                            <img src={this.props.imagenSocio} alt=""/>
                             <img src={escuadra} alt=""/>
                             <div>
-                                <p className="Socio__item-name"> {nombreSocio} </p>
-                                <p className="Socio__item-status"> {estatusSocio} </p>
-                                <p className="Socio__item-info"> {nacSocio} </p>
-                                <p className="Socio__item-info"> {titulacionSocio} </p>
-                                <p className="Socio__item-info">Idiomas / Languages: {idiomaSocio} </p>
-                                <p className="Socio__item-info">Email: {emailSocio} </p>
+                                <p className="Socio__item-name"> {this.props.nombreSocio} </p>
+                                <p className="Socio__item-status"> {this.props.estatusSocio} </p>
+                                <p className="Socio__item-info"> {this.props.nacSocio} </p>
+                                <p className="Socio__item-info"> {this.props.titulacionSocio} </p>
+                                <p className="Socio__item-info">Idiomas / Languages: {this.props.idiomaSocio} </p>
+                                <p className="Socio__item-info">Email: {this.props.emailSocio} </p>
                             </div>
                         </div>
                     </div>
                     <div className="Socios__item-bottom">
                         <div>
                             <div> <span></span> Educación</div>
-                            <div> {educacion} </div>
+                            <div>
+                               {this.props.educacion.map( (educacion) => {
+                                   return (
+                                    <span key={educacion}>
+                                    {educacion}
+                                    <br/>
+                                    </span>
+                                   )
+                               }
+
+                               )} 
+                            </div>
                             <div> <span></span> Experiencia<br/> Profesional</div>
-                            <div> {ExpProf} </div>
+                            <div> 
+                                {this.props.expProfesional.map( (expProfesional) =>{
+                                    return (
+                                        <span key={expProfesional}>
+                                        {expProfesional}
+                                        <br/>
+                                        </span>
+                                    );
+                                } )}
+                            </div>
                             <div> <span></span> Miembro</div>
-                            <div> {Miembro} </div>
+                            <div> 
+                                {this.props.socioMiembroDe.map( (socioMiembroDe) =>{
+                                    return (
+                                        <span key={socioMiembroDe}>
+                                            {socioMiembroDe}
+                                            <br/>
+                                        </span>
+                                    )
+                                }  )}    
+                            </div>
                             <div> <span></span> Áreas de<br/> Práctica</div>
-                            <div> {AreaPractica} </div>
+                            <div>
+                                {this.props.areasDePractica.map( (areasDePractica) => {
+                                    return(
+                                        <span key={areasDePractica}>
+                                            {areasDePractica}
+                                            
+                                        </span>
+                                    )
+                                } )}
+                            </div>
                         </div>
                     </div>
                 </div>

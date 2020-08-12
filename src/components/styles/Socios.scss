@@ -120,14 +120,15 @@
                     position: absolute;
                     right: -4.5%;
                     background-color: $color-red-ihma;
+                    
                 }
             }
 
             & div:nth-child(even){
-                padding: 0 0 10vh 10%;
+                padding: 0 0 5vh 10%;
                 font-family: $font-montserrat;
                 font-size: 1.2em;
-                line-height: 30px;
+                line-height: 50px;
             }
         }
     }
