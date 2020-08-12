@@ -1,0 +1,50 @@
+@import "../../vars.scss";
+@import "../../mixins.scss";
+
+.EquipoLegal__about-socios{
+    // border: $border-test;
+    margin-left: 8vw;
+    list-style: none;
+
+}
+
+.EquipoLegal__about-item {
+    // border: $border-test;
+    @include basic-flexbox(flex-start,center,row);
+    margin-top: 5vh;
+
+    & .EquipoLegal__about-item-img img{
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    & .EquipoLegal__about-item-name{
+        //border: $border-test;
+        width: 30vw;
+        margin-left: 4vw;
+        position: relative;
+
+        & img{
+            position: absolute;
+            right: 0;
+            top: 40%;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+        & p{
+            font-size: 1.5rem;
+            line-height: 50px;
+            font-family: $font-unna;
+            font-weight: bold;
+            color: $color-grey-meiumLight;
+            border-bottom: 2px solid $color-red-ihma;
+        }
+    }
+}

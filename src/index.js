@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import Home from './pages/Home';
-import Socio from './pages/Socio';
+import App from './components/App.jsx';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Socio />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
