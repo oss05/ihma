@@ -72,7 +72,16 @@ class App extends React.Component{
                 
             },
         ],
+        socioSolicitado: ''
         
+    }
+
+    evento = (id) =>{
+        this.setState({
+            socioSolicitado: `${id}`
+        })
+
+        //console.log('hola el id generado es'+ this.state.socioSolicitado)
     }
 
     render(){
@@ -86,23 +95,24 @@ class App extends React.Component{
                         <EquipoLegal 
                         leftEquipoLegal={fotoEquipoLegal} 
                         datosSocios={this.state.dataSocios}
+                        evento = {this.evento}
                         />
                         }
                         />  
-                        <Route exact path="/Equipo-Legal/1"
+                        <Route exact path="/Equipo-Legal/info"
                         render={ () => 
                         <Socios 
-                        nombreSocio={this.state.dataSocios[0].nombre}
-                        imagenSocio={this.state.dataSocios[0].imagenCuadrada}
-                        estatusSocio={this.state.dataSocios[0].estatusSocio}
-                        nacSocio={this.state.dataSocios[0].nacSocio}
-                        titulacionSocio={this.state.dataSocios[0].titulacionSocio}
-                        idiomaSocio={this.state.dataSocios[0].idiomaSocio}
-                        emailSocio={this.state.dataSocios[0].emailSocio}
-                        educacion={this.state.dataSocios[0].educacion}
-                        expProfesional={this.state.dataSocios[0].expProfesional}
-                        socioMiembroDe={this.state.dataSocios[0].socioMiembroDe}
-                        areasDePractica={this.state.dataSocios[0].areasDePractica}
+                        nombreSocio={this.state.dataSocios[this.state.socioSolicitado-1].nombre}
+                        imagenSocio={this.state.dataSocios[this.state.socioSolicitado-1].imagenCuadrada}
+                        estatusSocio={this.state.dataSocios[this.state.socioSolicitado-1].estatusSocio}
+                        nacSocio={this.state.dataSocios[this.state.socioSolicitado-1].nacSocio}
+                        titulacionSocio={this.state.dataSocios[this.state.socioSolicitado-1].titulacionSocio}
+                        idiomaSocio={this.state.dataSocios[this.state.socioSolicitado-1].idiomaSocio}
+                        emailSocio={this.state.dataSocios[this.state.socioSolicitado-1].emailSocio}
+                        educacion={this.state.dataSocios[this.state.socioSolicitado-1].educacion}
+                        expProfesional={this.state.dataSocios[this.state.socioSolicitado-1].expProfesional}
+                        socioMiembroDe={this.state.dataSocios[this.state.socioSolicitado-1].socioMiembroDe}
+                        areasDePractica={this.state.dataSocios[this.state.socioSolicitado-1].areasDePractica}
                         />
                         }
                         /> 
