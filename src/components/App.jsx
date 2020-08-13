@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import Socios from './Socios';
 import AreasPractica from '../pages/AreasPractica';
 import EquipoLegal from '../pages/EquipoLegal';
+import Clientes from '../pages/Clientes';
 import fotoEquipoLegal from '../img/leftEquipoLegal.png';
 import MauricioCamposRedondo from '../img/MauricioCamposRedondo.png';
 import JorgeAriasRedondo from '../img/JorgeAriasRedondo.png';
@@ -219,7 +220,112 @@ class App extends React.Component{
                         'Inmobiliario',
                         'Transporte y Aviación'
                         ],
-            } ],
+            } 
+        ],
+        clientesData: [
+            {
+                titulo: 'Clientes Representativos',
+                descripcion: 'Los abogados de IHMA son reconocidos por su innovación legal y su excelente servicio a clientes',
+                clientesList: [
+                    '1ero Dinero',
+                    'Aegerion Pharmaceuticals',
+                    'Aeromexico Cargo',
+                    'Aeroservicios Especializados',
+                    'Aggreko',
+                    'AIM',
+                    'Allrig',
+                    'Alto',
+                    'Amerex Brokers',
+                    'AMK Healthcare',
+                    'Arsenal Capital Partners',
+                    'AXA',
+                    'Beesion Technologies Méixco',
+                    'Beyond Trust Software Inc.',
+                    'Bristol-Myers Squibb de México',
+                    'Cámara Mexicana de la industria de la Construcción',
+                    'Capital inmobiliario',
+                    'Columbia laboratorios',
+                    'Combustibles Masal',
+                    'Cordstrap',
+                    'Corporativo Laudex',
+                    'Crediempleado',
+                    'Cree Ser México PF',
+                    'Dade Behring',
+                    'Daito Gyourui Co.',
+                    'Datacard',
+                    'Despegar.com',
+                    'Digital Entertainment',
+                    'Ding',
+                    'Echostar',
+                    'El Papalote Taco & Grill',
+                    'Elastomeros Taza',
+                    'Empacadora Sabadell',
+                    'Equipos Médicos Vizcarra',
+                    'Expo Pack México',
+                    'Gate Gourmet',
+                    'Georesearch',
+                    'GIFF',
+                    'Golden Gate Capital',
+                    'Groke',
+                    'Grupo Quiper',
+                    'Grupo Rendichicas',
+                    'GTA Telecom de México',
+                    'Guthy Renker',
+                    'Hanosil International',
+                    'HIG Capital Partners',
+                    'High Level Films',
+                    'Hoteles City Express',
+                    'Huatan',
+                    'HYT Capital',
+                    'Industria de la Construcción',
+                    'IRASA Fortec',
+                    'Jaguar',
+                    'Jos A. Bank Clothiers',
+                    'Joy Global México',
+                    'Krispy Kreme',
+                    'Doughnut Corporation',
+                    'Land Rover',
+                    'Lease Plan México',
+                    'Lek Securites Corporation',
+                    'Lemon Films',
+                    'Lemon Media',
+                    'Leo Pharmaceuticals',
+                    'Lexus',
+                    'Maasa México',
+                    'Marking Services',
+                    'McCormik México',
+                    'McCormik Pesa',
+                    'Meyn Beheer, B.V.',
+                    'Movilab',
+                    'MW Rental Power',
+                    'Nova Condesa',
+                    'Orca Mining',
+                    'Packaging Machinery',
+                    'Manufacturers Institute Inc.',
+                    'Pandora Jewelry',
+                    'PC Capital',
+                    'Peco Pallet México',
+                    'Pitney Bowes',
+                    'Powermate Corp.',
+                    'Sagem Securité',
+                    'Schneider México',
+                    'Siemens',
+                    'Stewart Connector Systems',
+                    'Sun Capital Ventures',
+                    'Takeda',
+                    'Tamoin',
+                    'The Carlyle Group',
+                    'Tower One Wireless',
+                    'Toyota',
+                    'Tresmontes Lucchetti México',
+                    'Truelock',
+                    'United Parcel Service (UPS)',
+                    'WFI',
+                    'Winco',
+                    'About the partners'
+                ]
+            }
+        ],
         
     }
 
@@ -262,7 +368,14 @@ class App extends React.Component{
                             data={this.state.AreasPractica[0]}
                             />
                         
-                        } /> 
+                        } />
+                        <Route exact path="/Clientes" render= { () =>
+                                <Clientes 
+                                data={this.state.clientesData[0]}
+                                />
+                            
+                         } 
+                         /> 
                     </Switch>
                 </Layout>
             </BrowserRouter>

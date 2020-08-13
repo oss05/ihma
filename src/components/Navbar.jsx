@@ -26,7 +26,7 @@ class Navbar extends React.Component{
                             <Link to="/Equipo-Legal"> <i>|</i> <span> {link3} </span>  <i>|</i> </Link>
                         </li>
                         <li>
-                            <a href=""> <i>|</i> <span> {link4} </span>  <i>|</i> </a>
+                            <Link to="/Clientes"> <i>|</i> <span> {link4} </span>  <i>|</i> </Link>
                         </li>
                     </ul>
                     <div className="Navbar__nav-language">

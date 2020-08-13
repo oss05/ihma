@@ -1,0 +1,7 @@
+@import '../../vars.scss';
+@import '../../mixins.scss';
+
+.Clientes{
+  @include basic-flexbox(flex-start,flex-start,row);
+  
+}
