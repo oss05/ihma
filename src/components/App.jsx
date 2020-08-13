@@ -3,6 +3,7 @@ import { BrowserRouter , Switch , Route } from 'react-router-dom';
 import Layout from './Layout';
 import Home from '../pages/Home';
 import Socios from './Socios';
+import AreasPractica from '../pages/AreasPractica';
 import EquipoLegal from '../pages/EquipoLegal';
 import fotoEquipoLegal from '../img/leftEquipoLegal.png';
 import MauricioCamposRedondo from '../img/MauricioCamposRedondo.png';
@@ -180,7 +181,45 @@ class App extends React.Component{
                 
             },
         ],
-        socioSolicitado: ''
+        socioSolicitado: '',
+        AreasPractica: [ 
+            {
+                id: '1',
+                title: 'Areas de Practica',
+                subtitle: 'Altos estándares de calidad y una amplia gama de servicios',
+                description: 'Cada uno de los socios, asociados y pasantes del Bufete se Especializan en una o más de las siguientes áreas de práctica',
+                areas: ['Alianzas Estrategicas ',
+                        'Inversiones de capital',
+                        'Ambiental',
+                        'Leyes Anticorrupcion',
+                        'Conversiones',
+                        'Licitaciones Públicas',
+                        'Competencia Economica',
+                        'Litigio Administrativo',
+                        'Consultoria Laboral',
+                        'Litigio Laboral',
+                        'Coorporativo',
+                        'Marítimo',
+                        'Energia',
+                        'Migratorio',
+                        'Financiamiento de proyectos',
+                        'propiedad intelectual',
+                        'Financiero',
+                        'Reestructuras Financieras',
+                        'Hoteles y hospitalidad',
+                        'Reestructuras y Concursos',
+                        'Industria Automotriz',
+                        'Salud',
+                        'Industria Farmaceutica',
+                        'Seguridad Social',
+                        'Industria Filmica',
+                        'Seguros',
+                        'Infraestructura',
+                        'Telecomunicaciones',
+                        'Inmobiliario',
+                        'Transporte y Aviación'
+                        ],
+            } ],
         
     }
 
@@ -213,7 +252,17 @@ class App extends React.Component{
                         data={this.state.dataSocios[this.state.socioSolicitado-1]}
                         />
                         }
-                        /> 
+                        />
+                        <Route exact path="/AreasDePractica" render = { () =>
+                            <AreasPractica 
+                            
+                            data={this.state.AreasPractica[0]}
+                            data={this.state.AreasPractica[0]}
+                            data={this.state.AreasPractica[0]}
+                            data={this.state.AreasPractica[0]}
+                            />
+                        
+                        } /> 
                     </Switch>
                 </Layout>
             </BrowserRouter>

@@ -20,7 +20,7 @@ class Navbar extends React.Component{
                             <a href=""> <i>|</i> <span> {link1} </span>  <i>|</i> </a>
                         </li>
                         <li>
-                            <a href=""> <i>|</i> <span> {link2} </span>  <i>|</i> </a>
+                            <Link to="/AreasDePractica"> <i>|</i> <span> {link2} </span>  <i>|</i> </Link>
                         </li>
                         <li>
                             <Link to="/Equipo-Legal"> <i>|</i> <span> {link3} </span>  <i>|</i> </Link>
