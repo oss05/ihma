@@ -11,6 +11,9 @@ import JesusMendozaRedondo from '../img/JesusMendozaRedondo.png';
 import DiegoMaxRedondo from '../img/DiegoMaxRedondo.png';
 import triangulo from '../img/triangulo.png';
 import MauricioCamposCuadrado from '../img/MauricioCampos.png';
+import JorgeAriasCuadrado from '../img/JorgeArias.png';
+import JesusMendozaCuadrado from '../img/JesusMendoza.png';
+import DiegoMaxCuadrado from '../img/DiegoMax.png';
 
 class App extends React.Component{
 
@@ -55,13 +58,75 @@ class App extends React.Component{
                 nombre: 'Jorge Hoffmann Arias',
                 image: `${JorgeAriasRedondo}`,
                 imgTriangulo: `${triangulo}`,
-                
+                educacion: [ 'Universidad Iberoamericana (Licenciatura, 1991)',
+                'Universidad Iberoamericana (J.D., 1991)',
+                 ],
+                expProfesional: [ 'Zitro-Lex, S.A. de C.V. (1987-1989)',
+                   'Alvarez, Cantón y Peters, S.C. (1989-1991)',                  
+                   'Hoffmann y Asociados, S.C. (1991-1998)',
+                   'Buenfil & Hoffmann, S.C. (1998-2005',
+                   ],
+                socioMiembroDe: [ 'Barra Mexicana, Colegio de Abogados, S.C.',
+                   'Mexican Bar Association',
+                   ],
+                areasDePractica: [ 'Derecho Laboral',
+                                    'Seguridad Social',
+                                    'Labor and Employment Law',
+                                    'Social Security'
+                   ],
+                imagenCuadrada: `${JorgeAriasCuadrado}`,
+                estatusSocio: "Socio",
+                nacSocio: "Ciudad de México. Noviembre 7, 1967.",
+                titulacionSocio: "Admitido para ejercer, México, 1995",
+                idiomaSocio: " Español e Inglés. Spanish and English",
+                emailSocio: " jhoffmann@ihma.law",
             },
             {
                 id: '3',
                 nombre: 'Jesus Mendoza Henríquez',
                 image: `${JesusMendozaRedondo}`,
                 imgTriangulo: `${triangulo}`,
+                educacion: [ 'Universidad Anáhuac (Licenciatura, 2000)',
+                            'Pepperdine University (Juris Doctor – EEUU)',
+                            'Strauss Institute for Dispute Resolution, Pepperdine',
+                            'University (Maestría en Resolución Alternativa de Disputas Internacionales 2004)',
+                            'Universidad Anáhuac (J.D., Mexico)',
+                            'Pepperdine University (J.D., 2000',
+                            'Strauss Institute for Dispute Resolution, Pepperdine',
+                            'University (LL.M in International Dispute Resolution, 2004)',
+                            ],
+                expProfesional: [ 'Buenfil & Hoffmann, S.C. (Pasante 1998-2000)',
+                                    'Comisión Federal de Competencia (Subdirector de Asuntos Jurídicos 2000-2001)',
+                                    'Mediador de la Corte de Los Ángeles, California (Clínica de Resolución Alternativa de Disputas 2003)',
+                                    'Director General Adjunto y Director General de Asuntos Jurídicos (2004-2008)',
+                                    'Grupo Sacbes (Socio fundador 2008-2018)',
+                                    'Buenfil & Hoffmann, S.C. (Clerk 1998-2000)',
+                                    'Federal Competition Commission (Mexico, Legal Affairs Subdirector 2000-2001)',
+                                    'Court Mediator Los Angeles County (Dispute Resolution Clinic Pepperdine University, 2003)',
+                                    'Deputy General Counsel and General Counsel (2004-2008) Grupo Sacbes (Partner 2008-2018)',
+                                ],
+                socioMiembroDe: [ 'Barra Mexicana, Colegio de Abogados, S.C.',
+                                    'Mexican Bar Association',
+                                ],
+                areasDePractica: ['Competencia Económica',
+                                    'Derecho Administrativo – Consultoría y litigio',
+                                    'Derecho Corporativo',
+                                    'Derecho de las Telecomunicaciones',
+                                    'Fusiones y Adquisiciones',
+                                    'Derecho Energético.',
+                                    'Antitrust Law',
+                                    'Administrative Law – consulting and litigation',
+                                    'Corporate Law',
+                                    'Telecommunications Law',
+                                    'Mergers and Acquisitions',
+                                    'Energy'
+                   ],
+                imagenCuadrada: `${JesusMendozaCuadrado}`,
+                estatusSocio: "Socio",
+                nacSocio: "Ciudad de México.Diciembre 10, 1975.",
+                titulacionSocio: "Admitido para ejercer, México, 2001",
+                idiomaSocio: " Español e Inglés. Spanish and English",
+                emailSocio: " jmendoza@ihma.law",
                 
             },
             {
@@ -69,6 +134,49 @@ class App extends React.Component{
                 nombre: 'Diego Andrade Max',
                 image: `${DiegoMaxRedondo}`,
                 imgTriangulo: `${triangulo}`,
+                educacion: [ 'Universidad Iberoamericana (Licenciatura, 1992)',
+                            'Universitaet Wien, Austria (Doctorado,Derecho Internacional y Derecho Comunitario,1994)',
+                            'The University of Chicago Law School (LL.M, 1996)',
+                            'Universidad Iberoamericana (J.D., 1992)',
+                            'Universitaet Wien, Austria (International and European EU Law, Doctorate, 1994)',
+                            'The University of Chicago Law School (LL.M, 1996)',
+                            ],
+                expProfesional: [ 'Von Wobeser y Sierra, S.C. (Pasante 1988–1992)',
+                                'ICC International Court of Arbitration (Pasante, 1993)',
+                                'Comision Federal de Competencia (Sub-Director Jurídico 1994 -1995)',
+                                'Gardner Carton Douglas, Chicago (Pasante extranjero 1996-1997)',
+                                'Freshfields Deringer, Bruselas UE (Asociado 1997-1999)',
+                                'BOCAR, S.A. de C.V. (Sub Gerente Legal 1999-2005)',
+                                'Bristol Myers Squibb de Mexico, S. de R.L. de C.V. (Director Jurídico 2005-2008)',
+                                'Bristol Myers Squibb Company, Princeton NJ (Director Juródico Adjunto para Latinoamérica, Región Intercontinental, 2008-2012)',
+                                'Aggreko LLC, Houston TX (Vice Presidente Riesgo Comercial y Legal América Latina 2013-2017)',
+                                'Von Wobeser y Sierra, S.C. (Intern 1988–1992)',
+                                'ICC International Court of Arbitration (Intern, 1993)',
+                                'Mexican Federal Competition Commission (Deputy Legal Director 1994 -1995)',
+                                'Gardner Carton Douglas, Chicago (Foreign intern 1996-1997)',
+                                'Freshfields Deringer, Brussels (Associate 1997-1999)',
+                                'BOCAR, S.A. de C.V. (Deputy Legal Manager 1999-2005)',
+                                'Bristol Myers Squibb de Mexico, S de R.L de C.V. (Legal Director 2005-2008)',
+                                'Bristol Myers Squibb Company, Princeton NJ (Deputy General Counsel Latin America, Intercontinental Region, 2008-2012)',
+                                'Aggreko LLC, Houston, TX (Vice President of Commercial Risk and Head of Latin America Legal 2013-2017)',
+                   ],
+                socioMiembroDe: [ 'Colegio Mexicano de Abogados',
+                   'Consultor Foráneo, certificado por el Tribunal Supremo del Estado de Texas',
+                   'Mexican Bar Association',
+                   'Foreign Legal Consultant, certified by The Supreme Court of Texas',
+                   ],
+                areasDePractica: [
+                    'Corporativo, Contratos, Competencia, Licitaciones, Internacional, Arbitraje y Comercio Exterior',
+                    'Experiencia en industrias automotriz, farmacéutica, nutricionales y energía.',
+                    'Corporate, Contracts, Antitrust, Public Tenders, International law, Arbitration, Foreign Trade',
+                    ' Expertise in the automotive, pharmaceutical, nutritional and energy industries',
+                                ],
+                imagenCuadrada: `${DiegoMaxCuadrado}`,
+                estatusSocio: "Socio",
+                nacSocio: "Ciudad de México. Enero 5, 1967.",
+                titulacionSocio: "Admitido para ejercer, México, 1992",
+                idiomaSocio: " Español, Inglés, Alemán y Francés ",
+                emailSocio: " dandrade@ihma.law",
                 
             },
         ],
@@ -102,17 +210,7 @@ class App extends React.Component{
                         <Route exact path="/Equipo-Legal/info"
                         render={ () => 
                         <Socios 
-                        nombreSocio={this.state.dataSocios[this.state.socioSolicitado-1].nombre}
-                        imagenSocio={this.state.dataSocios[this.state.socioSolicitado-1].imagenCuadrada}
-                        estatusSocio={this.state.dataSocios[this.state.socioSolicitado-1].estatusSocio}
-                        nacSocio={this.state.dataSocios[this.state.socioSolicitado-1].nacSocio}
-                        titulacionSocio={this.state.dataSocios[this.state.socioSolicitado-1].titulacionSocio}
-                        idiomaSocio={this.state.dataSocios[this.state.socioSolicitado-1].idiomaSocio}
-                        emailSocio={this.state.dataSocios[this.state.socioSolicitado-1].emailSocio}
-                        educacion={this.state.dataSocios[this.state.socioSolicitado-1].educacion}
-                        expProfesional={this.state.dataSocios[this.state.socioSolicitado-1].expProfesional}
-                        socioMiembroDe={this.state.dataSocios[this.state.socioSolicitado-1].socioMiembroDe}
-                        areasDePractica={this.state.dataSocios[this.state.socioSolicitado-1].areasDePractica}
+                        data={this.state.dataSocios[this.state.socioSolicitado-1]}
                         />
                         }
                         /> 

@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import './styles/SociosList.scss';
 
 class SociosList extends React.Component{
-    // evento(e,id){
-    //     console.log(e,id)
-    // }
+    
     render(){
         return (
             <ul className="EquipoLegal__about-socios">
@@ -20,14 +18,11 @@ class SociosList extends React.Component{
                                     </Link>
                                 </div>
                                 <div className="EquipoLegal__about-item-name">
-                                    <Link to={'/Equipo-Legal/info'} >
+                                    <Link to={'/Equipo-Legal/info'} onClick={ (e) => this.props.evento(nombres.id) } >
                                         <img src={nombres.imgTriangulo} alt="trianguloLink"/>
                                     </Link>
                                         <p> {nombres.nombre} </p>
                                 </div>
-                                
-                            
-                            
                             </li>
 
                         )
