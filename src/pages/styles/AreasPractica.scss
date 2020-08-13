@@ -28,9 +28,19 @@
 }
 
 .AreasPractica__contenido-title{
+  // border: $border-test;
   font-family: $font-unna;
   font-weight: bold;
   color :$color-grey-meiumLight;
+  padding-bottom: 10px;
+  width: 25vw;
+  line-height: 60px;
+  position: relative;
+
+  & img{
+    position: absolute;
+    right: 0;
+  }
 }
 
 .AreasPractica__contenido-subtitle{
