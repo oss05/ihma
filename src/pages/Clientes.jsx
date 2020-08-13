@@ -8,7 +8,7 @@ class Clientes extends React.Component{
     return ( 
       <div className="Clientes">
         <div className="Clientes__content">
-          <h1 className="Clientes__content-titulo"> {this.props.data.titulo} </h1>
+          <h1 className="Clientes__content-titulo"> <div></div> {this.props.data.titulo} </h1>
           <p className="Clientes__content-descripcion"> {this.props.data.descripcion} </p>
           <div className="Clientes__content-list">
             <ClientesList
