@@ -10,6 +10,7 @@ const Layout = (props) =>{
             link2="Areas de Práctica"
             link3="Equipo Legal"
             link4="Clientes"
+            link5="Reconocimientos"
             idioma="En"
             />
             {props.children}

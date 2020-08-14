@@ -6,7 +6,7 @@ import logo from '../img/Logo.svg';
 
 class Navbar extends React.Component{
     render(){
-        const { link1 , link2 , link3 , link4 , idioma } = this.props;
+        const { link1 , link2 , link3 , link4 , link5 , idioma } = this.props;
         return (
             <header className="Navbar">
                 <div className="Navbar__logo"> 
@@ -17,7 +17,7 @@ class Navbar extends React.Component{
                 <nav className="Navbar__nav">
                     <ul>
                         <li>
-                            <a href=""> <i>|</i> <span> {link1} </span>  <i>|</i> </a>
+                            <Link to="/"> <i>|</i> <span> {link1} </span>  <i>|</i> </Link>
                         </li>
                         <li>
                             <Link to="/AreasDePractica"> <i>|</i> <span> {link2} </span>  <i>|</i> </Link>
@@ -27,6 +27,9 @@ class Navbar extends React.Component{
                         </li>
                         <li>
                             <Link to="/Clientes"> <i>|</i> <span> {link4} </span>  <i>|</i> </Link>
+                        </li>
+                        <li>
+                            <Link to="/"> <i>|</i> <span> {link5} </span>  <i>|</i> </Link>
                         </li>
                     </ul>
                     <div className="Navbar__nav-language">

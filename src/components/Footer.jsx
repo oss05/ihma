@@ -17,6 +17,7 @@ class Footer extends React.Component{
                             <p>Areas de Práctica</p>
                             <p>Equipo Legal</p>
                             <p>Clientes</p>
+                            <p>Reconocimientos</p>
                        </div>
                    </div>
                    <div className="Footer__item">
