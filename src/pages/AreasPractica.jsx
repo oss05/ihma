@@ -9,7 +9,7 @@ class AreasPractica extends React.Component{
         <div className="AreasPractica__decoration">
           <img src={imagenDecoracion} alt="" className="AreasPractica__decoration-img"/>
         </div>
-        <div className="AreasPractica__contenido" key={this.props.data.id}>
+        <div className="AreasPractica__contenido" >
           <h1 className="AreasPractica__contenido-title"> 
           <img src={escuadra} alt=""/>
           {this.props.data.title} 
@@ -19,7 +19,7 @@ class AreasPractica extends React.Component{
           <div className="AreasPractica__contenido-list">
             { this.props.data.areas.map( (areas) => {
               return (
-                <div>
+                <div key={this.props.data.id} >
                   <div></div>
                   <p> {areas} </p>
                 </div>

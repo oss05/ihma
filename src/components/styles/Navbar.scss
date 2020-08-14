@@ -9,7 +9,7 @@
 }
 
 .Navbar__logo{
-    //border: $border-test;
+    // border: $border-test;
     margin-left: 2vw;
     width: 15%;
     height: 95%;
@@ -21,15 +21,15 @@
 }
 
 .Navbar__nav{
-    //border: $border-test;
-    width: 50%;
+    // border: $border-test;
+    width: 60%;
     height: 95%;
     margin-right: 3vh;
     @include basic-flexbox(center,center,row);
 }
 
 .Navbar__nav ul{
-    //border: $border-test;
+    // border: $border-test;
     list-style: none;
     width: 70%;
     & li{
@@ -61,7 +61,7 @@
 }
 
 .Navbar__nav .Navbar__nav-language{
-    //border: $border-test;
+    // border: $border-test;
     width: 10%;
     height: 95%;
     @include basic-flexbox(center,center,column);
@@ -83,5 +83,27 @@
         &:hover{
             background-color: $color-gray-little;
         }
+    }
+}
+
+@media screen and(max-width: 1560px){
+
+    .Navbar__nav{
+        width: 65%;
+    }
+
+    .Navbar__nav ul{
+        width: 80%;
+    }
+}
+
+@media screen and(max-width: 1280px){
+
+    .Navbar__nav{
+        width: 80%;
+    }
+
+    .Navbar__nav ul{
+        width: 83%;
     }
 }

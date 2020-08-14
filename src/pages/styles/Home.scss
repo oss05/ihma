@@ -81,3 +81,23 @@
     }
   }
 }
+
+@media screen and(max-width: 1500px){
+  .Home__direction{
+    height: 50vh;
+  }
+
+  .Home__direction div .Home__direction-place{
+    line-height: 30px;
+  }
+}
+
+@media screen and(max-width: 1100px){
+  .Home__direction{
+    height: 45vh;
+  }
+
+  .Home__direction div .Home__direction-place{
+    line-height: 30px;
+  }
+}
