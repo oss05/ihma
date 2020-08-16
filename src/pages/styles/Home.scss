@@ -102,5 +102,57 @@
     font-size: 1rem;
   }
 
-  
+}
+
+@media screen and(max-width: 800px){
+  .Home__direction{
+    & img:nth-of-type(1){
+      display: none;
+    }
+
+    & img:nth-of-type(2){
+      width: 100%;
+    }
+
+    &  div  {
+      padding-top: 2%;
+      & .Home__direction-place{
+        font-size: 0.9rem;
+        line-height: 40px;
+      }
+
+      & .Home__direction-especific div{
+        font-size: 0.9rem;
+        line-height: 15px;
+      }
+
+      & .Home__direction-cel div{
+        font-size: 0.9rem;
+        line-height: 15px;
+      }
+      & .Home__direction-img{
+        display: block;
+      }
+      width: auto;
+      right: 40%;
+      bottom: 15%;
+
+    }
+  }
+}
+
+@media screen and(max-width: 500px){
+  .Home__direction{
+
+    & div .Home__direction-triangle{
+      right: 50%;
+    }
+    & div  {
+      
+      width: auto;
+      right: 30%;
+      bottom: 5%;
+
+    }
+  }
 }

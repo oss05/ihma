@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/MainHome.scss';
 import escuadra from '../img/escuadra.png';
+import mainBottom from '../img/mainBottom.png';
 class MainHome extends React.Component{
     render(){
 
@@ -39,7 +40,10 @@ class MainHome extends React.Component{
                     asesoría práctica y confiable a sus requerimientos. La calidad de nuestros servicios está a la altura de las exigencias de un mundo globalizado y en constante transformación. 
                     </p>
                 </div>
-                <div className="MainHome__item"></div>
+                <div className="MainHome__item">
+                    <img src={mainBottom} alt=""/>
+
+                </div>
             </main>
         );
     }

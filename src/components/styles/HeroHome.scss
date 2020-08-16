@@ -57,14 +57,14 @@
 
 @media screen and (max-width: 700px){
     .HeroHome__description{
-        font-size: 2.3rem;
-        top: 65%;
+        font-size: 2.5rem;
+        top: 60%;
         left: 10%;
         width: auto;
     }
 
     .HeroHome{
-        height: 50vh;
+        height: 40vh;
     }
 
     .HeroHome__logo{
@@ -76,4 +76,14 @@
         z-index: 2;
     }
 
+}
+
+@media screen and(max-width: 400px)
+{
+    .HeroHome__description{
+        font-size: 1.8rem;
+        top: 60%;
+        left: 10%;
+        width: auto;
+    }
 }

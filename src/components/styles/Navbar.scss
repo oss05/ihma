@@ -107,3 +107,38 @@
         width: 83%;
     }
 }
+
+@media screen and(max-width: 1000px){
+    .Navbar__nav {
+        display: none;
+    }
+
+    .Navbar__logo{
+        height: 98%;
+        width: 25%;
+    }
+}
+
+@media screen and(max-width: 750px){
+
+    .Navbar__logo{
+        height: 98%;
+        width: 35%;
+    }
+}
+
+@media screen and(max-width: 500px){
+
+    .Navbar__logo{
+        height: 98%;
+        width: 45%;
+    }
+}
+
+@media screen and(max-width: 350px){
+
+    .Navbar__logo{
+        height: 98%;
+        width: 65%;
+    }
+}

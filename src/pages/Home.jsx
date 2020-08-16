@@ -20,7 +20,7 @@ class Home extends React.Component{
                     <div className="Home__direction-triangle"></div>
                     <h3 className="Home__direction-place"> Oficina Ciudad de México </h3>
                     <div className="Home__direction-especific">
-                        <img src={markIcon} alt=""/>
+                        <img className="Home__direction-img" src={markIcon} alt=""/>
                         <div>
                         Bosque de Ciruelos 130 -501<br/>
                         Col. Bosques de las Lomas,<br/>
@@ -28,7 +28,7 @@ class Home extends React.Component{
                         </div>
                     </div>
                     <div className="Home__direction-cel">
-                        <img src={celIcon} alt=""/>
+                        <img  className="Home__direction-img" src={celIcon} alt=""/>
                         <div>
                         T. +(5255) 5292 6191<br/>
                         +(5255) 5251 8373<br/>
