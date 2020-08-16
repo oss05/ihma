@@ -44,15 +44,15 @@ class Footer extends React.Component{
                            <div>Unete a nuestras <br/>Redes Sociales</div>
                        <div>
                            <img src={facebook} alt=""/>
-                            <a href="">Facebook</a>
+                            <a href="/">Facebook</a>
                        </div>
                        <div>
                            <img src={twitter} alt=""/>
-                            <a href="">Twitter</a>
+                            <a href="/">Twitter</a>
                        </div>
                        <div>
                            <img src={LinkedIn} alt=""/>
-                            <a href="">Linkedink</a>
+                            <a href="/">Linkedink</a>
                        </div>
                        </div>
                     </div> 

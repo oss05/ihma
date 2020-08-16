@@ -39,9 +39,7 @@ class App extends React.Component{
                 socioMiembroDe: [ 'Colegio Mexicano de Abogados',
                                 'The Americas Society',
                                 'Barra Mexicana, Colegio de Abogados, S.C.',
-                                'American Bar Association',
                                 'Mexican Lawyers College',
-                                'The Americas Society',
                                 'Mexican Bar Association',
                                 'American Bar Association',
                                 ],
@@ -94,7 +92,6 @@ class App extends React.Component{
                             'University (Maestría en Resolución Alternativa de Disputas Internacionales 2004)',
                             'Universidad Anáhuac (J.D., Mexico)',
                             'Pepperdine University (J.D., 2000',
-                            'Strauss Institute for Dispute Resolution, Pepperdine',
                             'University (LL.M in International Dispute Resolution, 2004)',
                             ],
                 expProfesional: [ 'Buenfil & Hoffmann, S.C. (Pasante 1998-2000)',
@@ -141,7 +138,6 @@ class App extends React.Component{
                             'The University of Chicago Law School (LL.M, 1996)',
                             'Universidad Iberoamericana (J.D., 1992)',
                             'Universitaet Wien, Austria (International and European EU Law, Doctorate, 1994)',
-                            'The University of Chicago Law School (LL.M, 1996)',
                             ],
                 expProfesional: [ 'Von Wobeser y Sierra, S.C. (Pasante 1988–1992)',
                                 'ICC International Court of Arbitration (Pasante, 1993)',
@@ -183,7 +179,7 @@ class App extends React.Component{
             },
         ],
         socioSolicitado: '',
-        AreasPractica: [ 
+        AreasPractica:  
             {
                 id: '1',
                 title: 'Areas de Practica',
@@ -220,8 +216,7 @@ class App extends React.Component{
                         'Inmobiliario',
                         'Transporte y Aviación'
                         ],
-            } 
-        ],
+            },
         clientesData: [
             {
                 titulo: 'Clientes Representativos',
@@ -361,14 +356,10 @@ class App extends React.Component{
                         />
                         <Route exact path="/AreasDePractica" render = { () =>
                             <AreasPractica 
-                            
-                            data={this.state.AreasPractica[0]}
-                            data={this.state.AreasPractica[0]}
-                            data={this.state.AreasPractica[0]}
-                            data={this.state.AreasPractica[0]}
+                            data={this.state.AreasPractica}
                             />
-                        
-                        } />
+                        } 
+                        />
                         <Route exact path="/Clientes" render= { () =>
                                 <Clientes 
                                 data={this.state.clientesData[0]}

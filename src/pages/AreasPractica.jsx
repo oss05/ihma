@@ -19,7 +19,7 @@ class AreasPractica extends React.Component{
           <div className="AreasPractica__contenido-list">
             { this.props.data.areas.map( (areas) => {
               return (
-                <div key={this.props.data.id} >
+                <div key={areas} >
                   <div></div>
                   <p> {areas} </p>
                 </div>

@@ -1,12 +1,6 @@
 import React from 'react';
-import { BrowserRouter , Switch , Route } from 'react-router-dom';
 import SociosList from '../components/SociosList';
 import './styles/EquipoLegal.scss';
-// import MauricioCamposRedondo from '../img/MauricioCamposRedondo.png';
-// import JorgeAriasRedondo from '../img/JorgeAriasRedondo.png';
-// import JesusMendozaRedondo from '../img/JesusMendozaRedondo.png';
-// import DiegoMaxRedondo from '../img/DiegoMaxRedondo.png';
-// import triangulo from '../img/triangulo.png';
 
 
 class EquipoLegal extends React.Component{

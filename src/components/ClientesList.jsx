@@ -7,7 +7,7 @@ class ClientesList extends React.Component{
       <React.Fragment>
         { this.props.data.clientesList.map( (clientesList) =>{
           return (
-            <div>
+            <div key={clientesList}>
               <div></div>
              <p>
                {clientesList}
