@@ -336,7 +336,7 @@ class App extends React.Component{
             <BrowserRouter>
                 <Layout>
                     <Switch>
-                        <Route exact path="/ihma/" component={Home} />
+                        <Route exact path="/ihma" component={Home} />
                         <Route exact path="/Equipo-Legal"
                         render={ () => 
                         <EquipoLegal 

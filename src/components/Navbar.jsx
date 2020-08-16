@@ -13,14 +13,14 @@ class Navbar extends React.Component{
                     <img src={menu} alt="menu"/>
                 </div>
                 <div className="Navbar__logo"> 
-                    <Link to="/ihma/">
+                    <Link to="/ihma">
                         <img src={logo} alt="Logo ihma" />
                     </Link>
                 </div>
                 <nav className="Navbar__nav">
                     <ul>
                         <li>
-                            <Link to="/ihma/"> <i>|</i> <span> {link1} </span>  <i>|</i> </Link>
+                            <Link to="/ihma"> <i>|</i> <span> {link1} </span>  <i>|</i> </Link>
                         </li>
                         <li>
                             <Link to="/AreasDePractica"> <i>|</i> <span> {link2} </span>  <i>|</i> </Link>
@@ -32,7 +32,7 @@ class Navbar extends React.Component{
                             <Link to="/Clientes"> <i>|</i> <span> {link4} </span>  <i>|</i> </Link>
                         </li>
                         <li>
-                            <Link to="/ihma/"> <i>|</i> <span> {link5} </span>  <i>|</i> </Link>
+                            <Link to="/ihma"> <i>|</i> <span> {link5} </span>  <i>|</i> </Link>
                         </li>
                     </ul>
                     <div className="Navbar__nav-language">
