@@ -9,10 +9,9 @@ class ClientesList extends React.Component{
           return (
             <div key={clientesList}>
               <div></div>
-             <p>
-               {clientesList}
-              </p> 
-            
+                <p>
+                  {clientesList}
+                </p> 
             </div>
           )
         } ) }

@@ -217,7 +217,7 @@ class App extends React.Component{
                         'Transporte y Aviación'
                         ],
             },
-        clientesData: [
+        clientesData: 
             {
                 titulo: 'Clientes Representativos',
                 descripcion: 'Los abogados de IHMA son reconocidos por su innovación legal y su excelente servicio a clientes',
@@ -319,8 +319,7 @@ class App extends React.Component{
                     'Winco',
                     'About the partners'
                 ]
-            }
-        ],
+            },
         
     }
 
@@ -337,7 +336,7 @@ class App extends React.Component{
             <BrowserRouter>
                 <Layout>
                     <Switch>
-                        <Route exact path="/" component={Home} />
+                        <Route exact path="/ihma/" component={Home} />
                         <Route exact path="/Equipo-Legal"
                         render={ () => 
                         <EquipoLegal 
@@ -362,7 +361,7 @@ class App extends React.Component{
                         />
                         <Route exact path="/Clientes" render= { () =>
                                 <Clientes 
-                                data={this.state.clientesData[0]}
+                                data={this.state.clientesData}
                                 />
                             
                          } 
