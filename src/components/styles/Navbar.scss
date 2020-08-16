@@ -8,6 +8,17 @@
 
 }
 
+.Navbar__oculto{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    margin-right: 5%;
+    display: none;
+    border-radius: 50%;
+   
+}
+
 .Navbar__logo{
     // border: $border-test;
     margin-left: 2vw;
@@ -111,6 +122,12 @@
 @media screen and(max-width: 1000px){
     .Navbar__nav {
         display: none;
+    }
+
+    .Navbar__oculto{
+        display: block;
+        @include basic-flexbox(center,center,row);
+
     }
 
     .Navbar__logo{

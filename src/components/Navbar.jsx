@@ -2,13 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Navbar.scss';
 import logo from '../img/Logo.svg';
-
+import menu from '../img/menu.png';
 
 class Navbar extends React.Component{
     render(){
         const { link1 , link2 , link3 , link4 , link5 , idioma } = this.props;
         return (
             <header className="Navbar">
+                <div className="Navbar__oculto">
+                    <img src={menu} alt="menu"/>
+                </div>
                 <div className="Navbar__logo"> 
                     <Link to="/">
                         <img src={logo} alt="Logo ihma" />
