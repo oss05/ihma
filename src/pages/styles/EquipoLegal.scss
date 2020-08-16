@@ -42,3 +42,117 @@
     }
 
 }
+
+@media screen and(max-width: 1000px){
+    .EquipoLegal{
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .EquipoLegal__left{
+        width: 100vw;
+        height: 55vh;
+        background-image: url('../../img/areasDecorateLittle.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        & .EquipoLegal__left-img{
+            display: none;
+        }
+    }
+
+
+    .EquipoLegal__about{
+        width: 95vw;
+    
+        & .EquipoLegal__about-title{
+            width: 70%;
+            font-size: 2.4rem;
+            line-height: 40px;
+            border-bottom: 2px solid $color-red-ihma;
+            background-image: url('../../img/cuadrado.png');
+            background-repeat: no-repeat;
+            background-position-y: 100%;
+            background-position-x: 100%;
+        }
+    
+        & .Equipolegal__about-description{
+            font-size: 1.3rem;
+            font-style: normal;
+            line-height: 27px;
+            color: #666D70;
+            margin-left: 10vw;
+            margin-right: 30vw;
+        }
+    
+    }
+
+    .EquipoLegal__about-item .EquipoLegal__about-item-name{
+        width: 70%;
+    }
+
+    .EquipoLegal__about-socios{
+        margin-left: 5vw;
+    }
+}
+
+
+
+@media screen and(max-width: 600px){
+
+
+    .EquipoLegal__left{
+        width: 100vw;
+        height: 35vh;
+
+    }
+
+
+    .EquipoLegal__about{
+        width: 90vw;
+    
+        & .EquipoLegal__about-title{
+            font-size: 1.7rem;
+            margin-left: 0;
+        }
+    
+        & .Equipolegal__about-description{
+            font-size: 1.1rem;
+            margin-left: 0;
+            margin-right: 10vw;
+        }
+    
+    }
+
+    .EquipoLegal__about-item .EquipoLegal__about-item-name{
+        width: 70%;
+    }
+
+    .EquipoLegal__about-socios{
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+
+@media screen and(max-width: 500px){
+
+    .EquipoLegal__about{
+    
+        & .EquipoLegal__about-title{
+            font-size: 1.5rem;
+        }
+    
+        & .Equipolegal__about-description{
+            font-size: 1rem;
+        }
+    
+    }
+
+    .EquipoLegal__about-item .EquipoLegal__about-item-name p{
+        width: 90%;
+        line-height: 35px;
+        font-size: 1.2rem;
+    }
+
+
+}
