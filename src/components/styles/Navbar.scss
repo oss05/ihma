@@ -8,6 +8,58 @@
 
 }
 
+.Navbar__desplegable{
+    // border: $border-test;
+    display: none;
+    background-color: rgb(241, 240, 240);
+    position: fixed;
+    z-index: 10;
+    right: 5px;
+    top: 15px;
+    width: 40vw;
+    padding: 10px 20px 20px 20px;
+    border-radius: 15px;
+
+   
+
+    & .Navbar__desplegable-item:nth-of-type(1){
+        margin-bottom: 20px;
+    }
+
+    & .Navbar__desplegable-item:nth-child(n+2){
+        & a{
+            text-decoration: none;
+            color: black;
+            border-bottom: 1px solid $color-red-ihma;
+            font-family: $font-montserrat;
+            font-weight: bold;
+            line-height: 40px;
+            color: #535558;
+            position: relative;
+            @include basic-flexbox(space-between,center,row);
+        }
+
+    }
+
+    & .Navbar__desplegable-item:nth-of-type(7){
+        border: 0;
+        margin-top: 15px;
+        background-color: rgb(241, 240, 240);
+        @include basic-flexbox(space-between,center,row);
+
+        & .Navbar__desplegable-more:nth-of-type(4){
+            & div{
+                margin-top: 5px;
+                width: 50px;
+                height: 50px;
+                background-color: $color-gray-little;
+                @include basic-flexbox(center,center,row);
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
 .Navbar__oculto{
     position: fixed;
     width: 40px;
@@ -120,6 +172,9 @@
 }
 
 @media screen and(max-width: 1000px){
+    // .Navbar__desplegable{
+    //     display: block;
+    // }
     .Navbar__nav {
         display: none;
     }
@@ -142,6 +197,10 @@
         height: 98%;
         width: 35%;
     }
+
+    .Navbar__desplegable{
+        width: 50vw;
+    }
 }
 
 @media screen and(max-width: 500px){
@@ -149,6 +208,10 @@
     .Navbar__logo{
         height: 98%;
         width: 45%;
+    }
+
+    .Navbar__desplegable{
+        width: 60vw;
     }
 }
 
