@@ -18,7 +18,7 @@ class Navbar extends React.Component{
         }
     }
     render(){
-        const { link1 , link2 , link3 , link4 , link5 , idioma } = this.props;
+        const { link1 , link2 , link3 , link4 , link5 , link6 , idioma } = this.props;
         return (
             <header className="Navbar">
                 <div id="menuDesplegable" className="Navbar__desplegable">
@@ -48,6 +48,11 @@ class Navbar extends React.Component{
                         {link5} <img src={triangulo} alt=""/>
                         </Link>
                          </div>
+                    {/* <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/ihma/"> 
+                        {link6} <img src={triangulo} alt=""/>
+                        </Link>
+                         </div> */}
                     <div className="Navbar__desplegable-item">
                         <div className="Navbar__desplegable-more">
                             <img src={LinkedIn} alt=""/>
@@ -59,8 +64,10 @@ class Navbar extends React.Component{
                             <img src={twitter} alt=""/>
                         </div>
                         <div className="Navbar__desplegable-more">
-                            Idioma
-                            <div>En</div>
+                          {
+                            idioma==='En'?'Language':'Idioma'
+                          }
+                          <div> {idioma} </div>
                         </div>
                     </div>
                 </div>
@@ -89,9 +96,16 @@ class Navbar extends React.Component{
                         <li>
                             <Link to="/ihma"> <i>|</i> <span> {link5} </span>  <i>|</i> </Link>
                         </li>
+                        <li>
+                            <Link to="/ihma"> <i>|</i> <span> {link6} </span>  <i>|</i> </Link>
+                        </li>
                     </ul>
                     <div className="Navbar__nav-language">
-                        <p>Idioma</p>
+                        <p> 
+                          {
+                            idioma==='En'?'Language':'Idioma'
+                          }
+                        </p>
                         <div> {idioma} </div>
                     </div>
                 </nav>

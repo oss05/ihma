@@ -14,7 +14,7 @@ class AreasPractica extends React.Component{
           <img src={escuadra} alt=""/>
           {this.props.data.title} 
           </h1>
-          <h4 className="AreasPractica__contenido-subtitle"> Nuestro enfoque: <br/> {this.props.data.subtitle} </h4>
+          <h4 className="AreasPractica__contenido-subtitle"> {this.props.data.enfoque} <br/> {this.props.data.subtitle} </h4>
           <p className="AreasPractica__contenido-description"> {this.props.data.description} </p>
           <div className="AreasPractica__contenido-list">
             { this.props.data.areas.map( (areas) => {

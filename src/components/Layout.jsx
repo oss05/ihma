@@ -6,12 +6,13 @@ const Layout = (props) =>{
     return (
         <React.Fragment>
             <Navbar 
-            link1="Sobre nosotros"
-            link2="Areas de Práctica"
-            link3="Equipo Legal"
-            link4="Clientes"
-            link5="Reconocimientos"
-            idioma="En"
+            link1={props.nav.link1}
+            link2={props.nav.link2}
+            link3={props.nav.link3}
+            link4={props.nav.link4}
+            link5={props.nav.link5}
+            link6={props.nav.link6}
+            idioma={props.nav.actual}
             />
             {props.children}
             <Footer />

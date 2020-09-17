@@ -4,6 +4,10 @@ import socioDecoration from '../img/socioDecoration.png';
 import escuadra from '../img/escuadra.png';
 
 class Socios extends React.Component{
+  constructor(props){
+    super(props)
+    debugger
+  }
     render(){
         return (
             <div className="Socios">
@@ -20,14 +24,14 @@ class Socios extends React.Component{
                                 <p className="Socio__item-status"> {this.props.data.estatusSocio} </p>
                                 <p className="Socio__item-info"> {this.props.data.nacSocio} </p>
                                 <p className="Socio__item-info"> {this.props.data.titulacionSocio} </p>
-                                <p className="Socio__item-info">Idiomas / Languages: {this.props.data.idiomaSocio} </p>
-                                <p className="Socio__item-info">Email: {this.props.data.emailSocio} </p>
+                                <p className="Socio__item-info"> {this.props.data.idiomaSocio} </p>
+                                <p className="Socio__item-info"> {this.props.data.emailSocio} </p>
                             </div>
                         </div>
                     </div>
                     <div className="Socios__item-bottom">
                         <div>
-                            <div> <span></span> Educación</div>
+                            <div> <span></span> {this.props.data.educacionTitle} </div>
                             <div>
                                {this.props.data.educacion.map( (educacion) => {
                                    return (
@@ -40,7 +44,7 @@ class Socios extends React.Component{
 
                                )} 
                             </div>
-                            <div> <span></span> Experiencia<br/> Profesional</div>
+                            <div> <span></span> {this.props.data.expTitle}</div>
                             <div> 
                                 {this.props.data.expProfesional.map( (expProfesional) =>{
                                     return (
@@ -51,7 +55,7 @@ class Socios extends React.Component{
                                     );
                                 } )}
                             </div>
-                            <div> <span></span> Miembro</div>
+                            <div> <span></span>{this.props.data.socioTitle}</div>
                             <div> 
                                 {this.props.data.socioMiembroDe.map( (socioMiembroDe) =>{
                                     return (
@@ -62,7 +66,7 @@ class Socios extends React.Component{
                                     )
                                 }  )}    
                             </div>
-                            <div> <span></span> Áreas de<br/> Práctica</div>
+                            <div> <span></span> {this.props.data.areasTitle}</div>
                             <div>
                                 {this.props.data.areasDePractica.map( (areasDePractica) => {
                                     return(

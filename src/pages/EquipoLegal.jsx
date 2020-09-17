@@ -6,6 +6,7 @@ import './styles/EquipoLegal.scss';
 class EquipoLegal extends React.Component{
     
     render(){
+        
         return (
             <div className="EquipoLegal">
                 <div className="EquipoLegal__left">
