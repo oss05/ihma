@@ -55,7 +55,7 @@ class Navbar extends React.Component{
                         </Link>
                          </div>
                     <div className="Navbar__desplegable-item">
-                        <Link onClick={this.sacarMenu} to="/ihma/"> 
+                        <Link onClick={this.sacarMenu} to="/alianzas"> 
                         {link6} <img src={triangulo} alt=""/>
                         </Link>
                          </div>
@@ -103,7 +103,7 @@ class Navbar extends React.Component{
                             <Link to="/ihma"> <i>|</i> <span> {link5} </span>  <i>|</i> </Link>
                         </li>
                         <li>
-                            <Link to="/ihma"> <i>|</i> <span> {link6} </span>  <i>|</i> </Link>
+                            <Link to="/alianzas"> <i>|</i> <span> {link6} </span>  <i>|</i> </Link>
                         </li>
                     </ul>
                     <div className="Navbar__nav-language">

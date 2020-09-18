@@ -1,0 +1,137 @@
+@import '../../vars.scss';
+@import '../../mixins.scss';
+
+
+.Alianzas{
+  // border: 1px solid black;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+
+  & .Alianzas__img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    & img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & .Alianzas__text{
+    // border: 1px solid red;
+    padding: 2% 5%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+    & .Alianzas__text-titles{
+      // border: 1px solid blue;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      & h1{
+        // border: 1px solid black;
+        margin: 0;
+        font-family: $font-unna;
+        color: $color-grey-meiumLight;
+        font-size: 2.3rem;
+        line-height: 80px;
+        width: 40%;
+        position: relative;
+        & img{
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      & h4{
+        // border: 1px solid black;
+        font-family: $font-arsenal;
+        color: $color-grey-meiumLight;
+        font-size: 1.5rem;
+        margin: 0;
+        margin-top: 20px;
+      }
+    }
+
+    & .Alianzas__text-details{
+      // border: 1px solid black;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      & p{
+        font-family: $font-arsenal;
+        color: $color-grey-meiumLight;
+        font-size: 1.5rem;
+      }
+    }
+
+    & .Alianzas__text-img{
+      // border: 1px solid green;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      & a{
+        display: block;
+        margin: 30px 0;
+        font-weight: bold;
+        font-family: $font-unna;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1350px){
+  .Alianzas .Alianzas__text .Alianzas__text-titles h1{
+    font-size: 2rem;
+    width: 80%;
+  }
+  .Alianzas .Alianzas__text .Alianzas__text-titles h4{
+    font-size: 1.2rem;
+  }
+
+  .Alianzas .Alianzas__text .Alianzas__text-details p{
+    font-size: 1.2rem;
+  }
+
+  .Alianzas .Alianzas__text .Alianzas__text-img a{
+    margin-top: 0;
+  }
+}
+
+
+@media screen and(max-width: 1350px){
+  .Alianzas{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+  }
+
+  .Alianzas .Alianzas__img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 300px;
+    background-image: url('../../img/clientesDecorateLittle.png');
+    background-repeat: none;
+    background-size: 100% 100%;
+    & img{
+     display: none; 
+    }
+  }
+
+  .Alianzas .Alianzas__text{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+
+@media screen and(max-width: 650px){
+  .Alianzas .Alianzas__text{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+
+  .Alianzas .Alianzas__text .Alianzas__text-titles h1{
+    font-size: 1.5rem;
+  }
+}

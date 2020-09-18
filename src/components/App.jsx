@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter , Switch , Route } from 'react-router-dom';
+
 import Layout from './Layout';
 import Home from '../pages/Home';
 import Socios from './Socios';
 import AreasPractica from '../pages/AreasPractica';
 import EquipoLegal from '../pages/EquipoLegal';
 import Clientes from '../pages/Clientes';
+import Alianzas from '../pages/Alianzas';
+
 import fotoEquipoLegal from '../img/leftEquipoLegal.png';
 import MauricioCamposRedondo from '../img/MauricioCamposRedondo.png';
 import JorgeAriasRedondo from '../img/JorgeAriasRedondo.png';
@@ -25,6 +28,13 @@ state =
   language: {
     es: 
     {
+      alianzas: {
+        title: 'Alianzas Estratégicas',
+        subtitle: 'Capacidades internacionales de IHMA',
+        details1: 'Hoy vivimos en un mundo enfocado en los mercados globales y las transacciones comerciales modernas que abarcan elementos de diferentes jurisdicciones nacionales y extranjeras. La capacidad de práctica internacional de IHMA ayuda a los clientes a navegar estos mercados a menudo complejos e inciertos y sus sistemas legales. Ayudamos a los clientes a promover su interés comercial internacional en México y mercados relevantes. Los abogados de IHMA han estudiado y trabajado en el extranjero, hablan idiomas extranjeros y conocen diferentes culturas empresariales. Además, la Firma cuenta con una vasta red de abogados y firmas de abogados extranjeros en todo el mundo para ayudar a ésta a brindar soluciones integrales para sus clientes que desean aprovechar estos mercados globales y promover sus intereses comerciales internacionales.',
+        details2: 'IHMA y Leger Ketchum & Cohoon, PLLC (LKC), una firma de abogados líder en el área de Houston, con oficinas en The Woodlands, Boerne-San Antonio y Dallas, Texas, se han asociado como parte de una alianza estratégica para manejar el comercio internacional y asuntos fronterizos tanto en Estados Unidos como en México. Al unir fuerzas en una alianza estratégica, los recursos combinados de los abogados de IHMA admitidos para ejercer en México y los abogados de LKC admitidos para ejercer en Texas y otras jurisdicciones de EE. UU., nos permite brindar asesoría legal integral e integral en cualquier asunto corporativo, comercial, laboral o de otro tipo regido por los Estados Unidos. Acuerdo Estados - México - Canadá (USMCA) que reemplazó y reemplazó al NAFTA.',
+        details3: 'Después de trabajar durante casi dos décadas como Asesor Jurídico de varias empresas multinacionales importantes en las industrias automotriz, farmacéutica, nutricional, energética y de servicios públicos, manejando responsabilidades corporativas en México y América Latina, Diego Andrade Max se unió a IHMA en 2017 y encabezó nuestros esfuerzos para abrir una oficina enlace en Woodlands, Texas en 2018. El propósito de esta oficina es estar más cerca de nuestros clientes con sede en EE. UU. que hacen negocios en México. El siguiente paso ha sido establecer una alianza estratégica con una firma de Texas a raíz de los cuestionamientos constantes de nuestros clientes extranjeros que hacen negocios en México sobre el acceso a los servicios legales en Texas, así como los clientes, personas físicas mexicanas de alto poder adquisitivo que han buscado empresas en Texas. Nuestro socio, Diego Andrade maneja la alianza IHMA-LKC y divide su tiempo entre Houston y Ciudad de México. Para mas información sobre los servicios de nuestra firma aliada por favor visitar',
+      },
       footer: {
         terms: 'Terminos y condiciones',
         politicy: 'Politicas de privacidad ',
@@ -346,6 +356,14 @@ state =
       // ----------------------------------------------------------------------------------------------------
     en: 
     {
+      alianzas: {
+        title: 'Strategic Alliances',
+        subtitle: 'IHMA International Capabilities',
+        details1: 'Today we live in a world focused on global markets and modern business transactions that encompass elements of different domestic and foreign jurisdictions.  The IHMA International Practice capability helps clients navigate these often complex and uncertain markets and their legal systems.  We help clients to promote their international business interest in Mexico and relevant markets.  IHMA attorneys have studied and worked abroad, speak foreign languages, and know different business cultures.  In addition, the Firm has a vast network of lawyers and foreign law firms around the globe to assist the firm in providing one-stop shop solutions for its clients wanting to take advantage of these global markets and promote their international business interests.',
+        details2: 'IHMA and Leger Ketchum & Cohoon, PLLC (LKC), a leading law firm in the Houston area with offices in The Woodlands, Boerne-San Antonio and Dallas, Texas have teamed up as part of a strategic alliance to handle international trade and cross-border matters in both the US and Mexico.  By joining forces in strategic alliance, the combined resources of IHMA attorneys admitted in Mexico and LKC lawyers admitted in Texas and other US jurisdictions, allows us to provide integrated and comprehensive legal advice in any corporate, trade, labor or other matter governed by the United States - Mexico - Canada Agreement (USMCA) that superseded and replaced NAFTA.  ',
+        details3: 'After working for almost two decades as General Counsel for several major multinational companies in the automotive, pharmaceutical, nutritional, energy and utility industries managing corporate responsibilities in Mexico and Latin America, Diego Andrade Max joined IHMA in 2017 and led our efforts to open a liaison office in the Woodlands, Texas in 2018.  The purpose of this office is to be closer to our US based clients doing business in Mexico.  The next step has resulted in a strategic alliance with a Texas firm because our foreign clients doing business in Mexico often inquired about access to services in Texas and Mexican high net-worth individual clients have pursued ventures in Texas.  Our partner, Diego Andrade manages the IHMA-LKC alliance and splits his time between Houston and Mexico City.For more information about the services of our allied firm please visit',
+
+      },
       footer: {
         terms: 'Terms and Conditions',
         politicy: 'privacy policies',
@@ -758,6 +776,12 @@ state =
                           
                         } 
                         /> 
+                      <Route exact path="/alianzas" render={() => (
+                        <Alianzas
+                        language={this.switchLanguage()} 
+                        />
+                      )} 
+                      />
                     </Switch>
                 </Layout>
             </BrowserRouter>
