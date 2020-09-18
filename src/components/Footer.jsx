@@ -13,23 +13,25 @@ class Footer extends React.Component{
                 <div className="footer-container">
                    <div className="Footer__item">
                        <div>
-                            <p>Acerca de Nosotros</p>
-                            <p>Areas de Práctica</p>
-                            <p>Equipo Legal</p>
-                            <p>Clientes</p>
-                            <p>Reconocimientos</p>
+                            <p> {this.props.link1} </p>
+                            <p> {this.props.link2} </p>
+                            <p> {this.props.link3} </p>
+                            <p> {this.props.link4} </p>
+                            <p> {this.props.link5} </p>
+                            <p> {this.props.link6} </p>
+
                        </div>
                    </div>
                    <div className="Footer__item">
                         <div>
-                            <p>Terminos y condiciones</p>
-                            <p>Politicas de privacidad</p>
+                            <p> {this.props.language.footer.terms} </p>
+                            <p> {this.props.language.footer.politicy} </p>
                        </div>
                    </div>
                    <div className="Footer__item">
-                       <div>Contacto</div>
+                       <div> {this.props.language.footer.contact} </div>
                        <div>
-                           <i>Oficina Woodlands, Texas</i>
+                           <i>Office Woodlands, Texas</i>
                            <br/>
                            1095 Evergreen Circle Suite 200 - 432 The Woodlands, TX 77380 T. +1(281) 206 0030
                        </div>
@@ -41,7 +43,7 @@ class Footer extends React.Component{
                    </div>
                    <div className="Footer__item">
                        <div>
-                           <div>Unete a nuestras <br/>Redes Sociales</div>
+                           <div> {this.props.language.footer.join} <br/> {this.props.language.footer.social} </div>
                        <div>
                            <img src={facebook} alt=""/>
                             <a href="/">Facebook</a>

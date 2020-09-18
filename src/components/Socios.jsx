@@ -6,7 +6,7 @@ import escuadra from '../img/escuadra.png';
 class Socios extends React.Component{
   constructor(props){
     super(props)
-    debugger
+    // debugger
   }
     render(){
         return (

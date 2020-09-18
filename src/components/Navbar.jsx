@@ -17,6 +17,12 @@ class Navbar extends React.Component{
             menu.style.display = 'none'
         }
     }
+
+    handleLanguage = () => {
+       this.props.changeLanguage(true)
+       
+    }
+
     render(){
         const { link1 , link2 , link3 , link4 , link5 , link6 , idioma } = this.props;
         return (
@@ -48,11 +54,11 @@ class Navbar extends React.Component{
                         {link5} <img src={triangulo} alt=""/>
                         </Link>
                          </div>
-                    {/* <div className="Navbar__desplegable-item">
+                    <div className="Navbar__desplegable-item">
                         <Link onClick={this.sacarMenu} to="/ihma/"> 
                         {link6} <img src={triangulo} alt=""/>
                         </Link>
-                         </div> */}
+                         </div>
                     <div className="Navbar__desplegable-item">
                         <div className="Navbar__desplegable-more">
                             <img src={LinkedIn} alt=""/>
@@ -67,7 +73,7 @@ class Navbar extends React.Component{
                           {
                             idioma==='En'?'Language':'Idioma'
                           }
-                          <div> {idioma} </div>
+                          <div onClick={this.handleLanguage} > {idioma} </div>
                         </div>
                     </div>
                 </div>
@@ -106,7 +112,7 @@ class Navbar extends React.Component{
                             idioma==='En'?'Language':'Idioma'
                           }
                         </p>
-                        <div> {idioma} </div>
+                        <div onClick={this.handleLanguage} > {idioma} </div>
                     </div>
                 </nav>
             </header>

@@ -11,20 +11,22 @@ class Home extends React.Component{
     render(){
         return <React.Fragment>
             <HeroHome 
-            heroDescription1="Consultoría"
-            heroDescription2="Legal Internacional"
+            heroDescription1={this.props.language.home.heroDescription1}
+            heroDescription2={this.props.language.home.heroDescription2}
             />
-            <MainHome />
+            <MainHome 
+            language={this.props.language}
+            />
             <div className="Home__direction">
                 <div>
                     <div className="Home__direction-triangle"></div>
-                    <h3 className="Home__direction-place"> Oficina Ciudad de México </h3>
+                    <h3 className="Home__direction-place"> {this.props.language.home.office} </h3>
                     <div className="Home__direction-especific">
                         <img className="Home__direction-img" src={markIcon} alt=""/>
                         <div>
-                        Bosque de Ciruelos 130 -501<br/>
-                        Col. Bosques de las Lomas,<br/>
-                        Ciudad de México, 11700<br/>
+                         {this.props.language.home.dir1} <br/>
+                         {this.props.language.home.dir2} <br/>
+                         {this.props.language.home.dir3} <br/>
                         </div>
                     </div>
                     <div className="Home__direction-cel">

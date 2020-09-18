@@ -41,9 +41,9 @@
 
     }
 
-    & .Navbar__desplegable-item:nth-of-type(7){
+    & .Navbar__desplegable-item:nth-of-type(8){
         border: 0;
-        margin-top: 15px;
+        margin-top: 40px;
         background-color: rgb(241, 240, 240);
         @include basic-flexbox(space-between,center,row);
 
@@ -85,7 +85,7 @@
 
 .Navbar__nav{
     // border: $border-test;
-    width: 60%;
+    width: 80%;
     height: 95%;
     margin-right: 3vh;
     @include basic-flexbox(center,center,row);
@@ -94,7 +94,9 @@
 .Navbar__nav ul{
     // border: $border-test;
     list-style: none;
-    width: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
     & li{
         float: left;
         margin-right: 2%;
@@ -152,11 +154,11 @@
 @media screen and(max-width: 1560px){
 
     .Navbar__nav{
-        width: 65%;
+        width: 80%;
     }
 
     .Navbar__nav ul{
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -167,11 +169,15 @@
     }
 
     .Navbar__nav ul{
-        width: 83%;
+        width: 90%;
+        padding-left: 0;
+        & li {
+        margin-right: 1%;
+        }
     }
 }
 
-@media screen and(max-width: 1000px){
+@media screen and(max-width: 1120px){
     // .Navbar__desplegable{
     //     display: block;
     // }

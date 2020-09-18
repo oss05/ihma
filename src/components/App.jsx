@@ -25,6 +25,31 @@ state =
   language: {
     es: 
     {
+      footer: {
+        terms: 'Terminos y condiciones',
+        politicy: 'Politicas de privacidad ',
+        contact: 'Contacto',
+        join: 'Unete a nuestras',
+        social: 'Redes Sociales',
+      },
+      home: {
+        heroDescription1: 'Consultoría',
+        heroDescription2: 'Legal Internacional',
+        greyDecorate: 'Un moderno y dinámico ejercicio de la profesión',
+        details1a: 'fue concebido como un Bufete que ofrece servicios integrales a clientes nacionales e internacionales acostumbrados a recibir servicios legales de la más alta calidad por parte de los más grandes y destacados despachos, pero con un nivel de atención personalizada en todos los asuntos confiados a éste, que claramente lo distingue de otras firmas legales tradicionales de mayor tamaño.',
+        details1b: 'Los antecedentes académicos y profesionales de los miembros del Bufete, tanto en México como en los Estados Unidos de América y Europa, permite a IHMA entender las necesidades de los clientes de una mejor manera, así como los aspectos legales que inciden en una operación internacional y brindar respuestas de calidad en tiempo oportuno de acuerdo a las expectativas de los clientes más exigentes.',
+        details2a: 'Perspectiva actualizada de negocios',
+        details2b: 'Uno de nuestros principales objetivos consiste en participar proactivamente en los asuntos de nuestros clientes, proporcionando asesoría práctica y confiable a sus requerimientos. La calidad de nuestros servicios está a la altura de las exigencias de un mundo globalizado y en constante transformación.',
+        dir1: 'Bosque de Ciruelos 130 -501',
+        dir2: 'Col. Bosques de las Lomas,',
+        dir3: 'Ciudad de México, 11700',
+        office: 'Oficina Ciudad de México',
+      },
+      equipoLegal:
+      {
+        title: 'Acerca de los Socios',
+        details: 'Los abogados de IHMA son reconocidos por su innovación legal y su excelente servicio a clientes',
+      },
       nav: 
       {
         link1: 'Sobre Nosotros',
@@ -321,6 +346,31 @@ state =
       // ----------------------------------------------------------------------------------------------------
     en: 
     {
+      footer: {
+        terms: 'Terms and Conditions',
+        politicy: 'privacy policies',
+        contact: 'Contact',
+        join: 'Join our',
+        social: 'Social Networks',
+      },
+      home: {
+        heroDescription1: 'International',
+        heroDescription2: 'Legal Consultancy', 
+        greyDecorate: 'A modern and dynamic approach to the practice of law',
+        details1a: 'was envisioned as a full service law firm servicing foreign and local clients used to receiving top quality legal services from the best and largest international law firms, but with such a personal degree of attention in all matters entrusted to it by the clients, that clearly distinguishes it from the larger traditional law firms.         ',
+        details1b: 'The education and employment backgrounds of the members of the firm in Mexico as well as in the United States and Europe, allows IHMA to better understand the clients needs, the legal issues involved on the both sides of a crossborder transaction and to deliver quality and timely responses as expected by the most demanding clients.        ',
+        details2a: 'Present-day business perspective',
+        details2b: 'One of our main goals consists in proactive approach to our clients’ matters, providing practical and reliable advice in those matters entrusted to the Firm. The quality of our services meets the utmost demands of a globalized world in constant change.        ',
+        dir1: '1095 Evergreen Circle',
+        dir2: 'Suite 200 - 432',
+        dir3: 'The Woodlands, TX 77380',
+        office: 'Office Woodlands, Texas        ',
+      },
+      equipoLegal:
+      {
+        title: 'About the partners',
+        details: 'IHMA attorneys are recognized for their legal innovation and excellent client service',
+      },
       nav: 
       {
         link1: 'The Firm',
@@ -359,8 +409,8 @@ state =
                             ],
             imagenCuadrada: `${MauricioCamposCuadrado}`,
             estatusSocio: "Socio",
-            nacSocio: "Ciudad de México. Noviembre 8, 1969.",
-            titulacionSocio: "Admitido para ejercer, México, 1994",
+            nacSocio: "Born Mexico City. November 8, 1969.            ",
+            titulacionSocio: "Admitted, 1994, Mexico.",
             idiomaSocio: "Language: Spanish and English",
             emailSocio: "Email: mibanez@ihma.law",
               
@@ -384,8 +434,8 @@ state =
                 ],
             imagenCuadrada: `${JorgeAriasCuadrado}`,
             estatusSocio: "Socio",
-            nacSocio: "Ciudad de México. Noviembre 7, 1967.",
-            titulacionSocio: "Admitido para ejercer, México, 1995",
+            nacSocio: "Born Mexico City. November 7, 1967.            ",
+            titulacionSocio: "Admitted, 1995, Mexico. ",
             idiomaSocio: "Languages: Spanish and English",
             emailSocio: "Email: jhoffmann@ihma.law",
           },
@@ -417,8 +467,8 @@ state =
                 ],
             imagenCuadrada: `${JesusMendozaCuadrado}`,
             estatusSocio: "Socio",
-            nacSocio: "Ciudad de México.Diciembre 10, 1975.",
-            titulacionSocio: "Admitido para ejercer, México, 2001",
+            nacSocio: "Born Mexico City. December 10, 1975.            ",
+            titulacionSocio: "Admitted, 2001, Mexico. ",
             idiomaSocio: "Languages: Spanish and English",
             emailSocio: "Email: jmendoza@ihma.law",
               
@@ -461,8 +511,8 @@ state =
                             ],
             imagenCuadrada: `${DiegoMaxCuadrado}`,
             estatusSocio: "Socio",
-            nacSocio: "Ciudad de México. Enero 5, 1967.",
-            titulacionSocio: "Admitido para ejercer, México, 1992",
+            nacSocio: "Born Mexico City. January 5, 1967.            ",
+            titulacionSocio: "Admitted, 1992, Mexico. ",
             idiomaSocio: "Languages:  Spanish, English, German and French",
             emailSocio: "Email: dandrade@ihma.law",
               
@@ -472,46 +522,48 @@ state =
           AreasPractica:  
           {
             id: '1',
-            enfoque: 'Nuestro Enfoque',
-            title: 'Areas de Practica',
-            subtitle: 'Altos estándares de calidad y una amplia gama de servicios',
-            description: 'Cada uno de los socios, asociados y pasantes del Bufete se Especializan en una o más de las siguientes áreas de práctica',
-            areas: ['Alianzas Estrategicas ',
-                    'Inversiones de capital',
-                    'Ambiental',
-                    'Leyes Anticorrupcion',
-                    'Conversiones',
-                    'Licitaciones Públicas',
-                    'Competencia Economica',
-                    'Litigio Administrativo',
-                    'Consultoria Laboral',
-                    'Litigio Laboral',
-                    'Coorporativo',
-                    'Marítimo',
-                    'Energia',
-                    'Migratorio',
-                    'Financiamiento de proyectos',
-                    'propiedad intelectual',
-                    'Financiero',
-                    'Reestructuras Financieras',
-                    'Hoteles y hospitalidad',
-                    'Reestructuras y Concursos',
-                    'Industria Automotriz',
-                    'Salud',
-                    'Industria Farmaceutica',
-                    'Seguridad Social',
-                    'Industria Filmica',
-                    'Seguros',
-                    'Infraestructura',
-                    'Telecomunicaciones',
-                    'Inmobiliario',
-                    'Transporte y Aviación'
+            enfoque: '',
+            title: 'Practices Areas',
+            subtitle: 'We focus on high quality standards and a wide range of services',
+            description: 'Each one of the partners, associates and law clerks of the firm specializes in one or more of the following practices areas:',
+            areas: 
+            [
+              'Administrative Litigation ',
+              'Antitrust',
+              'Automotive Industry',
+              'Corporate',
+              'Energy',
+              'Environmental',
+              'Equity Investments',
+              'FCPA - UKBA investigations',
+              'Film Industry',
+              'Finance',
+              'Financial Reestructuring',
+              'Health',
+              'Hotels & Hospitality',
+              'Immigration',
+              'Infrastructure',
+              'Insurance',
+              'Intellectual Property',
+              'Joint Ventures',
+              'Labor Consulting ',
+              'Labor Litigation ',
+              'Maritime',
+              'Mergers & Acquisitions',
+              'Pharmaceutical Industry ',
+              'Project Finance',
+              'Public Tenders ',
+              'Real Estate',
+              'Social Security',
+              'Strategic Alliances',
+              'Telecommunications',
+              'Transportation & Aviation',
                     ],
           },
           clientesData: 
           {
-            titulo: 'Clientes Representativos',
-            descripcion: 'Los abogados de IHMA son reconocidos por su innovación legal y su excelente servicio a clientes',
+            titulo: 'Representative Clients',
+            descripcion: 'IHMA attorneys are recognized for their legal innovation and excellent client service',
             clientesList: [
                 '1ero Dinero',
                 'Aegerion Pharmaceuticals',
@@ -625,6 +677,20 @@ state =
       }
     }
 
+    changeLanguage = (a) =>{
+      console.log('cambiador listo',a)
+      let idioma 
+      if(this.state.actual==='es'){
+        idioma='en'
+      }else if(this.state.actual==='en'){
+        idioma='es'
+      }
+      return this.setState({
+        ...this.state,
+        actual: idioma,
+      })
+    }
+
     evento = (id) =>{
         this.setState({
           language:{
@@ -649,15 +715,25 @@ state =
             <BrowserRouter>
                 <Layout
                 nav={this.switchLanguage().nav}
+                changeLanguage={this.changeLanguage}
+                language={this.switchLanguage()}
                 >
                     <Switch>
-                      <Route exact path="/ihma" component={Home} />
+                      <Route exact path="/ihma"  
+                      render={ () => (
+                        <Home 
+                        language={this.switchLanguage()}
+                        />
+                      )
+                      }
+                      />
                       <Route exact path="/Equipo-Legal"
                       render={ () => 
                       <EquipoLegal 
                       leftEquipoLegal={fotoEquipoLegal} 
                       datosSocios={this.switchLanguage().dataSocios}
                       evento = {this.evento}
+                      language={this.switchLanguage()}
                       />
                       }
                       />  
