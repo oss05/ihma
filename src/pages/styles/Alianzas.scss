@@ -97,6 +97,10 @@
   .Alianzas .Alianzas__text .Alianzas__text-img a{
     margin-top: 0;
   }
+  .Alianzas .Alianzas__text{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
 }
 
 

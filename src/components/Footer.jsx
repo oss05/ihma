@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './styles/Footer.scss';
 import facebook from '../img/facebook.png';
 import twitter from '../img/twitter.png';
@@ -13,12 +15,24 @@ class Footer extends React.Component{
                 <div className="footer-container">
                    <div className="Footer__item">
                        <div>
-                            <p> {this.props.link1} </p>
-                            <p> {this.props.link2} </p>
-                            <p> {this.props.link3} </p>
-                            <p> {this.props.link4} </p>
-                            <p> {this.props.link5} </p>
-                            <p> {this.props.link6} </p>
+                        <Link to="/ihma" >
+                        <p> {this.props.link1} </p>
+                        </Link>
+                        <Link to="/AreasDePractica" >
+                        <p> {this.props.link2} </p>
+                        </Link>
+                        <Link to="/Equipo-Legal" >
+                        <p> {this.props.link3} </p>
+                        </Link>
+                        <Link to="/Clientes" >
+                        <p> {this.props.link4} </p>
+                        </Link>
+                        <Link to="/reconocimientos" >
+                        <p> {this.props.link5} </p>
+                        </Link>
+                        <Link to="/alianzas" >
+                        <p> {this.props.link6} </p>
+                        </Link>
 
                        </div>
                    </div>

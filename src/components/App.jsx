@@ -8,6 +8,7 @@ import AreasPractica from '../pages/AreasPractica';
 import EquipoLegal from '../pages/EquipoLegal';
 import Clientes from '../pages/Clientes';
 import Alianzas from '../pages/Alianzas';
+import Reconocimientos from '../pages/Reconocimientos';
 
 import fotoEquipoLegal from '../img/leftEquipoLegal.png';
 import MauricioCamposRedondo from '../img/MauricioCamposRedondo.png';
@@ -28,6 +29,13 @@ state =
   language: {
     es: 
     {
+      reconocimientos: {
+        title: 'Reconocimientos',
+        subtitle: '',
+        details1: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ',
+        details2: '',
+        details3: '',
+      },
       alianzas: {
         title: 'Alianzas Estratégicas',
         subtitle: 'Capacidades internacionales de IHMA',
@@ -356,6 +364,13 @@ state =
       // ----------------------------------------------------------------------------------------------------
     en: 
     {
+      reconocimientos: {
+        title: 'Awards',
+        subtitle: '',
+        details1: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ',
+        details2: '',
+        details3: '',
+      },
       alianzas: {
         title: 'Strategic Alliances',
         subtitle: 'IHMA International Capabilities',
@@ -778,6 +793,12 @@ state =
                         /> 
                       <Route exact path="/alianzas" render={() => (
                         <Alianzas
+                        language={this.switchLanguage()} 
+                        />
+                      )} 
+                      />
+                      <Route exact path="/reconocimientos" render={() => (
+                        <Reconocimientos
                         language={this.switchLanguage()} 
                         />
                       )} 
