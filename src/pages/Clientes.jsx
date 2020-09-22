@@ -1,7 +1,7 @@
 import React from 'react';
 import ClientesList from '../components/ClientesList';
 import './styles/Clientes.scss';
-import clientesDecorate from '../img/clientesDecorate.png';
+import clientesDecorate from '../img/writting.png';
 
 class Clientes extends React.Component{
   render(){

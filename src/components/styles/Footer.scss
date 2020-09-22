@@ -29,7 +29,7 @@
         margin: 0;
         padding: 0;
         color: white;
-        font-family: $font-montserrat;
+        font-family: $font-arsenal;
         font-weight: bold;
         line-height: 32px;
         font-size: 0.9em;
@@ -51,7 +51,7 @@
         margin: 0;
         padding: 0;
         color: $color-gray-little;
-        font-family: $font-montserrat;
+        font-family: $font-arsenal;
         font-weight: normal;
         line-height: 27px;
         font-size: 1em;
@@ -78,7 +78,7 @@
         grid-row: 1/2;
         @include basic-flexbox(center,center,row);
         color: white;
-        font-family: $font-montserrat;
+        font-family: $font-arsenal;
         font-weight: bold;
         line-height: 32px;
         font-size: 0.9em;
@@ -87,7 +87,7 @@
 
     & div:nth-child(n+2){
         padding: 3% 5%;
-        font-family: $font-montserrat;
+        font-family: $font-arsenal;
         font-weight: normal;
         line-height: 22px;
         font-size: 0.9em;
@@ -100,7 +100,7 @@
 
 .Footer__item:nth-of-type(4){
     border-left: 3px solid white;
-    border-right: 3px solid white;
+    // border-right: 3px solid white;
     @include basic-flexbox(center,center,row);
 
     & div div{
@@ -109,7 +109,7 @@
 
     & div div:nth-of-type(1){
         color: white;
-        font-family: $font-montserrat;
+        font-family: $font-arsenal;
         font-weight: bold;
         line-height: 20px;
         font-size: 0.9em;
@@ -120,7 +120,7 @@
             text-decoration: none;
             margin-left: 15px;
             color: $color-gray-little;
-            font-family: $font-montserrat;
+            font-family: $font-arsenal;
             font-weight: normal;
             font-size: 1em;
 
@@ -150,6 +150,7 @@
         align-items: center;
         & div{
             margin: 0;
+            margin-top: 25px;
         }
     }
 

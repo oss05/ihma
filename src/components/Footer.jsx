@@ -58,14 +58,14 @@ class Footer extends React.Component{
                    <div className="Footer__item">
                        <div>
                            <div> {this.props.language.footer.join} <br/> {this.props.language.footer.social} </div>
-                       <div>
+                       {/* <div>
                            <img src={facebook} alt=""/>
                             <a href="/">Facebook</a>
                        </div>
                        <div>
                            <img src={twitter} alt=""/>
                             <a href="/">Twitter</a>
-                       </div>
+                       </div> */}
                        <div>
                            <img src={LinkedIn} alt=""/>
                             <a href="/">Linkedink</a>

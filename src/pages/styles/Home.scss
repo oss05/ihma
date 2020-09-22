@@ -9,12 +9,38 @@
   position: relative;
   @include basic-flexbox(flex-start,flex-start,row);
   
-  & img{
+  & .Home__angel{
     width: 50%;
     height: 100%;
+    background-image: url('../../img/angelMexico.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
   }
 
-  & div{
+  & .map1{
+    width: 50%;
+    height: 100%;
+    background-image: url('../../img/mapa2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+
+  }
+  
+  & .map2{
+    width: 50%;
+    height: 100%;
+    background-image: url('../../img/mapa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+
+  }
+  & .Home__direction-container{
     all: initial;
     // border: $border-test;
     position: absolute;
