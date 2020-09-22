@@ -76,7 +76,7 @@ state =
         link4: 'clientes',
         link5: 'Reconocimientos',
         link6: 'Alianzas Estrategicas',
-        actual: 'Es'
+        actual: 'En'
       },
       dataSocios: 
       [
@@ -412,7 +412,7 @@ state =
         link4: 'Client',
         link5: 'Award',
         link6: 'Strategic Alliances',
-        actual: 'En'
+        actual: 'Sp'
       },
         dataSocios: 
         [

@@ -2,7 +2,7 @@
 @import "../../mixins.scss";
 .Navbar{
     width: 100vw;
-    height: 12vh;
+    height: 120px;
     background-color: $color-nav;
     @include basic-flexbox(space-between,center,row);
 
@@ -135,9 +135,9 @@
     }
 
     & div{
-         //border: $border-test;
-        width: 50%;
-        height: 50%;
+        // border: $border-test;
+        width: 50px;
+        height: 50px;
         margin-top: 8%;
         @include basic-flexbox(center,center,column);
         border-radius: 50%;
@@ -193,7 +193,7 @@
 
     .Navbar__logo{
         height: 98%;
-        width: 25%;
+        width: auto;
     }
 }
 
@@ -201,7 +201,7 @@
 
     .Navbar__logo{
         height: 98%;
-        width: 35%;
+        // width: auto;
     }
 
     .Navbar__desplegable{
@@ -213,7 +213,7 @@
 
     .Navbar__logo{
         height: 98%;
-        width: 45%;
+        // width: 45%;
     }
 
     .Navbar__desplegable{
@@ -225,6 +225,6 @@
 
     .Navbar__logo{
         height: 98%;
-        width: 65%;
+        width: 80%;
     }
 }

@@ -63,6 +63,8 @@
 
   & div{
     @include basic-flexbox(flex-start,center,row);
+    font-family: $font-arsenal;
+    
   }
 
   & div div{
@@ -133,6 +135,7 @@
     
     & .AreasPractica__contenido-description{
       font-size: 1.2rem;
+      text-align: justify;
     }
 
     & .AreasPractica__contenido-list{

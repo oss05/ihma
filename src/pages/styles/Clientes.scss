@@ -34,10 +34,12 @@
   }
 
   & .Clientes__content-descripcion{
+    // border: 1px solid blue;
+    text-align: justify;
     line-height: 27px;
     color: #666D70;
     font-size: 1.3rem;
-    font-family: $font-montserrat;
+    font-family: $font-arsenal;
   }
 
   & .Clientes__content-list{
@@ -57,7 +59,7 @@
         line-height: 27px;
         color: #666D70;
         font-size: 1.3rem;
-        font-family: $font-montserrat;
+        font-family: $font-arsenal;
         margin-left: 5%;
       }
       

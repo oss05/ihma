@@ -71,7 +71,7 @@ class Navbar extends React.Component{
                         </div>
                         <div className="Navbar__desplegable-more">
                           {
-                            idioma==='En'?'Language':'Idioma'
+                            idioma==='Sp'?'Language':'Idioma'
                           }
                           <div onClick={this.handleLanguage} > {idioma} </div>
                         </div>
@@ -109,7 +109,7 @@ class Navbar extends React.Component{
                     <div className="Navbar__nav-language">
                         <p> 
                           {
-                            idioma==='En'?'Language':'Idioma'
+                            idioma==='Sp'?'Language':'Idioma'
                           }
                         </p>
                         <div onClick={this.handleLanguage} > {idioma} </div>
