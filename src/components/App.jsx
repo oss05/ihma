@@ -25,7 +25,7 @@ class App extends React.Component{
 
 state = 
 {
-  actual: 'en',
+  actual: 'es',
   language: {
     es: 
     {
