@@ -22,115 +22,101 @@ class Navbar extends React.Component {
     this.props.changeLanguage(true);
   };
 
-  render() {
-    const { link1, link2, link3, link4, link5, link6, idioma } = this.props;
-    return (
-      <header className="Navbar">
-        <div id="menuDesplegable" className="Navbar__desplegable">
-          <div className="Navbar__desplegable-item">
-            <img src={cerrar} onClick={this.sacarMenu} alt="" />
-          </div>
-          <div className="Navbar__desplegable-item">
-            <Link onClick={this.sacarMenu} to="/">
-              {link1} <img src={triangulo} alt="" />
-            </Link>
-          </div>
-          <div className="Navbar__desplegable-item">
-            <Link onClick={this.sacarMenu} to="/AreasDePractica">
-              {link2} <img src={triangulo} alt="" />
-            </Link>
-          </div>
-          <div className="Navbar__desplegable-item">
-            <Link onClick={this.sacarMenu} to="/Equipo-Legal">
-              {link3} <img src={triangulo} alt="" />
-            </Link>
-          </div>
-          <div className="Navbar__desplegable-item">
-            <Link onClick={this.sacarMenu} to="/Clientes">
-              {link4} <img src={triangulo} alt="" />
-            </Link>
-          </div>
-          <div className="Navbar__desplegable-item">
-            <Link onClick={this.sacarMenu} to="/reconocimientos">
-              {link5} <img src={triangulo} alt="" />
-            </Link>
-          </div>
-          <div className="Navbar__desplegable-item">
-            <Link onClick={this.sacarMenu} to="/alianzas">
-              {link6} <img src={triangulo} alt="" />
-            </Link>
-          </div>
-          <div className="Navbar__desplegable-item">
-            <div className="Navbar__desplegable-more">
-              <img src={LinkedIn} alt="" />
-            </div>
-            <div className="Navbar__desplegable-more">
-              <img src={facebook} alt="" />
-            </div>
-            <div className="Navbar__desplegable-more">
-              <img src={twitter} alt="" />
-            </div>
-            <div className="Navbar__desplegable-more">
-              {idioma === "En" ? "Language" : "Idioma"}
-              <div onClick={this.handleLanguage}> {idioma} </div>
-            </div>
-          </div>
-        </div>
-        <div className="Navbar__oculto" onClick={this.sacarMenu}>
-          <img src={menu} alt="menu" />
-        </div>
-        <div className="Navbar__logo">
-          <Link to="/">
-            <img src={logo} alt="Logo ihma" />
-          </Link>
-        </div>
-        <nav className="Navbar__nav">
-          <ul>
-            <li>
-              <Link to="/">
-                {" "}
-                <i>|</i> <span> {link1} </span> <i>|</i>{" "}
-              </Link>
-            </li>
-            <li>
-              <Link to="/AreasDePractica">
-                {" "}
-                <i>|</i> <span> {link2} </span> <i>|</i>{" "}
-              </Link>
-            </li>
-            <li>
-              <Link to="/Equipo-Legal">
-                {" "}
-                <i>|</i> <span> {link3} </span> <i>|</i>{" "}
-              </Link>
-            </li>
-            <li>
-              <Link to="/Clientes">
-                {" "}
-                <i>|</i> <span> {link4} </span> <i>|</i>{" "}
-              </Link>
-            </li>
-            <li>
-              <Link to="/reconocimientos">
-                {" "}
-                <i>|</i> <span> {link5} </span> <i>|</i>{" "}
-              </Link>
-            </li>
-            <li>
-              <Link to="/alianzas">
-                {" "}
-                <i>|</i> <span> {link6} </span> <i>|</i>{" "}
-              </Link>
-            </li>
-          </ul>
-          <div className="Navbar__nav-language">
-            <p>{idioma === "En" ? "Language" : "Idioma"}</p>
-            <div onClick={this.handleLanguage}> {idioma} </div>
-          </div>
-        </nav>
-      </header>
-    );
-  }
+    render(){
+        const { link1 , link2 , link3 , link4 , link5 , link6 , idioma } = this.props;
+        return (
+            <header className="Navbar">
+                <div id="menuDesplegable" className="Navbar__desplegable">
+                    <div className="Navbar__desplegable-item"><img src={cerrar} onClick={this.sacarMenu}  alt=""/></div>
+                    <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/ihma/"> 
+                        {link1} <img src={triangulo} alt=""/>
+                        </Link>
+                         </div>
+                    <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/AreasDePractica"> 
+                        {link2} <img src={triangulo} alt=""/>
+                        </Link>
+                         </div>
+                    <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/Equipo-Legal"> 
+                        {link3} <img src={triangulo} alt=""/>
+                        </Link>
+                         </div>
+                    <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/Clientes"> 
+                        {link4} <img src={triangulo} alt=""/>
+                        </Link>
+                         </div>
+                    <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/reconocimientos"> 
+                        {link5} <img src={triangulo} alt=""/>
+                        </Link>
+                         </div>
+                    <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/alianzas"> 
+                        {link6} <img src={triangulo} alt=""/>
+                        </Link>
+                         </div>
+                    <div className="Navbar__desplegable-item">
+                        <div className="Navbar__desplegable-more">
+                            <img src={LinkedIn} alt=""/>
+                        </div>
+                        <div className="Navbar__desplegable-more">
+                            <img src={facebook} alt=""/>
+                        </div>
+                        <div className="Navbar__desplegable-more">
+                            <img src={twitter} alt=""/>
+                        </div>
+                        <div className="Navbar__desplegable-more">
+                          {
+                            idioma==='Sp'?'Language':'Idioma'
+                          }
+                          <div onClick={this.handleLanguage} > {idioma} </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="Navbar__oculto" onClick={this.sacarMenu}>
+                    <img src={menu} alt="menu"/>
+                </div>
+                <div className="Navbar__logo"> 
+                    <Link to="/ihma">
+                        <img src={logo} alt="Logo ihma" />
+                    </Link>
+                </div>
+                <nav className="Navbar__nav">
+                    <ul>
+                        <li>
+                            <Link to="/ihma"> <i>|</i> <span> {link1} </span>  <i>|</i> </Link>
+                        </li>
+                        <li>
+                            <Link to="/AreasDePractica"> <i>|</i> <span> {link2} </span>  <i>|</i> </Link>
+                        </li>
+                        <li>
+                            <Link to="/Equipo-Legal"> <i>|</i> <span> {link3} </span>  <i>|</i> </Link>
+                        </li>
+                        <li>
+                            <Link to="/Clientes"> <i>|</i> <span> {link4} </span>  <i>|</i> </Link>
+                        </li>
+                        <li>
+                            <Link to="/reconocimientos"> <i>|</i> <span> {link5} </span>  <i>|</i> </Link>
+                        </li>
+                        <li>
+                            <Link to="/alianzas"> <i>|</i> <span> {link6} </span>  <i>|</i> </Link>
+                        </li>
+                    </ul>
+                    <div className="Navbar__nav-language">
+                        <p> 
+                          {
+                            idioma==='Sp'?'Language':'Idioma'
+                          }
+                        </p>
+                        <div onClick={this.handleLanguage} > {idioma} </div>
+                    </div>
+                </nav>
+            </header>
+        );
+    }
 }
 
 export default Navbar;

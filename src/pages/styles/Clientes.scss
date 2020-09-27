@@ -3,20 +3,24 @@
 
 .Clientes{
   // border: $border-test;
-  @include basic-flexbox(flex-start,flex-start,row);
+  // @include basic-flexbox(flex-start,flex-start,row);
+  display: grid;
+  grid-template-columns: 55% 40%;
   width: 100vw;
+  padding-left: 5%;
   overflow: hidden;
 }
 
 .Clientes__content{
   // border: $border-test;
-  width: 45%;
-  padding-left: 5%;
+  grid-column: 1/2;
+  @include basic-flexbox(flex-start,flex-start,column);
+
 
   & .Clientes__content-titulo{
     // border: $border-test;
     border-bottom: 2px solid $color-red-ihma;
-    width: 50%;
+    width: 70%;
     font-size: 2.2rem;
     line-height: 45px;
     font-family: $font-unna;
@@ -34,17 +38,23 @@
   }
 
   & .Clientes__content-descripcion{
+    // border: 1px solid blue;
+    width: 90%;
+    text-align: justify;
     line-height: 27px;
     color: #666D70;
     font-size: 1.3rem;
-    font-family: $font-montserrat;
+    font-family: $font-arsenal;
   }
 
   & .Clientes__content-list{
-    margin-top: 5vh;
+    // border: 1px solid blue;
+    column-count: 2;
+    margin-top: 3vh;
     margin-bottom: 5vh;
-    
+    // text-align: center;
     & div{
+      // border: 1px solid blue;
       @include basic-flexbox(flex-start,center,row);
       
       & div{
@@ -54,11 +64,15 @@
       }
 
       & p{
-        line-height: 27px;
+        width: 100%;
+        
+        // line-height: 25px;
         color: #666D70;
         font-size: 1.3rem;
-        font-family: $font-montserrat;
+        font-family: $font-arsenal;
         margin-left: 5%;
+        margin-top: 0;
+        margin-bottom: 0;
       }
       
     }
@@ -67,10 +81,15 @@
 }
 
 .Clientes__decorate{
-  width: 50%;
+  // border: 1px solid blue;
+  grid-column: 2/3;
+  width: 100%;
+  height: 100%;
 
   & img{
     width: 100%;
+    height: 100%;
+
   }
 }
 
@@ -84,8 +103,9 @@
 
 @media screen and(max-width: 1000px){
   .Clientes{
-    
+    padding: 0;
     display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: 50vh auto;
 
     & .Clientes__decorate{
@@ -107,6 +127,7 @@
 
     & .Clientes__content{
       width: 80%;
+      padding-left: 10%;
       grid-row: 2/3;
       grid-column: 1/2;
     }

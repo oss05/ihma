@@ -78,6 +78,7 @@
         font-family: $font-arsenal;
         color: $color-grey-medium;
         font-size: 1.4em;
+        text-align: justify;
 
         & i{
             color: $color-red-ihma;
@@ -110,15 +111,19 @@
         }
 
         & p{
+            // border: $border-test;
             font-family: $font-arsenal;
             font-weight: bold;
             font-size: 2em;
             line-height: 35px;
             color: $color-grey-meiumLight;
+            margin-top: 13px;
         }
     }
 
-    & p{
+    & > p{
+        // border: $border-test;
+        text-align: justify;
         font-family: $font-arsenal;
         font-size: 1.4em;
         line-height: 28px;

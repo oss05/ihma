@@ -6,6 +6,7 @@
   // border: $border-test;
   width: 100vw;
   height: auto;
+  margin-bottom: 50px;
   @include basic-flexbox(flex-start,flex-start,row);
   
   & .AreasPractica__decoration{
@@ -34,7 +35,7 @@
   color :$color-grey-meiumLight;
   padding-bottom: 10px;
   width: 25vw;
-  line-height: 60px;
+  line-height: 80px;
   position: relative;
 
   & img{
@@ -44,7 +45,7 @@
 }
 
 .AreasPractica__contenido-subtitle{
-  font-size: $font-arsenal;
+  font-family: $font-arsenal;
   font-weight: bold;
   color :$color-grey-meiumLight;
 }
@@ -63,6 +64,8 @@
 
   & div{
     @include basic-flexbox(flex-start,center,row);
+    font-family: $font-arsenal;
+    
   }
 
   & div div{
@@ -133,6 +136,7 @@
     
     & .AreasPractica__contenido-description{
       font-size: 1.2rem;
+      text-align: justify;
     }
 
     & .AreasPractica__contenido-list{

@@ -1,8 +1,9 @@
 import React from 'react';
 import HeroHome from '../components/HeroHome';
 import MainHome from '../components/MainHome';
-import mapa from '../img/mapa.png';
-import angelMexico from '../img/angelMexico.png';
+// import mapa from '../img/mapa.png';
+// import mapa2 from '../img/mapa2.png';
+// import angelMexico from '../img/angelMexico.png';
 import markIcon from '../img/markIcon.png';
 import celIcon from '../img/celIcon.png';
 import './styles/Home.scss';
@@ -18,7 +19,7 @@ class Home extends React.Component{
             language={this.props.language}
             />
             <div className="Home__direction">
-                <div>
+                <div className="Home__direction-container">
                     <div className="Home__direction-triangle"></div>
                     <h3 className="Home__direction-place"> {this.props.language.home.office} </h3>
                     <div className="Home__direction-especific">
@@ -37,8 +38,8 @@ class Home extends React.Component{
                         </div>
                     </div>
                 </div>
-                <img src={angelMexico} alt="angel de la independencia"/>
-                <img src={mapa} alt="croquis para llegar a ihma"/>
+                <div className="Home__angel"></div>
+                { this.props.language.nav.actual==='Sp'?<div className="map1"></div> : <div className="map2"></div> }
             </div>
 
         </React.Fragment>

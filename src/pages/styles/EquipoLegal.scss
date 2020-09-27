@@ -32,7 +32,9 @@
     }
 
     & .Equipolegal__about-description{
-        font-family: $font-montserrat;
+        // border: 1px solid red;
+        text-align: justify;
+        font-family: $font-arsenal;
         font-size: 1.4rem;
         font-style: normal;
         line-height: 27px;
@@ -76,6 +78,7 @@
         }
     
         & .Equipolegal__about-description{
+            // border: 1px solid black;
             font-size: 1.3rem;
             font-style: normal;
             line-height: 27px;
