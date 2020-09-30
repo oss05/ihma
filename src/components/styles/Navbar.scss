@@ -100,7 +100,39 @@
     & li{
         float: left;
         margin-right: 2%;
+        position: relative;
+        
+        & ul{
+          display: none;
+        }
 
+        &:nth-of-type(3):hover {
+          & ul{
+            width: auto;
+            box-shadow: 4px 7px 30px 0px rgba(145,145,145,1);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-right: 15px;
+            position: absolute;
+            background: white;
+            z-index: 10;
+            & li{
+              line-height: 40px;
+              border-bottom: 1px solid $color-gray-little;
+              padding-left: 5px;
+              & a{
+                color: $color-grey-medium;
+                font-family: $font-unna;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        
         & a{
             text-decoration: none;
         }
@@ -123,7 +155,12 @@
             background-color: rgb(238, 238, 238);
         }
     }
+
+
 }
+
+
+
 
 .Navbar__nav .Navbar__nav-language{
     //border: $border-test;

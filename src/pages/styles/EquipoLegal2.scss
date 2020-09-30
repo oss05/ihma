@@ -1,0 +1,162 @@
+@import "../../vars.scss";
+@import "../../mixins.scss";
+
+
+.EquipoLegal2{
+  // border: $border-test;
+  @include basic-flexbox(center,flex-start,row);
+  width: 100vw;
+  
+}
+
+.EquipoLegal2__right{
+  // border: $border-test;
+  width: 20vw;
+
+  & .EquipoLegal__left-img{
+      width: 100%;
+  }
+}
+
+.EquipoLegal2__about{
+  // border: $border-test;
+  width: 80vw;
+  margin-bottom: 2vh;
+
+  & .EquipoLegal2__about-title{
+      font-family: $font-unna;
+      font-size: 2.8rem;
+      font-style: normal;
+      line-height: 43px;
+      color: #7E7E7E;
+      margin-left: 10vw;
+  }
+
+  & .Equipolegal2__about-description{
+      // border: 1px solid red;
+      text-align: justify;
+      font-family: $font-arsenal;
+      font-size: 1.4rem;
+      font-style: normal;
+      line-height: 27px;
+      color: #666D70;
+      margin-left: 10vw;
+      margin-right: 30vw;
+  }
+
+}
+
+@media screen and(max-width: 1000px){
+  .EquipoLegal2{
+      flex-direction: column;
+      align-items: center;        
+  }
+
+  .EquipoLegal2__right{
+      width: 100vw;
+      height: 55vh;
+      background-image: url('../../img/areasDecorateLittle.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      & .EquipoLegal2__right-img{
+          display: none;
+      }
+  }
+
+
+  .EquipoLegal2__about{
+      width: 95vw;
+  
+      & .EquipoLegal2__about-title{
+          width: 70%;
+          font-size: 2.4rem;
+          line-height: 40px;
+          border-bottom: 2px solid $color-red-ihma;
+          background-image: url('../../img/cuadrado.png');
+          background-repeat: no-repeat;
+          background-position-y: 100%;
+          background-position-x: 100%;
+      }
+  
+      & .Equipolegal2__about-description{
+          // border: 1px solid black;
+          font-size: 1.3rem;
+          font-style: normal;
+          line-height: 27px;
+          color: #666D70;
+          margin-left: 10vw;
+          margin-right: 30vw;
+      }
+  
+  }
+
+  .EquipoLegal2__about-item .EquipoLegal2__about-item-name{
+      width: 70%;
+  }
+
+  .EquipoLegal2__about-socios{
+      margin-left: 5vw;
+  }
+}
+
+
+
+@media screen and(max-width: 600px){
+
+
+  .EquipoLegal2__right{
+      width: 100vw;
+      height: 35vh;
+
+  }
+
+
+  .EquipoLegal2__about{
+      width: 90vw;
+  
+      & .EquipoLegal2__about-title{
+          font-size: 1.7rem;
+          margin-left: 0;
+      }
+  
+      & .Equipolegal2__about-description{
+          font-size: 1.1rem;
+          margin-left: 0;
+          margin-right: 10vw;
+      }
+  
+  }
+
+  .EquipoLegal2__about-item .EquipoLegal2__about-item-name{
+      width: 70%;
+  }
+
+  .EquipoLegal2__about-socios{
+      margin-left: 0;
+      padding-left: 0;
+  }
+}
+
+
+@media screen and(max-width: 500px){
+
+  .EquipoLegal2__about{
+  
+      & .EquipoLegal2__about-title{
+          font-size: 1.5rem;
+      }
+  
+      & .Equipolegal2__about-description{
+          font-size: 1rem;
+      }
+  
+  }
+
+  .EquipoLegal2__about-item .EquipoLegal2__about-item-name p{
+      width: 90%;
+      line-height: 35px;
+      font-size: 1.2rem;
+  }
+
+
+}
