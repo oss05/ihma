@@ -40,7 +40,7 @@ class Navbar extends React.Component{
                         </Link>
                          </div>
                     <div className="Navbar__desplegable-item">
-                        <Link onClick={this.sacarMenu} to="/Equipo-Legal"> 
+                        <Link onClick={this.sacarMenu} to="/Equipo-Legal2"> 
                         {link3} <img src={triangulo} alt=""/>
                         </Link>
                          </div>

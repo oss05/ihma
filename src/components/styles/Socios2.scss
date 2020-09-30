@@ -1,0 +1,156 @@
+@import "../../vars.scss";
+@import "../../mixins.scss";
+
+.Socios2{
+    // border: $border-test;
+    overflow: hidden;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    margin-bottom: 10vh;
+}
+
+
+.Socios__item1{
+    // border: $border-test;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto ;
+
+    & .Socios__item-profile{
+        // border: $border-test;
+        grid-column: 1/2;
+        @include basic-flexbox(center,center,row);
+        & div{
+            // border: $border-test;
+            width: 80%;
+            height: 90%;
+            // margin-left: 10%;
+            margin-top: 2%;
+            position: relative;
+            @include basic-flexbox(center,center,column);
+
+            & *{
+                margin: 0;
+                padding: 0;
+            }
+            & img:nth-of-type(1){
+              object-fit: contain;
+              width: 40%;
+              // height: 100%;
+            }
+            
+            
+            & div{
+              position: relative;
+              & img{
+                // border: $border-test;
+                  position: absolute;
+                  right: 0;
+                  
+              }
+                display: block;
+                // margin-left: 10%;
+                margin-top: 30px;
+
+                & .Socio__item-name2{
+                    color: $color-grey-meiumLight;
+                    font-family: $font-unna;
+                    font-weight: bold;
+                    margin-top: 4%;
+                    font-size: 2em;
+                }
+
+                & .Socio__item-status2{
+                    color: $color-grey-meiumLight;
+                    font-family: $font-unna;
+                    font-size: 1.5em;
+                    margin-bottom: 10%;
+                }
+
+                & .Socio__item-info2{
+                    color: #666D70;
+                    color: $color-grey-meiumLight;
+                    font-family: $font-montserrat;
+                    font-size: 1em;
+                    line-height: 30px;
+                }
+            }
+
+        }
+    }
+
+    & .Socios__item-details{
+        // border: $border-test;
+        
+
+        & div{
+            // border: $border-test;
+            width: 65%;
+            margin-left: 10%;
+            margin-top: 5vh;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: repeat(4,auto);
+
+            & div{
+                all: initial;
+                // border: $border-test;
+                font-family: $font-unna;
+                font-weight: normal;
+                color: $color-grey-meiumLight;
+                
+            }
+
+            & div:nth-child(odd){
+                // border: $border-test;
+                @include basic-flexbox(flex-end,flex-start,row);
+                padding-right: 15%;
+                font-size: 1.5em;
+                border-right: 2px solid $color-red-ihma;
+                position: relative;
+                text-align: right;
+
+                & span{
+                    // border: $border-test;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    right: -4.5%;
+                    background-color: $color-red-ihma;
+                    
+                }
+            }
+
+            & div:nth-child(even){
+                padding: 0 0 5vh 10%;
+                font-family: $font-montserrat;
+                font-size: 1.2rem;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width: 1000px){
+  .Socios2 .Socios__item1{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    & .Socios__item-profile{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  .Socios__item1 .Socios__item-details div div:nth-child(odd){
+    padding-right: 30px;
+    font-size: 1rem;
+  }
+
+  .Socios__item1 .Socios__item-details div div:nth-child(even){
+    font-size: 1rem;
+    line-height: 25px;
+  }
+}

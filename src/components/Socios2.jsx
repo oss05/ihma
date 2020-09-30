@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Socios.scss';
+import './styles/Socios2.scss';
 import socioDecoration from '../img/socioDecoration.png';
 import escuadra from '../img/escuadra.png';
 
@@ -10,26 +10,23 @@ class Socios2 extends React.Component{
   }
     render(){
         return (
-            <div className="Socios">
-                <div className="Socios__item">
-                    <img src={socioDecoration} alt=""/>
-                </div>
-                <div className="Socios__item">
-                    <div className="Socios__item-top">
+            <div className="Socios2">
+                <div className="Socios__item1">
+                    <div className="Socios__item-profile">
                         <div>
                             <img src={this.props.data.imagenCuadrada} alt=""/>
-                            <img src={escuadra} alt=""/>
                             <div>
-                                <p className="Socio__item-name"> {this.props.data.nombre} </p>
-                                <p className="Socio__item-status"> {this.props.data.estatusSocio} </p>
-                                <p className="Socio__item-info"> {this.props.data.nacSocio} </p>
-                                <p className="Socio__item-info"> {this.props.data.titulacionSocio} </p>
-                                <p className="Socio__item-info"> {this.props.data.idiomaSocio} </p>
-                                <p className="Socio__item-info"> {this.props.data.emailSocio} </p>
+                                <img src={escuadra} alt=""/>
+                                <p className="Socio__item-name2"> {this.props.data.nombre} </p>
+                                <p className="Socio__item-status2"> {this.props.data.estatusSocio} </p>
+                                <p className="Socio__item-info2"> {this.props.data.nacSocio} </p>
+                                <p className="Socio__item-info2"> {this.props.data.titulacionSocio} </p>
+                                <p className="Socio__item-info2"> {this.props.data.idiomaSocio} </p>
+                                <p className="Socio__item-info2"> {this.props.data.emailSocio} </p>
                             </div>
                         </div>
                     </div>
-                    <div className="Socios__item-bottom">
+                    <div className="Socios__item-details">
                         <div>
                             <div> <span></span> {this.props.data.educacionTitle} </div>
                             <div>
