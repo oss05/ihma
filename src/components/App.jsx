@@ -1145,6 +1145,7 @@ state =
                       datosSocios2={this.switchLanguage().dataSocios2}
                       evento = {this.evento}
                       language={this.switchLanguage()}
+                      elegido={this.switchLanguage().socioSolicitado}
                       />
                       }
                       /> 

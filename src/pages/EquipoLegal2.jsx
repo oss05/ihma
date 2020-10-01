@@ -13,7 +13,7 @@ class EquipoLegal2 extends React.Component{
               <div className="EquipoLegal2__about">
                   <h1 className="EquipoLegal2__about-title"> {this.props.language.equipoLegal2.title} </h1>
                   <p className="Equipolegal2__about-description"> {this.props.language.equipoLegal2.details} </p>
-                  <SociosList2 nombres={this.props.datosSocios2}
+                  <SociosList2  elegido={this.props.elegido} nombres={this.props.datosSocios2}
                   evento={this.props.evento}
                   />
               </div>

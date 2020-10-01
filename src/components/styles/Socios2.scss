@@ -4,11 +4,13 @@
 .Socios2{
     // border: $border-test;
     overflow: hidden;
-    width: 100vw;
+    overflow-y: auto;
+    width: 80vw;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    margin-bottom: 10vh;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 
@@ -24,7 +26,7 @@
         @include basic-flexbox(center,center,row);
         & div{
             // border: $border-test;
-            width: 80%;
+            width: 100%;
             height: 90%;
             // margin-left: 10%;
             margin-top: 2%;
@@ -37,7 +39,7 @@
             }
             & img:nth-of-type(1){
               object-fit: contain;
-              width: 40%;
+              // width: 40%;
               // height: 100%;
             }
             
@@ -46,6 +48,7 @@
               position: relative;
               & img{
                 // border: $border-test;
+                display: none;
                   position: absolute;
                   right: 0;
                   
@@ -53,13 +56,16 @@
                 display: block;
                 // margin-left: 10%;
                 margin-top: 30px;
+                // border: $border-test;
+
 
                 & .Socio__item-name2{
                     color: $color-grey-meiumLight;
                     font-family: $font-unna;
                     font-weight: bold;
                     margin-top: 4%;
-                    font-size: 2em;
+                    font-size: 1.5rem;
+                    text-align: center;
                 }
 
                 & .Socio__item-status2{
@@ -67,6 +73,7 @@
                     font-family: $font-unna;
                     font-size: 1.5em;
                     margin-bottom: 10%;
+                    text-align: center;
                 }
 
                 & .Socio__item-info2{
@@ -74,7 +81,7 @@
                     color: $color-grey-meiumLight;
                     font-family: $font-montserrat;
                     font-size: 1em;
-                    line-height: 30px;
+                    line-height: 20px;
                 }
             }
 
@@ -83,13 +90,14 @@
 
     & .Socios__item-details{
         // border: $border-test;
+        margin-top: 30px;
         
 
         & div{
             // border: $border-test;
-            width: 65%;
-            margin-left: 10%;
-            margin-top: 5vh;
+            width: 100%;
+            // margin-left: 10%;
+            // margin-top: 1vh;
             display: grid;
             grid-template-columns: 40% 60%;
             grid-template-rows: repeat(4,auto);
@@ -107,7 +115,7 @@
                 // border: $border-test;
                 @include basic-flexbox(flex-end,flex-start,row);
                 padding-right: 15%;
-                font-size: 1.5em;
+                font-size: 1.2rem;
                 border-right: 2px solid $color-red-ihma;
                 position: relative;
                 text-align: right;
@@ -124,10 +132,10 @@
             }
 
             & div:nth-child(even){
-                padding: 0 0 5vh 10%;
+                padding: 0 0 2vh 10%;
                 font-family: $font-montserrat;
-                font-size: 1.2rem;
-                line-height: 35px;
+                font-size: 1rem;
+                line-height: 18px;
             }
         }
     }
@@ -135,6 +143,9 @@
 
 
 @media screen and(max-width: 1000px){
+  .Socios2{
+    width: 75vw;
+  }
   .Socios2 .Socios__item1{
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
@@ -152,5 +163,38 @@
   .Socios__item1 .Socios__item-details div div:nth-child(even){
     font-size: 1rem;
     line-height: 25px;
+  }
+
+  .Socios__item1 .Socios__item-profile div div{
+    margin-top: 0;
+  }
+  .Socios__item1 .Socios__item-profile div div .Socio__item-status2{
+    margin-bottom: 5px;
+  }
+
+  .Socios__item1 .Socios__item-profile div div .Socio__item-info2{
+    text-align: center;
+  }
+}
+
+@media screen and(max-width: 1000px){
+  .Socios__item1 .Socios__item-profile div div .Socio__item-name2{
+    font-size: 1.2rem;
+  }
+  .Socios__item1 .Socios__item-profile div div .Socio__item-status2{
+    font-size: 1.2rem;
+  }
+  .Socios__item1 .Socios__item-profile div div .Socio__item-info2{
+    line-height: 18px;
+    font-size: 0.8rem;
+  }
+
+  .Socios__item1 .Socios__item-details div div:nth-child(even){
+    line-height: 18px;
+    font-size: 0.8rem;
+  }
+
+  .Socios__item1 .Socios__item-details div{
+    grid-template-columns: 50% 50%
   }
 }
