@@ -1156,14 +1156,14 @@ state =
                       />
                       }
                       />
-                      <Route exact path="/Equipo-Legal2/info"
+                      {/* <Route exact path="/Equipo-Legal2/info"
                       render={ () => 
                         
                       <Socios2 
                       data={this.switchLanguage().dataSocios2[this.switchLanguage().socioSolicitado-1]}
                       />
                       }
-                      />
+                      /> */}
                       <Route exact path="/AreasDePractica" render = { () =>
                           <AreasPractica 
                           data={this.switchLanguage().AreasPractica}
