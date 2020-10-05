@@ -1,0 +1,89 @@
+@import "../../vars.scss";
+@import "../../mixins.scss";
+
+
+.ModalLegal{
+  // border: 1px solid red ;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  // overflow-y: auto;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  // right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  
+  & .ModalLegal__content{
+    max-height: 90vh;
+    border: 2px solid #E11B22;
+    position: relative;
+    background-color: #ffffff;
+    padding: 1rem;
+    width: auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    & .ModalLegal__back{
+      position: absolute;
+      width: 50px;
+      height: 80%;
+      background-color: #E11B22;  
+      right: -2%;
+      border-radius: 15px;
+      z-index: -1;
+    }
+
+    & .ModalLegal__decorate{
+      // border: 2px solid #E11B22;
+      width: 99%;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & img{
+        cursor: pointer;
+        max-height: 100%;
+      }
+    }
+    & .ModalLegal__card{
+      border: 3px solid red ;
+      width: 120px;
+      padding: 20px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      font-weight: bold;
+      font-family: $font-montserrat;
+
+      & a{
+        text-decoration: none;
+        color: black;
+      }
+      & img{
+        margin-left: 10px;
+      }
+    }
+  }
+
+}
+
+@media screen and(max-width: 1000px){
+  .ModalLegal .ModalLegal__content .ModalLegal__card{
+    padding: 5px 10px;
+  }
+  .ModalLegal{
+    z-index: 10;
+  }
+}

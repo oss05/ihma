@@ -1,25 +1,34 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Layout from "./Layout";
-import Home from "../pages/Home";
-import Socios from "./Socios";
-import AreasPractica from "../pages/AreasPractica";
-import EquipoLegal from "../pages/EquipoLegal";
-import Clientes from "../pages/Clientes";
-import Alianzas from "../pages/Alianzas";
-import Reconocimientos from "../pages/Reconocimientos";
+import Layout from './Layout';
+import Home from '../pages/Home';
+import Socios from './Socios';
+import Socios2 from './Socios2';
+import AreasPractica from '../pages/AreasPractica';
+import EquipoLegal from '../pages/EquipoLegal';
+import EquipoLegal2 from '../pages/EquipoLegal2';
+import Clientes from '../pages/Clientes';
+import Alianzas from '../pages/Alianzas';
+import Reconocimientos from '../pages/Reconocimientos';
 
-import fotoEquipoLegal from "../img/leftEquipoLegal.png";
-import MauricioCamposRedondo from "../img/MauricioCamposRedondo.png";
-import JorgeAriasRedondo from "../img/JorgeAriasRedondo.png";
-import JesusMendozaRedondo from "../img/JesusMendozaRedondo.png";
-import DiegoMaxRedondo from "../img/DiegoMaxRedondo.png";
-import triangulo from "../img/triangulo.png";
-import MauricioCamposCuadrado from "../img/MauricioCampos.png";
-import JorgeAriasCuadrado from "../img/JorgeArias.png";
-import JesusMendozaCuadrado from "../img/JesusMendoza.png";
-import DiegoMaxCuadrado from "../img/DiegoMax.png";
+import fotoEquipoLegal from '../img/leftEquipoLegal.png';
+import fotoEquipoLegal2 from '../img/rightEquipoLegal2.png';
+import MauricioCamposRedondo from '../img/MauricioCamposRedondo.png';
+import AnaGabrielaRedonda from '../img/AnaGabrielaRedonda.png';
+import EduardoPulidoRedondo from '../img/EduardoPulidoRedondo.png';
+import ErikaRedondo from '../img/ErikaRedondo.png';
+import JhonatanRedondo from '../img/JhonatanRedondo.png';
+import JosueBalderasRedondo from '../img/JosueBalderasRedondo.png';
+import MariaJuliaRedondo from '../img/MariaJuliaRedondo.png';
+import JorgeAriasRedondo from '../img/JorgeAriasRedondo.png';
+import JesusMendozaRedondo from '../img/JesusMendozaRedondo.png';
+import DiegoMaxRedondo from '../img/DiegoMaxRedondo.png';
+import triangulo from '../img/triangulo.png';
+import MauricioCamposCuadrado from '../img/MauricioCampos.png';
+import JorgeAriasCuadrado from '../img/JorgeArias.png';
+import JesusMendozaCuadrado from '../img/JesusMendoza.png';
+import DiegoMaxCuadrado from '../img/DiegoMax.png';
 
 class App extends React.Component{
 
@@ -63,6 +72,11 @@ state =
         dir3: 'Ciudad de México, 11700',
         office: 'Oficina Ciudad de México',
       },
+      equipoLegal2:
+      {
+        title: 'Equipo Legal',
+        details: 'Los abogados de IHMA son reconocidos por su innovación legal y su excelente servicio a clientes',
+      },
       equipoLegal:
       {
         title: 'Acerca de los Socios',
@@ -73,11 +87,173 @@ state =
         link1: 'Sobre Nosotros',
         link2: 'Areas de Práctica',
         link3: 'Equipo Legal',
+        link31: 'Socios',
+        link32: 'Asociados',
         link4: 'clientes',
         link5: 'Reconocimientos',
         link6: 'Alianzas Estrategicas',
         actual: 'En'
       },
+      dataSocios2: 
+      [
+      {
+        id: '1',
+        educacionTitle: 'Educacion',
+        socioTitle: null,
+        expTitle: 'Experiencia Profesional',
+        areasTitle: 'Áreas de Práctica',
+        nombre: 'Ana Gabriela Núñez Rodríguez',
+        image: `${AnaGabrielaRedonda}`,
+        imgTriangulo: `${triangulo}`,
+        educacion: [ 'Universidad Nacional Autónoma de México (Licenciatura, 2013)',
+                       ],
+        expProfesional: [ 'Grupo A.D.O. (Autobuses de Oriente) (2010-2011)',
+                        'Ordoñez Abogados, S.C. (2011-2011)',
+                        'Ibáñez Maroto Scheriever & Hoffmann (2012-2018)',
+                        'Rechtlich & Gentan I, S.C. – MOWAT (2018-2020)',
+                        ],
+        socioMiembroDe: [],
+        areasDePractica: ['Consultoría y litigio laboralSeguridad Social',
+                        ],
+        imagenCuadrada: `${AnaGabrielaRedonda}`,
+        estatusSocio: "Asociada",
+        nacSocio: "Ciudad de México. Noviembre 2, 1990.",
+        titulacionSocio: "Admitida para ejercer, 2016, México",
+        idiomaSocio: "Idioma: Español e Inglés.",
+        emailSocio: "Email: anunez@ihma.law",    
+      },
+      {
+        id: '2',
+        socioTitle: null,
+        educacionTitle: 'Educacion',
+        expTitle: 'Experiencia Profesional',
+        areasTitle: 'Áreas de Práctica',
+        nombre: 'Eduardo Chávez Pulido',
+        image: `${EduardoPulidoRedondo}`,
+        imgTriangulo: `${triangulo}`,
+        educacion: [ 'Universidad Tecnológica de México (J.D. 2002)',
+          ],
+        expProfesional: [ 'Martín del Campo y Asociados, S.C. (2002-2003)',
+            'Cardoso y Asociados, S.C. (2003-2004)',                  
+            'Buenfil & Hoffmann (2004-2006)',
+            'Ibáñez, Maroto, Scheriever & Hoffmann (2006-2020)',
+            ],
+        socioMiembroDe: [],
+        areasDePractica: [ 'Consultoría y litigio laboral Seguridad Social',
+            ],
+        imagenCuadrada: `${EduardoPulidoRedondo}`,
+        estatusSocio: "Asociado",
+        nacSocio: "Ciudad de México. Enero 31, 1981.",
+        titulacionSocio: "Admitido para ejercer, México, 2003",
+        idiomaSocio: "Idioma: Español e Inglés.",
+        emailSocio: "Email: echavez@ihma.law",
+      },
+      {
+        id: '3',
+        socioTitle: 'Miembro',
+        educacionTitle: 'Educacion',
+        expTitle: 'Experiencia Profesional',
+        areasTitle: 'Áreas de Práctica',
+        nombre: 'Erika Velázquez Blakely',
+        image: `${ErikaRedondo}`,
+        imgTriangulo: `${triangulo}`,
+        educacion: [ 'Universidad Nacional Autónoma de México (Licenciatura 1997)',
+                    'Universidad Nacional Autónoma de México / Diplomado en Derecho Corporativo (2019)',
+                    ],
+        expProfesional: [ 'BBufete De Presno y Asociados, S.C. (1994-1999)        ',
+                            'Buenfil & Hoffmann, S.C. (1999-2004)                            ',
+                            'Ibáñez, Maroto, Schriever & Hoffmann, S.C. (2004-2007)                            ',
+                            'Director General Adjunto y Director General de Asuntos Jurídicos (2004-2008)Ibáñez, Schriever & Hoffmann, S.C. (2008-2020)',
+                        ],
+        socioMiembroDe: [ 'Barra Mexicana, Colegio de Abogados, A.C.',
+                        ],
+        areasDePractica: ['Derecho Laboral consultoría y litigio',
+                            'Auditoría legal',
+                            'Seguridad Social, Corporativo-laboral Laboral.',
+            ],
+        imagenCuadrada: `${ErikaRedondo}`,
+        estatusSocio: "Socio",
+        nacSocio: "Ciudad de México.Abril 4, 1974.",
+        titulacionSocio: "Admitida para ejercer, México, 1998",
+        idiomaSocio: "Lenguage: Español e Inglés.",
+        emailSocio: "Email: ehoffmann@ihma.law",    
+      },
+      {
+        id: '4',
+        socioTitle: null,
+        educacionTitle: 'Educacion',
+        expTitle: 'Experiencia Profesional',
+        areasTitle: 'Áreas de Práctica',
+        nombre: 'Jonathan Retana Pérez',
+        image: `${JhonatanRedondo}`,
+        imgTriangulo: `${triangulo}`,
+        educacion: [ 'Universidad de las Américas - UDLA (J.D., 2006)',
+                    ],
+        expProfesional: [ 'Ortiz Noriega y González, S.C. (2005-2011)',
+                        'Pronósticos para la Asistencia Pública (2011-2014)',
+                        'Naviera Integral, S.A. de C.V. (2014-2017)                        ',
+                        'Grupo Sacbes, S.C. (2017-2020)                        ',
+            ],
+        areasDePractica: [
+            'Derecho Administrativo, Civil, Mercantil, Corporativo y Propiedad Intelectual',
+                        ],
+        imagenCuadrada: `${JhonatanRedondo}`,
+        estatusSocio: "Socio",
+        nacSocio: "Ciudad de México. Junio 24, 1983.",
+        titulacionSocio: "Admitido para ejercer, México, 2010",
+        idiomaSocio: "Lenguage: Español, Inglés y Francés(Básico) ",
+        emailSocio: "Email: jretana@ihma.law",
+      },
+      {
+        id: '5',
+        socioTitle: null,
+        educacionTitle: 'Educacion',
+        expTitle: 'Experiencia Profesional',
+        areasTitle: 'Áreas de Práctica',
+        nombre: 'Josué Hernández Balderas ',
+        image: `${JosueBalderasRedondo}`,
+        imgTriangulo: `${triangulo}`,
+        educacion: [ 'UUniversidad Nacional Autónoma de México - UNAM (J.D., 2017)        ',
+                    ],
+        expProfesional: [ 'Zavala, Zavala y Asociados, S.C. (2017-2020)        ',
+            ],
+        areasDePractica: [
+            'Derecho Administrativo, Familiar, Civil, Penal, Mercantil, Consultoría y litigio laboral Seguridad Social',
+                        ],
+        imagenCuadrada: `${JosueBalderasRedondo}`,
+        estatusSocio: "Asociado",
+        nacSocio: "Ciudad de México, México",
+        titulacionSocio: "Admitido para ejercer, México, 2020",
+        idiomaSocio: "Lenguage: Español, Inglés(Intermedio), Francés(básico) ",
+        emailSocio: "Email: jhernandez@ihma.law",
+      },
+      {
+        id: '6',
+        socioTitle: null,
+        educacionTitle: 'Educacion',
+        expTitle: 'Experiencia Profesional',
+        areasTitle: 'Áreas de Práctica',
+        nombre: 'María Julia Bugnest',
+        image: `${MariaJuliaRedondo}`,
+        imgTriangulo: `${triangulo}`,
+        educacion: [ 'Universidad de Buenos Aires, (UBA), Argentina.  (2008)        ',
+                    ],
+        expProfesional: [ 'Microsoft, South Cone. Argentina. (2007-2009)        ',
+                        'Abeledo Gottheil Abogados. Argentina. (2009-2010)',
+                        'Estudio O´Farrell Abogados. Argentina. (2010-2011)                        ',
+                        'Ibáñez Maroto Scheriever & Hoffmann (2012-2020)                        ',
+            ],
+        areasDePractica: [
+            'Derecho Corporativo, Fusiones y Adquisiciones.',
+                        ],
+        imagenCuadrada: `${MariaJuliaRedondo}`,
+        estatusSocio: "Socio",
+        nacSocio: "Buenos Aires,Argentina. Julio 15, 1983.",
+        titulacionSocio: "Admitido para ejercer, 2008",
+        idiomaSocio: "Lenguage: Español, Inglés,",
+        emailSocio: "Email: jbugnest@ihma.law",
+      },
+      ],
       dataSocios: 
       [
       {
@@ -117,6 +293,10 @@ state =
       },
       {
         id: '2',
+        educacionTitle: 'Educacion',
+        expTitle: 'Experiencia Profesional',
+        socioTitle: 'Miembro',
+        areasTitle: 'Áreas de Práctica',
         nombre: 'Jorge Hoffmann Arias',
         image: `${JorgeAriasRedondo}`,
         imgTriangulo: `${triangulo}`,
@@ -142,27 +322,82 @@ state =
               "Mexican Bar Association",
               "American Bar Association",
             ],
-            areasDePractica: [
-              "Derecho Corporativo, Fondos Privados, Fusiones y Adquisiciones, Financiamiento de Proyectos, Reestructuras, Telecomunicaciones, Transporte, Inmobiliario, Minería, Energía. Corporate Law, Mergers and Acquisitions, Project Finance, Private Equity, Workouts, Real Estate, Telecommunications, Transportation, Mining, Energy.",
+        imagenCuadrada: `${JorgeAriasCuadrado}`,
+        estatusSocio: "Socio",
+        nacSocio: "Ciudad de México. Noviembre 7, 1967.",
+        titulacionSocio: "Admitido para ejercer, México, 1995",
+        idiomaSocio: " Español e Inglés. Spanish and English",
+        emailSocio: " jhoffmann@ihma.law",
+      },
+      {
+        id: '3',
+        educacionTitle: 'Educacion',
+        expTitle: 'Experiencia Profesional',
+        socioTitle: 'Miembro',
+        areasTitle: 'Áreas de Práctica',
+        nombre: 'Jesus Mendoza Henríquez',
+        image: `${JesusMendozaRedondo}`,
+        imgTriangulo: `${triangulo}`,
+        educacion: [ 'Universidad Anáhuac (Licenciatura, 2000)',
+                    'Pepperdine University (Juris Doctor – EEUU)',
+                    'Strauss Institute for Dispute Resolution, Pepperdine',
+                    'University (Maestría en Resolución Alternativa de Disputas Internacionales 2004)',
+                    ],
+        expProfesional: [ 'Buenfil & Hoffmann, S.C. (Pasante 1998-2000)',
+                            'Comisión Federal de Competencia (Subdirector de Asuntos Jurídicos 2000-2001)',
+                            'Mediador de la Corte de Los Ángeles, California (Clínica de Resolución Alternativa de Disputas 2003)',
+                            'Director General Adjunto y Director General de Asuntos Jurídicos (2004-2008)',
+                            'Grupo Sacbes (Socio fundador 2008-2018)',
+                            
+                        ],
+        socioMiembroDe: [ 'Barra Mexicana, Colegio de Abogados, S.C.',
+                        ],
+        areasDePractica: ['Competencia Económica',
+                            'Derecho Administrativo – Consultoría y litigio',
+                            'Derecho Corporativo',
+                            'Derecho de las Telecomunicaciones',
+                            'Fusiones y Adquisiciones',
+                            'Derecho Energético.',
             ],
-            imagenCuadrada: `${MauricioCamposCuadrado}`,
-            estatusSocio: "Socio",
-            nacSocio: "Ciudad de México. Noviembre 8, 1969.",
-            titulacionSocio: "Admitido para ejercer, México, 1994",
-            idiomaSocio: "Idioma: Español e Inglés.",
-            emailSocio: "Email: mibanez@ihma.law",
-          },
-          {
-            id: "2",
-            nombre: "Jorge Hoffmann Arias",
-            image: `${JorgeAriasRedondo}`,
-            imgTriangulo: `${triangulo}`,
-            educacion: ["Universidad Iberoamericana (Licenciatura, 1991)"],
-            expProfesional: [
-              "Zitro-Lex, S.A. de C.V. (1987-1989)",
-              "Alvarez, Cantón y Peters, S.C. (1989-1991)",
-              "Hoffmann y Asociados, S.C. (1991-1998)",
-              "Buenfil & Hoffmann, S.C. (1998-2005",
+        imagenCuadrada: `${JesusMendozaCuadrado}`,
+        estatusSocio: "Socio",
+        nacSocio: "Ciudad de México.Diciembre 10, 1975.",
+        titulacionSocio: "Admitido para ejercer, México, 2001",
+        idiomaSocio: "Lenguage: Español e Inglés.",
+        emailSocio: "Email: jmendoza@ihma.law",    
+      },
+      {
+        id: '4',
+        educacionTitle: 'Educacion',
+        expTitle: 'Experiencia Profesional',
+        socioTitle: 'Miembro',
+        areasTitle: 'Áreas de Práctica',
+        nombre: 'Diego Andrade Max',
+        image: `${DiegoMaxRedondo}`,
+        imgTriangulo: `${triangulo}`,
+        educacion: [ 'Universidad Iberoamericana (Licenciatura, 1992)',
+                    'Universitaet Wien, Austria (Doctorado,Derecho Internacional y Derecho Comunitario,1994)',
+                    'The University of Chicago Law School (LL.M, 1996)',
+
+                    ],
+        expProfesional: [ 'Von Wobeser y Sierra, S.C. (Pasante 1988–1992)',
+                        'ICC International Court of Arbitration (Pasante, 1993)',
+                        'Comision Federal de Competencia (Sub-Director Jurídico 1994 -1995)',
+                        'Gardner Carton Douglas, Chicago (Pasante extranjero 1996-1997)',
+                        'Freshfields Deringer, Bruselas UE (Asociado 1997-1999)',
+                        'BOCAR, S.A. de C.V. (Sub Gerente Legal 1999-2005)',
+                        'Bristol Myers Squibb de Mexico, S. de R.L. de C.V. (Director Jurídico 2005-2008)',
+                        'Bristol Myers Squibb Company, Princeton NJ (Director Juródico Adjunto para Latinoamérica, Región Intercontinental, 2008-2012)',
+                        'Aggreko LLC, Houston TX (Vice Presidente Riesgo Comercial y Legal América Latina 2013-2017)',
+                        'Von Wobeser y Sierra, S.C. (Intern 1988–1992)',
+                        'ICC International Court of Arbitration (Intern, 1993)',
+                        'Mexican Federal Competition Commission (Deputy Legal Director 1994 -1995)',
+                        'Gardner Carton Douglas, Chicago (Foreign intern 1996-1997)',
+                        'Freshfields Deringer, Brussels (Associate 1997-1999)',
+                        'BOCAR, S.A. de C.V. (Deputy Legal Manager 1999-2005)',
+                        'Bristol Myers Squibb de Mexico, S de R.L de C.V. (Legal Director 2005-2008)',
+                        'Bristol Myers Squibb Company, Princeton NJ (Deputy General Counsel Latin America, Intercontinental Region, 2008-2012)',
+                        'Aggreko LLC, Houston, TX (Vice President of Commercial Risk and Head of Latin America Legal 2013-2017)',
             ],
             socioMiembroDe: ["Barra Mexicana, Colegio de Abogados, S.C."],
             areasDePractica: ["Derecho Laboral", "Seguridad Social"],
@@ -439,7 +674,12 @@ state =
       },
       equipoLegal:
       {
-        title: 'About the partners',
+        title: 'Legal Team',
+        details: 'IHMA attorneys are recognized for their legal innovation and excellent client service',
+      },
+      equipoLegal2:
+      {
+        title: 'Legal Team',
         details: 'IHMA attorneys are recognized for their legal innovation and excellent client service',
       },
       nav: 
@@ -447,11 +687,174 @@ state =
         link1: 'The Firm',
         link2: 'Practices',
         link3: 'Team',
+        link31: 'Partners',
+        link32: 'Associates',
         link4: 'Client',
         link5: 'Award',
         link6: 'Strategic Alliances',
         actual: 'Sp'
       },
+        dataSocios2: 
+        [
+          {
+            id: '1',
+            educacionTitle: 'Education',
+            expTitle: 'Professional Experience',
+            socioTitle: null,
+            areasTitle: 'Practice Areas',
+            nombre: 'Ana Gabriela Núñez Rodríguez',
+            image: `${AnaGabrielaRedonda}`,
+            imgTriangulo: `${triangulo}`,
+            educacion: [ 'Universidad Nacional Autónoma de México (Licenciatura, 2013)',
+                        ],
+            expProfesional: [ 'Grupo A.D.O. (Autobuses de Oriente) (2010-2011)',
+                      'Ordoñez Abogados, S.C. (2011-2011)',
+                      'Ibáñez Maroto Scheriever & Hoffmann (2012-2018)',
+                      'Rechtlich & Gentan I, S.C. – MOWAT (2018-2020)',
+                      ],
+            socioMiembroDe: [],
+            areasDePractica: ['Labor and Employment Law Social Security',
+                            ],
+            imagenCuadrada: `${AnaGabrielaRedonda}`,
+            estatusSocio: "Socio",
+            nacSocio: "Born Mexico City. November 2, 1990.            ",
+            titulacionSocio: "Admitted, 2016, Mexico.",
+            idiomaSocio: "Language: Spanish and English(basic)",
+            emailSocio: "Email:  anunez@ihma.law",
+              
+          },
+          {
+            id: '2',
+            educacionTitle: 'Education',
+            expTitle: 'Professional Experience',
+            socioTitle: null,
+            areasTitle: 'Practice Areas',
+            nombre: 'Eduardo Chávez Pulido',
+            image: `${EduardoPulidoRedondo}`,
+            imgTriangulo: `${triangulo}`,
+            educacion: [ 'Universidad Tecnológica de México (J.D. 2002)',
+          ],
+            expProfesional: [ 'Martín del Campo y Asociados, S.C. (2002-2003)',
+                'Cardoso y Asociados, S.C. (2003-2004)',                  
+                'Buenfil & Hoffmann (2004-2006)',
+                'Ibáñez, Maroto, Scheriever & Hoffmann (2006-2020)',
+                ],
+            socioMiembroDe: [],
+            areasDePractica: [ 'Administrative Law, Family Law, Civil Law, Criminal Law, Commercial Law, Labor and Employment Law, Social Security.',
+                ],
+            imagenCuadrada: `${EduardoPulidoRedondo}`,
+            estatusSocio: "Associate",
+            nacSocio: "Born Mexico City..            ",
+            titulacionSocio: "Admitted, 2003, Mexico. ",
+            idiomaSocio: "Languages: Spanish and English(basic)",
+            emailSocio: "Email: echavez@ihma.law",
+          },
+          {
+            id: '3',
+            educacionTitle: 'Education',
+            expTitle: 'Professional Experience',
+            socioTitle: 'Member',
+            areasTitle: 'Practice Areas',
+            nombre: 'Erika Velázquez Blakely',
+            image: `${ErikaRedondo}`,
+            imgTriangulo: `${triangulo}`,
+            educacion: [ 'Universidad Nacional Autónoma de México (Licenciatura 1997)',
+            'Universidad Nacional Autónoma de México / Diplomado en Derecho Corporativo (2019)',
+            ],
+            expProfesional: [ 'BBufete De Presno y Asociados, S.C. (1994-1999)        ',
+                    'Buenfil & Hoffmann, S.C. (1999-2004)                            ',
+                    'Ibáñez, Maroto, Schriever & Hoffmann, S.C. (2004-2007)                            ',
+                    'Director General Adjunto y Director General de Asuntos Jurídicos (2004-2008)Ibáñez, Schriever & Hoffmann, S.C. (2008-2020)',
+                ],
+            socioMiembroDe: [ 'American Bar Association',
+                            ],
+            areasDePractica: ['Labor and Employment Law consulting and litigation, legal auditing, Social Security, Corporate- Labor.',
+                ],
+            imagenCuadrada: `${ErikaRedondo}`,
+            estatusSocio: "Associate",
+            nacSocio: "Born Mexico City. April 4, 1974.            ",
+            titulacionSocio: "Admitted, 1998, Mexico. ",
+            idiomaSocio: "Languages: Spanish and English",
+            emailSocio: "Email: ehoffmann@ihma.law",
+              
+          },
+          {
+            id: '4',
+            educacionTitle: 'Education',
+            expTitle: 'Professional Experience',
+            socioTitle: null,
+            areasTitle: 'Practice Areas',
+            nombre: 'Jonathan Retana Pérez',
+            image: `${JhonatanRedondo}`,
+            imgTriangulo: `${triangulo}`,
+            educacion: [ 'Universidad de las Américas - UDLA (J.D., 2006)',
+          ],
+            expProfesional: [ 'Ortiz Noriega y González, S.C. (2005-2011)',
+                          'Pronósticos para la Asistencia Pública (2011-2014)',
+                          'Naviera Integral, S.A. de C.V. (2014-2017)                        ',
+                          'Grupo Sacbes, S.C. (2017-2020)                        ',
+              ],
+            areasDePractica: [
+                'Administrative law, Civil Law, Corporate and Intellectual Property',
+                            ],
+            imagenCuadrada: `${JhonatanRedondo}`,
+            estatusSocio: "Associate",
+            nacSocio: "Born Mexico City. June 24th, 1983.            ",
+            titulacionSocio: "Admitted, 2010, Mexico. ",
+            idiomaSocio: "Languages:  Spanish, English, and French(basic)",
+            emailSocio: "Email: jretana@ihma.law",
+              
+          },
+          {
+            id: '5',
+            educacionTitle: 'Education',
+            expTitle: 'Professional Experience',
+            socioTitle: null,
+            areasTitle: 'Practice Areas',
+            nombre: 'Josué Hernández Balderas ',
+            image: `${JosueBalderasRedondo}`,
+            imgTriangulo: `${triangulo}`,
+            educacion: [ 'UUniversidad Nacional Autónoma de México - UNAM (J.D., 2017)        ',
+          ],
+            expProfesional: [ 'Zavala, Zavala y Asociados, S.C. (2017-2020)        ',
+              ],
+            areasDePractica: [
+                'Administrative Law, Family Law, Civil Law, Criminal Law, Commercial Law, Labor and Employment Law, Social Security.',
+                            ],
+            imagenCuadrada: `${JosueBalderasRedondo}`,
+            estatusSocio: "Associate",
+            nacSocio: "Mexico City, Mexico",
+            titulacionSocio: "Admitted, 2020, Mexico.            ",
+            idiomaSocio: "Lenguage: Spanish, English (middle) and French (basic)",
+            emailSocio: "Email: jhernandez@ihma.law            ",
+          },
+          {
+            id: '6',
+            educacionTitle: 'Education',
+            expTitle: 'Professional Experience',
+            socioTitle: null,
+            areasTitle: 'Practice Areas',
+            nombre: 'María Julia Bugnest',
+            image: `${MariaJuliaRedondo}`,
+            imgTriangulo: `${triangulo}`,
+            educacion: [ 'Universidad de Buenos Aires, (UBA), Argentina.  (2008)        ',
+          ],
+            expProfesional: [ 'Microsoft, South Cone. Argentina. (2007-2009)        ',
+                          'Abeledo Gottheil Abogados. Argentina. (2009-2010)',
+                          'Estudio O´Farrell Abogados. Argentina. (2010-2011)                        ',
+                          'Ibáñez Maroto Scheriever & Hoffmann (2012-2020)                        ',
+              ],
+            areasDePractica: [
+              'Corporate Law, Mergers and Acquisitions.',
+                          ],
+            imagenCuadrada: `${MariaJuliaRedondo}`,
+            estatusSocio: "Associate",
+            nacSocio: "Buenos Aires, Argentina. June 15, 1983",
+            titulacionSocio: "Admitted, 2008.",
+            idiomaSocio: "Lenguage: Spanish, English ",
+            emailSocio: "Email: jbugnest@ihma.law ",
+          },
+        ],
         dataSocios: 
         [
           {
@@ -490,8 +893,12 @@ state =
             emailSocio: "Email: mibanez@ihma.law",
           },
           {
-            id: "2",
-            nombre: "Jorge Hoffmann Arias",
+            id: '2',
+            educacionTitle: 'Education',
+            expTitle: 'Professional Experience',
+            socioTitle: 'Member',
+            areasTitle: 'Practice Areas',
+            nombre: 'Jorge Hoffmann Arias',
             image: `${JorgeAriasRedondo}`,
             imgTriangulo: `${triangulo}`,
             educacion: ["Universidad Iberoamericana (Licenciatura, 1991)"],
@@ -511,8 +918,12 @@ state =
             emailSocio: "Email: jhoffmann@ihma.law",
           },
           {
-            id: "3",
-            nombre: "Jesus Mendoza Henríquez",
+            id: '3',
+            educacionTitle: 'Education',
+            expTitle: 'Professional Experience',
+            socioTitle: 'Member',
+            areasTitle: 'Practice Areas',
+            nombre: 'Jesus Mendoza Henríquez',
             image: `${JesusMendozaRedondo}`,
             imgTriangulo: `${triangulo}`,
             educacion: [
@@ -545,8 +956,12 @@ state =
             emailSocio: "Email: jmendoza@ihma.law",
           },
           {
-            id: "4",
-            nombre: "Diego Andrade Max",
+            id: '4',
+            educacionTitle: 'Education',
+            expTitle: 'Professional Experience',
+            socioTitle: 'Member',
+            areasTitle: 'Practice Areas',
+            nombre: 'Diego Andrade Max',
             image: `${DiegoMaxRedondo}`,
             imgTriangulo: `${triangulo}`,
             educacion: [
@@ -775,79 +1190,91 @@ state =
         },
       },
     });
+  }
 
-    //console.log('hola el id generado es'+ this.state.socioSolicitado)
-  };
-
-  render() {
-    return (
-      <BrowserRouter>
-        <Layout
-          nav={this.switchLanguage().nav}
-          changeLanguage={this.changeLanguage}
-          language={this.switchLanguage()}
-        >
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={() => <Home language={this.switchLanguage()} />}
-            />
-            <Route
-              exact
-              path="/Equipo-Legal"
-              render={() => (
-                <EquipoLegal
-                  leftEquipoLegal={fotoEquipoLegal}
-                  datosSocios={this.switchLanguage().dataSocios}
-                  evento={this.evento}
-                  language={this.switchLanguage()}
-                />
-              )}
-            />
-            <Route
-              exact
-              path="/Equipo-Legal/info"
-              render={() => (
-                <Socios
-                  data={
-                    this.switchLanguage().dataSocios[
-                      this.switchLanguage().socioSolicitado - 1
-                    ]
-                  }
-                />
-              )}
-            />
-            <Route
-              exact
-              path="/AreasDePractica"
-              render={() => (
-                <AreasPractica data={this.switchLanguage().AreasPractica} />
-              )}
-            />
-            <Route
-              exact
-              path="/Clientes"
-              render={() => (
-                <Clientes data={this.switchLanguage().clientesData} />
-              )}
-            />
-            <Route
-              exact
-              path="/alianzas"
-              render={() => <Alianzas language={this.switchLanguage()} />}
-            />
-            <Route
-              exact
-              path="/reconocimientos"
-              render={() => (
-                <Reconocimientos language={this.switchLanguage()} />
-              )}
-            />
-          </Switch>
-        </Layout>
-      </BrowserRouter>
-    );
+    render(){
+        return (
+            <BrowserRouter>
+                <Layout
+                nav={this.switchLanguage().nav}
+                changeLanguage={this.changeLanguage}
+                language={this.switchLanguage()}
+                >
+                    <Switch>
+                      <Route exact path="/ihma"  
+                      render={ () => (
+                        <Home 
+                        language={this.switchLanguage()}
+                        />
+                      )
+                      }
+                      />
+                      <Route exact path="/Equipo-Legal"
+                      render={ () => 
+                      <EquipoLegal 
+                      leftEquipoLegal={fotoEquipoLegal} 
+                      datosSocios={this.switchLanguage().dataSocios}
+                      evento = {this.evento}
+                      language={this.switchLanguage()}
+                      />
+                      }
+                      />
+                      <Route exact path="/Equipo-Legal2"
+                      render={ () => 
+                      <EquipoLegal2 
+                      rightEquipoLegal2={fotoEquipoLegal2} 
+                      datosSocios2={this.switchLanguage().dataSocios2}
+                      evento = {this.evento}
+                      language={this.switchLanguage()}
+                      elegido={this.switchLanguage().socioSolicitado}
+                      />
+                      }
+                      /> 
+                      <Route exact path="/Equipo-Legal/info"
+                      render={ () => 
+                        
+                      <Socios 
+                      data={this.switchLanguage().dataSocios[this.switchLanguage().socioSolicitado-1]}
+                      />
+                      }
+                      />
+                      {/* <Route exact path="/Equipo-Legal2/info"
+                      render={ () => 
+                        
+                      <Socios2 
+                      data={this.switchLanguage().dataSocios2[this.switchLanguage().socioSolicitado-1]}
+                      />
+                      }
+                      /> */}
+                      <Route exact path="/AreasDePractica" render = { () =>
+                          <AreasPractica 
+                          data={this.switchLanguage().AreasPractica}
+                          />
+                      } 
+                      />
+                      <Route exact path="/Clientes" render= { () =>
+                              <Clientes 
+                              data={this.switchLanguage().clientesData}
+                              />
+                          
+                        } 
+                        /> 
+                      <Route exact path="/alianzas" render={() => (
+                        <Alianzas
+                        language={this.switchLanguage()} 
+                        />
+                      )} 
+                      />
+                      <Route exact path="/reconocimientos" render={() => (
+                        <Reconocimientos
+                        language={this.switchLanguage()} 
+                        />
+                      )} 
+                      />
+                    </Switch>
+                </Layout>
+            </BrowserRouter>
+        );
   }
 }
 
