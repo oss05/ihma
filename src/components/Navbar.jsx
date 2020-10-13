@@ -23,7 +23,7 @@ class Navbar extends React.Component {
     };
 
     render() {
-        const { link1, link2, link3, link4, link5, link6, idioma } = this.props;
+        const { link1, link2, link3, link31, link32, link4, link5, link6, idioma } = this.props;
         return (
             <header className="Navbar">
                 <div id="menuDesplegable" className="Navbar__desplegable">
@@ -38,10 +38,22 @@ class Navbar extends React.Component {
                             {link2} <img src={triangulo} alt="" />
                         </Link>
                     </div>
-                    <div className="Navbar__desplegable-item">
-                        <Link onClick={this.sacarMenu} to="/Equipo-Legal">
+                    <div id="aaa" className="Navbar__desplegable-item">
+                        <a onClick={this.sacarMenu} href="#">
                             {link3} <img src={triangulo} alt="" />
-                        </Link>
+                        </a>
+                        <ul>
+                            <li>
+                                <Link onClick={this.sacarMenu} to="/Equipo-Legal">
+                                    {link31} <img src={triangulo} alt="" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link onClick={this.sacarMenu} to="/Equipo-Legal2">
+                                    {link32} <img src={triangulo} alt="" />
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                     <div className="Navbar__desplegable-item">
                         <Link onClick={this.sacarMenu} to="/Clientes">
@@ -75,7 +87,7 @@ class Navbar extends React.Component {
                             <div onClick={this.handleLanguage} > {idioma} </div>
                         </div>
                     </div>
-                </div>
+                </div >
                 <div className="Navbar__oculto" onClick={this.sacarMenu}>
                     <img src={menu} alt="menu" />
                 </div>
@@ -93,7 +105,15 @@ class Navbar extends React.Component {
                             <Link to="/AreasDePractica"> <i>|</i> <span> {link2} </span>  <i>|</i> </Link>
                         </li>
                         <li>
-                            <Link to="/Equipo-Legal"> <i>|</i> <span> {link3} </span>  <i>|</i> </Link>
+                            <a href="#"> <i>|</i> <span> {link3} </span>  <i>|</i> </a>
+                            <ul>
+                                <li>
+                                    <Link to="/Equipo-Legal">{link31}</Link>
+                                </li>
+                                <li>
+                                    <Link to="/Equipo-Legal2">{link32}</Link>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <Link to="/Clientes"> <i>|</i> <span> {link4} </span>  <i>|</i> </Link>
@@ -114,7 +134,7 @@ class Navbar extends React.Component {
                         <div onClick={this.handleLanguage} > {idioma} </div>
                     </div>
                 </nav>
-            </header>
+            </header >
         );
     }
 }
