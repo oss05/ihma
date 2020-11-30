@@ -45,19 +45,19 @@ class Footer extends React.Component {
                     <div className="Footer__item">
                         <div> {this.props.language.footer.contact} </div>
                         <div>
-                            <i>Office Woodlands, Texas</i>
+                            <i>Woodlands, Texas Office </i>
                             <br />
                            1095 Evergreen Circle Suite 200 - 432 The Woodlands, TX 77380 T. +1(281) 206 0030
                        </div>
                         <div>
                             <i>Oficina Ciudad de México</i>
                             <br />
-                           Bosque de Ciruelos 130 -501 Col. Bosques de las Lomas, Ciudad de México, 11700 T. +(5255) 5292 6191 +(5255) 5251 8373
+                           Bosque de Ciruelos 130 -501 Col. Bosques de las Lomas, Ciudad de México, 11700 T. +(5255) 5292 6191 +(5255) 5202 1180
                        </div>
                     </div>
                     <div className="Footer__item">
                         <div>
-                            <div> {this.props.language.footer.join} <br /> {this.props.language.footer.social} </div>
+                            {/* <div> {this.props.language.footer.join} <br /> {this.props.language.footer.social} </div> */}
                             {/* <div>
                            <img src={facebook} alt=""/>
                             <a href="/">Facebook</a>
@@ -67,8 +67,7 @@ class Footer extends React.Component {
                             <a href="/">Twitter</a>
                        </div> */}
                             <div>
-                                <img src={LinkedIn} alt="" />
-                                <a href="/">Linkedink</a>
+                                <img style={{ width: "2em" }} src={LinkedIn} alt="" />
                             </div>
                         </div>
                     </div>

@@ -1,30 +1,35 @@
-import React from 'react'
-import './styles/EquipoLegal2.scss'
+import React from 'react';
 import SociosList2 from '../components/SociosList2';
+import './styles/AreasPractica.scss';
+import imagenDecoracion from '../img/equipo-legal2.png';
+import './styles/EquipoLegal.scss';
+import './styles/EquipoLegal2.scss';
+import escuadra from '../img/escuadra.png';
 
+class EquipoLegal extends React.Component {
 
+    render() {
 
-class EquipoLegal2 extends React.Component{
-    
-  render(){
-      
-      return (
-          <div className="EquipoLegal2">
-              <div className="EquipoLegal2__about">
-                  <h1 className="EquipoLegal2__about-title"> {this.props.language.equipoLegal2.title} </h1>
-                  <p className="Equipolegal2__about-description"> {this.props.language.equipoLegal2.details} </p>
-                  <SociosList2  elegido={this.props.elegido} nombres={this.props.datosSocios2}
-                  evento={this.props.evento}
-                  />
-              </div>
-              <div className="EquipoLegal2__right">
-                  <img src={this.props.rightEquipoLegal2} 
-                  alt="imagen del equipo legal" 
-                  className="EquipoLegal2__right-img"/>
-              </div>
-          </div>
-      );
-  }
+        return (
+
+            <div className="AreasPractica Areas2 f-c">
+                <div className="AreasPractica__contenido" >
+                    <h1 className="AreasPractica__contenido-title">
+                        <img src={escuadra} alt="" />
+                        {this.props.language.equipoLegal2.title}
+                    </h1>
+                    <p className="AreasPractica__contenido-description"> {this.props.language.equipoLegal.details} </p>
+                    <SociosList2 nombres={this.props.datosSocios2}
+                        evento={this.props.evento}
+                    />
+                </div>
+                <div className="AreasPractica__decoration b-g team-mobile-banner2">
+                    <img src={imagenDecoracion} alt="" className="AreasPractica__decoration-img" />
+                </div>
+            </div>
+
+        );
+    }
 }
 
-export default EquipoLegal2;
+export default EquipoLegal;

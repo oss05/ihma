@@ -8,6 +8,9 @@ import facebook from "../img/facebookGrey.png";
 import twitter from "../img/twitterGrey.png";
 import LinkedIn from "../img/linkedinGrey.png";
 import triangulo from "../img/triangulo.png";
+import mx from "../img/mx-flag.png";
+import us from "../img/us-flag.png";
+
 class Navbar extends React.Component {
     sacarMenu = () => {
         const menu = document.getElementById("menuDesplegable");
@@ -38,7 +41,17 @@ class Navbar extends React.Component {
                             {link2} <img src={triangulo} alt="" />
                         </Link>
                     </div>
-                    <div id="aaa" className="Navbar__desplegable-item">
+                    <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/Equipo-Legal">
+                            {link31} <img src={triangulo} alt="" />
+                        </Link>
+                    </div>
+                    <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/Equipo-Legal2">
+                            {link32} <img src={triangulo} alt="" />
+                        </Link>
+                    </div>
+                    {/* <div id="aaa" className="Navbar__desplegable-item">
                         <a onClick={this.sacarMenu} href="#">
                             {link3} <img src={triangulo} alt="" />
                         </a>
@@ -54,7 +67,7 @@ class Navbar extends React.Component {
                                 </Link>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className="Navbar__desplegable-item">
                         <Link onClick={this.sacarMenu} to="/Clientes">
                             {link4} <img src={triangulo} alt="" />
@@ -65,27 +78,29 @@ class Navbar extends React.Component {
                             {link5} <img src={triangulo} alt="" />
                         </Link>
                     </div>
+
                     <div className="Navbar__desplegable-item">
                         <Link onClick={this.sacarMenu} to="/alianzas">
                             {link6} <img src={triangulo} alt="" />
                         </Link>
                     </div>
                     <div className="Navbar__desplegable-item">
-                        <div className="Navbar__desplegable-more">
-                            <img src={LinkedIn} alt="" />
+                        <div className="Navbar__desplegable-more" style={{ display: "flex", justifyContent: "space-around" }}>
+                            <img style={{ objectFit: "cover" }} src={LinkedIn} alt="" />
+                            <div className="Navbar__desplegable-more">
+                                {
+                                    idioma === 'Sp' ? 'Idioma' : 'Language'
+                                }
+                                <div onClick={this.handleLanguage} style={{ display: "flex", justifyContent: "space-around", alignItems: "center", flexDirection: "column" }}> {idioma === 'Sp' ? <img src={mx} alt="us flag" /> : <img src={us} alt="mx flag" />} </div>
+                            </div>
                         </div>
-                        <div className="Navbar__desplegable-more">
+                        {/* <div className="Navbar__desplegable-more">
                             <img src={facebook} alt="" />
                         </div>
                         <div className="Navbar__desplegable-more">
                             <img src={twitter} alt="" />
-                        </div>
-                        <div className="Navbar__desplegable-more">
-                            {
-                                idioma === 'Sp' ? 'Language' : 'Idioma'
-                            }
-                            <div onClick={this.handleLanguage} > {idioma} </div>
-                        </div>
+                        </div> */}
+
                     </div>
                 </div >
                 <div className="Navbar__oculto" onClick={this.sacarMenu}>
@@ -99,13 +114,13 @@ class Navbar extends React.Component {
                 <nav className="Navbar__nav">
                     <ul>
                         <li>
-                            <Link to="/"> <i>|</i> <span> {link1} </span>  <i>|</i> </Link>
+                            <Link to="/"> <span> {link1} </span> </Link>
                         </li>
                         <li>
-                            <Link to="/AreasDePractica"> <i>|</i> <span> {link2} </span>  <i>|</i> </Link>
+                            <Link to="/AreasDePractica">  <span> {link2} </span>  </Link>
                         </li>
                         <li>
-                            <a href="#"> <i>|</i> <span> {link3} </span>  <i>|</i> </a>
+                            <a href="#">  <span> {link3} </span>   </a>
                             <ul>
                                 <li>
                                     <Link to="/Equipo-Legal">{link31}</Link>
@@ -116,22 +131,22 @@ class Navbar extends React.Component {
                             </ul>
                         </li>
                         <li>
-                            <Link to="/Clientes"> <i>|</i> <span> {link4} </span>  <i>|</i> </Link>
+                            <Link to="/Clientes">  <span> {link4} </span>   </Link>
                         </li>
                         <li>
-                            <Link to="/reconocimientos"> <i>|</i> <span> {link5} </span>  <i>|</i> </Link>
+                            <Link to="/reconocimientos">  <span> {link5} </span>   </Link>
                         </li>
                         <li>
-                            <Link to="/alianzas"> <i>|</i> <span> {link6} </span>  <i>|</i> </Link>
+                            <Link to="/alianzas">  <span> {link6} </span>   </Link>
                         </li>
                     </ul>
                     <div className="Navbar__nav-language">
                         <p>
                             {
-                                idioma === 'Sp' ? 'Language' : 'Idioma'
+                                idioma === 'Sp' ? 'Idioma' : 'Language'
                             }
                         </p>
-                        <div onClick={this.handleLanguage} > {idioma} </div>
+                        <div onClick={this.handleLanguage} > {idioma === 'Sp' ? <img src={mx} alt="us flag" /> : <img src={us} alt="mx flag" />} </div>
                     </div>
                 </nav>
             </header >

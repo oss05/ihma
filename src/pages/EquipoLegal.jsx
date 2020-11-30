@@ -1,25 +1,32 @@
 import React from 'react';
 import SociosList from '../components/SociosList';
+import './styles/AreasPractica.scss';
+import imagenDecoracion from '../img/leftEquipoLegal.png';
 import './styles/EquipoLegal.scss';
+import escuadra from '../img/escuadra.png';
 
+class EquipoLegal extends React.Component {
 
-class EquipoLegal extends React.Component{
-    
-    render(){
-        
+    render() {
+
         return (
-            <div className="EquipoLegal">
-                <div className="EquipoLegal__left">
-                    <img src={this.props.leftEquipoLegal} alt="imagen del equipo legal" className="EquipoLegal__left-img"/>
+
+            <div className="AreasPractica">
+                <div className=" team-mobile-banner">
+                    <img src={imagenDecoracion} alt="" className="AreasPractica__decoration-img" />
                 </div>
-                <div className="EquipoLegal__about">
-                    <h1 className="EquipoLegal__about-title"> {this.props.language.equipoLegal.title} </h1>
-                    <p className="Equipolegal__about-description"> {this.props.language.equipoLegal.details} </p>
+                <div className="AreasPractica__contenido" >
+                    <h1 className="AreasPractica__contenido-title">
+                        <img src={escuadra} alt="" />
+                        {this.props.language.equipoLegal.title}
+                    </h1>
+                    <p className="AreasPractica__contenido-description"> {this.props.language.equipoLegal.details} </p>
                     <SociosList nombres={this.props.datosSocios}
-                    evento={this.props.evento}
+                        evento={this.props.evento}
                     />
                 </div>
             </div>
+
         );
     }
 }

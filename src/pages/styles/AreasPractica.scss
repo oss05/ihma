@@ -2,107 +2,118 @@
 @import '../../mixins.scss';
 
 
-.AreasPractica{
+.AreasPractica {
   // border: $border-test;
   width: 100vw;
   height: auto;
-  margin-bottom: 50px;
-  @include basic-flexbox(flex-start,flex-start,row);
-  
-  & .AreasPractica__decoration{
+  // margin-bottom: 50px;
+  @include basic-flexbox(flex-start, flex-start, row);
+
+  & .AreasPractica__decoration {
     // border: $border-test;
     width: 25vw;
     height: 100%;
     min-height: 100%;
-    & .AreasPractica__decoration-img{
+
+    & .AreasPractica__decoration-img {
       width: 100%;
       height: 100%;
     }
   }
 }
 
-.AreasPractica__contenido{
+.AreasPractica__contenido {
   // border: $border-test;
   width: 70vw;
   margin-left: 5vw;
   height: 100%;
 }
 
-.AreasPractica__contenido-title{
+.AreasPractica__contenido-title {
   // border: $border-test;
   font-family: $font-unna;
   font-weight: bold;
-  color :$color-grey-meiumLight;
-  padding-bottom: 10px;
-  width: 25vw;
+  color: $color-grey-meiumLight;
+  // padding-bottom: 10px;
+  // width: 22vw;
   line-height: 80px;
   position: relative;
+  font-size: 37px;
 
-  & img{
+  & img {
     position: absolute;
-    right: 0;
+    right: -30px;
   }
 }
 
-.AreasPractica__contenido-subtitle{
+.AreasPractica__contenido-subtitle {
   font-family: $font-arsenal;
   font-weight: bold;
-  color :$color-grey-meiumLight;
+  color: $color-grey-meiumLight;
+  font-size: 22px;
+  margin-top: 0;
 }
 
-.AreasPractica__contenido-description{
-  font-size: $font-arsenal;
+.AreasPractica__contenido-description {
+  font-family: $font-arsenal;
   font-weight: normal;
-  color :$color-grey-meiumLight;
+  color: $color-grey-meiumLight;
+  font-size: 18px;
 }
 
-.AreasPractica__contenido-list{
+.AreasPractica__contenido-list {
   // border: $border-test;
   display: grid;
-  grid-template-columns: repeat(2,50%);
-  grid-template-rows: repeat(auto,10vh);
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(auto, 10vh);
 
-  & div{
-    @include basic-flexbox(flex-start,center,row);
+  & div {
+    @include basic-flexbox(flex-start, center, row);
     font-family: $font-arsenal;
-    
+
   }
 
-  & div div{
+  & div div {
     width: 10px;
     height: 10px;
     background-color: $color-red-ihma;
     margin-right: 2vw;
   }
 
-  & div p{
+  & div p {
     font-size: $font-arsenal;
     font-weight: bold;
-    color :$color-grey-meiumLight;
+    color: $color-grey-meiumLight;
+    font-size: 22px;
+    margin: 6px 0;
   }
 }
 
-@media screen and(max-width: 1100px){
-  .AreasPractica{
+@media screen and(max-width: 1100px) {
+  .AreasPractica {
     flex-direction: column;
     align-items: center;
-    & .AreasPractica__decoration{
-      height: 55vh;
+
+    & .AreasPractica__decoration {
+      height: 22vh;
       width: 100%;
-      background-image: url('../../img/areasDecorateLittle.png');
+      background-image: url('../../img/areas-movil.png');
       background-repeat: no-repeat;
-      background-size: 100% 100%;
-      & .AreasPractica__decoration-img{
+      background-size: cover;
+      background-position: bottom;
+
+      & .AreasPractica__decoration-img {
         display: none;
       }
     }
 
-    & .AreasPractica__contenido-title{
-      display: none;
+    & .AreasPractica__contenido-title {
+      width: 90%;
+      font-size: 30px;
     }
-    
-    & .AreasPractica__contenido-subtitle{
-      background-image: url('../../img/escuadra.png');
+
+    & .AreasPractica__contenido-subtitle {
+      // background-image: url('../../img/escuadra.png');
       background-repeat: no-repeat;
       background-position: right;
       background-position-y: 1px;
@@ -114,35 +125,45 @@
 
 
   }
+
+  .f-c {
+    flex-direction: column-reverse;
+  }
+
+  .b-g {
+    background-image: url('../../img/equipo-legal-m.png') !important;
+  }
+
 }
 
-@media screen and(max-width: 700px){
+@media screen and(max-width: 700px) {
 
-  .AreasPractica{
-    & .AreasPractica__contenido{
+  .AreasPractica {
+    & .AreasPractica__contenido {
       width: 90%;
     }
-    & .AreasPractica__decoration{
-      height: 45vh;
-      
+
+    & .AreasPractica__decoration {
+      height: 22vh;
+
     }
 
-    & .AreasPractica__contenido-subtitle{
+    & .AreasPractica__contenido-subtitle {
       width: 95%;
       font-size: 1.2rem;
 
     }
 
-    
-    & .AreasPractica__contenido-description{
+
+    & .AreasPractica__contenido-description {
       font-size: 1.2rem;
-      text-align: justify;
+      text-align: left;
     }
 
-    & .AreasPractica__contenido-list{
+    & .AreasPractica__contenido-list {
       grid-template-columns: 100%;
 
-      & div p{
+      & div p {
         font-size: 1.4rem;
         margin: 0;
         line-height: 55px;
@@ -152,16 +173,17 @@
   }
 }
 
-@media screen and(max-width: 500px){
-  .AreasPractica{
+@media screen and(max-width: 500px) {
+  .AreasPractica {
+    // flex-direction: column-reverse;
 
-    & .AreasPractica__decoration{
+    & .AreasPractica__decoration {
       height: 30vh;
-      
+
     }
 
-    & .AreasPractica__contenido-list{
-      & div p{
+    & .AreasPractica__contenido-list {
+      & div p {
         font-size: 1.2rem;
         line-height: 50px;
       }
@@ -170,11 +192,11 @@
   }
 }
 
-@media screen and(max-width: 320px){
-  .AreasPractica{
+@media screen and(max-width: 320px) {
+  .AreasPractica {
 
-    & .AreasPractica__contenido-list{
-      & div p{
+    & .AreasPractica__contenido-list {
+      & div p {
         font-size: 1rem;
         line-height: 40px;
       }

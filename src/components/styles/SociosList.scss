@@ -1,44 +1,44 @@
 @import "../../vars.scss";
 @import "../../mixins.scss";
 
-.EquipoLegal__about-socios{
+.EquipoLegal__about-socios {
     // border: $border-test;
-    margin-left: 8vw;
+    // margin-left: 8vw;
     list-style: none;
 
 }
 
 .EquipoLegal__about-item {
     // border: $border-test;
-    @include basic-flexbox(flex-start,center,row);
-    margin-top: 5vh;
+    @include basic-flexbox(flex-start, center, row);
+    margin: 3em 0;
 
-    & .EquipoLegal__about-item-img img{
+    & .EquipoLegal__about-item-img img {
         cursor: pointer;
 
-        &:hover{
-            transform: scale(1.2);
-        }
+        // &:hover{
+        //     transform: scale(1.2);
+        // }
     }
 
-    & .EquipoLegal__about-item-name{
+    & .EquipoLegal__about-item-name {
         //border: $border-test;
         width: 30vw;
         margin-left: 4vw;
         position: relative;
 
-        & img{
+        & img {
             position: absolute;
             right: 0;
             top: 40%;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.2);
             }
         }
 
-        & p{
+        & p {
             font-size: 1.5rem;
             line-height: 50px;
             font-family: $font-unna;

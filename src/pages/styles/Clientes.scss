@@ -1,7 +1,7 @@
 @import '../../vars.scss';
 @import '../../mixins.scss';
 
-.Clientes{
+.Clientes {
   // border: $border-test;
   // @include basic-flexbox(flex-start,flex-start,row);
   display: grid;
@@ -11,13 +11,13 @@
   overflow: hidden;
 }
 
-.Clientes__content{
+.Clientes__content {
   // border: $border-test;
   grid-column: 1/2;
-  @include basic-flexbox(flex-start,flex-start,column);
+  @include basic-flexbox(flex-start, flex-start, column);
 
 
-  & .Clientes__content-titulo{
+  & .Clientes__content-titulo {
     // border: $border-test;
     border-bottom: 2px solid $color-red-ihma;
     width: 70%;
@@ -27,7 +27,7 @@
     color: #7E7E7E;
     position: relative;
 
-    & div{
+    & div {
       position: absolute;
       width: 25px;
       height: 25px;
@@ -37,7 +37,7 @@
     }
   }
 
-  & .Clientes__content-descripcion{
+  & .Clientes__content-descripcion {
     // border: 1px solid blue;
     width: 90%;
     text-align: justify;
@@ -47,76 +47,80 @@
     font-family: $font-arsenal;
   }
 
-  & .Clientes__content-list{
+  & .Clientes__content-list {
     // border: 1px solid blue;
     column-count: 2;
     margin-top: 3vh;
     margin-bottom: 5vh;
+    width: 100%;
+    // line-height: 2.5em;
+
     // text-align: center;
-    & div{
+    & div {
       // border: 1px solid blue;
-      @include basic-flexbox(flex-start,center,row);
-      
-      & div{
+      @include basic-flexbox(flex-start, center, row);
+
+      & div {
         width: 15px;
         height: 15px;
         background-color: $color-red-ihma;
       }
 
-      & p{
+      & p {
         width: 100%;
-        
+
         // line-height: 25px;
         color: #666D70;
         font-size: 1.3rem;
         font-family: $font-arsenal;
         margin-left: 5%;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin-right: 5%;
+        // margin-top: 0;
+        // margin-bottom: 0;
       }
-      
+
     }
 
   }
 }
 
-.Clientes__decorate{
+.Clientes__decorate {
   // border: 1px solid blue;
   grid-column: 2/3;
   width: 100%;
   height: 100%;
 
-  & img{
+  & img {
     width: 100%;
     height: 100%;
 
   }
 }
 
-@media screen and(max-width: 1250px){
-  .Clientes__content{
-    & .Clientes__content-titulo{
+@media screen and(max-width: 1250px) {
+  .Clientes__content {
+    & .Clientes__content-titulo {
       width: 90%;
     }
   }
 }
 
-@media screen and(max-width: 1000px){
-  .Clientes{
+@media screen and(max-width: 1000px) {
+  .Clientes {
     padding: 0;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50vh auto;
 
-    & .Clientes__decorate{
+    & .Clientes__decorate {
 
-      & img{
+      & img {
         display: none;
       }
 
-      background-image: url('../../img/clientesDecorateLittle.png');
+      background-image: url('../../img/clientes-movil.png');
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-size:cover;
       // border: 1px solid red;
       grid-row: 1/2;
       grid-column: 1/2;
@@ -125,7 +129,7 @@
       overflow: hidden;
     }
 
-    & .Clientes__content{
+    & .Clientes__content {
       width: 80%;
       padding-left: 10%;
       grid-row: 2/3;
@@ -135,40 +139,46 @@
 
 }
 
-@media screen and(max-width: 550px){
+@media screen and(max-width: 550px) {
 
-  .Clientes{
+  .Clientes {
     grid-template-rows: 40vh auto;
 
   }
-  .Clientes__content{
-    & .Clientes__content-titulo{
+
+  .Clientes__content {
+    & .Clientes__content-titulo {
       font-size: 1.7rem;
     }
 
-    & .Clientes__content-descripcion{
+    & .Clientes__content-descripcion {
       font-size: 1.2rem;
     }
 
-    & .Clientes__content-list div p{
+    & .Clientes__content-list div p {
       font-size: 1rem;
     }
   }
 }
 
-@media screen and(max-width: 450px){
-  .Clientes__content{
-    & .Clientes__content-titulo{
+@media screen and(max-width: 450px) {
+  .Clientes__content {
+    & .Clientes__content-list {
+      column-count: 1;
+    }
+
+    & .Clientes__content-titulo {
       width: 95%;
       font-size: 1.2rem;
       line-height: 40px;
-      & div{
+
+      & div {
         right: -8%;
         bottom: -5%;
       }
     }
 
-    & .Clientes__content-descripcion{
+    & .Clientes__content-descripcion {
       font-size: 1rem;
     }
 
