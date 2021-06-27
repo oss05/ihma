@@ -28,7 +28,7 @@ class Socios extends React.Component {
                                 <p className="Socio__item-status"> {this.props.data.estatusSocio} </p>
                                 <p className="Socio__item-info"> {this.props.data.nacSocio} </p>
                                 <p className="Socio__item-info"> {this.props.data.titulacionSocio} </p>
-                                <p className="Socio__item-info"> {this.props.data.idiomaSocio} </p>
+                                <p className="Socio__item-info"><span style={{ fontWeight: "bold" }}>{this.props.data.idiomaTitle}</span> {this.props.data.idiomaSocio} </p>
                                 <p className="Socio__item-info"><span style={{ fontWeight: "bold" }}>Email: </span> <a style={{ color: "#C4161C" }} href={`mailto:${this.props.data.emailSocio}`} className="Socio__item-info"> {this.props.data.emailSocio} </a></p>
 
                             </div>

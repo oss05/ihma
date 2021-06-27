@@ -78,6 +78,7 @@ class App extends React.Component {
             dir2: 'Col. Bosques de las Lomas,',
             dir3: 'Ciudad de México, 11700',
             office: 'Oficina Ciudad de México',
+
           },
           equipoLegal2:
           {
@@ -98,7 +99,7 @@ class App extends React.Component {
             link32: 'Asociados',
             link4: 'Clientes',
             link5: 'Reconocimientos',
-            link6: 'Alianzas Estrategicas',
+            link6: 'Alianzas Estratégicas',
             actual: 'En'
           },
           dataSocios2:
@@ -126,7 +127,8 @@ class App extends React.Component {
                 estatusSocio: "Asociada",
                 nacSocio: "Buenos Aires,Argentina. Julio 15, 1983.",
                 titulacionSocio: "Admitido para ejercer, 2008",
-                idiomaSocio: "Español, Inglés,",
+                idiomaSocio: "Español, Inglés",
+                idiomaTitle: "Idioma:",
                 emailSocio: " jbugnest@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/MariaJuliaBugnest.vcf"
               },
@@ -152,7 +154,8 @@ class App extends React.Component {
                 estatusSocio: "Asociado",
                 nacSocio: "Ciudad de México. Enero 31, 1981.",
                 titulacionSocio: "Admitido para ejercer, México, 2003",
-                idiomaSocio: "Idioma: Español e Inglés (Básico).",
+                idiomaSocio: "Español e Inglés (Básico)",
+                idiomaTitle: "Idioma:",
                 emailSocio: " echavez@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/EduardoChavezPulido.vcf"
               },
@@ -176,8 +179,9 @@ class App extends React.Component {
                 estatusSocio: "Asociado",
                 nacSocio: "Ciudad de México, Junio 24, 1983.",
                 titulacionSocio: "Admitido para ejercer, México, 2010",
-                idiomaSocio: "Lenguage: Español, Inglés(Intermedio), Francés(básico) ",
+                idiomaSocio: "Español, Inglés(Intermedio), Francés(básico) ",
                 emailSocio: "jretana@ihma.law",
+                idiomaTitle: "Idioma:",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/JosueHernandezBalderas.vcf"
 
               },
@@ -203,7 +207,8 @@ class App extends React.Component {
                 estatusSocio: "Asociada",
                 nacSocio: "Ciudad de México. Noviembre 2, 1990.",
                 titulacionSocio: "Admitida para ejercer, 2016, México",
-                idiomaSocio: "Idioma: Español e Inglés.",
+                idiomaSocio: "Español e Inglés",
+                idiomaTitle: "Idioma:",
                 emailSocio: " anunez@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/AnaGabrielaNunezRodriguez.vcf"
               },
@@ -230,7 +235,8 @@ class App extends React.Component {
                 estatusSocio: "Asociado",
                 nacSocio: "Ciudad de México. Junio 24, 1983.",
                 titulacionSocio: "Admitido para ejercer, México, 2010",
-                idiomaSocio: "Lenguage: Español, Inglés y Francés(Básico) ",
+                idiomaSocio: "Español, Inglés y Francés(Básico) ",
+                idiomaTitle: "Idioma:",
                 emailSocio: " jretana@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/JonathanRetanaPerez.vcf"
               },
@@ -246,10 +252,10 @@ class App extends React.Component {
                 educacion: ['Universidad Nacional Autónoma de México (Licenciatura 1997)',
                   'Universidad Nacional Autónoma de México / Diplomado en Derecho Corporativo (2019)',
                 ],
-                expProfesional: ['BBufete De Presno y Asociados, S.C. (1994-1999)        ',
+                expProfesional: ['Bufete De Presno y Asociados, S.C. (1994-1999)        ',
                   'Buenfil & Hoffmann, S.C. (1999-2004)                            ',
-                  'Ibáñez, Maroto, Schriever & Hoffmann, S.C. (2004-2020)                            ',
-
+                  'Ibáñez, Maroto, Schriever & Hoffmann, S.C. (2004-2007)                            ',
+                  'Ibáñez, Schriever & Hoffmann, S.C. (2008-2020)'
                 ],
                 socioMiembroDe: ['Barra Mexicana, Colegio de Abogados, A.C.',
                 ],
@@ -258,7 +264,8 @@ class App extends React.Component {
                 estatusSocio: "Asociada",
                 nacSocio: "Ciudad de México.Abril 4, 1974.",
                 titulacionSocio: "Admitida para ejercer, México, 1998",
-                idiomaSocio: "Lenguage: Español e Inglés.",
+                idiomaSocio: "Español e Inglés",
+                idiomaTitle: "Idioma:",
                 emailSocio: " ehoffmann@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/ErikaVelazquezBlakely.vcf"
               },
@@ -287,6 +294,8 @@ class App extends React.Component {
                 socioMiembroDe: [
                   'Colegio Mexicano de Abogados',
                   'The Americas Society',
+                  ' Barra Mexicana, Colegio de Abogados, S.C.',
+                  'American Bar Association'
                 ],
                 areasDePractica: [
                   'Derecho Corporativo, Fondos Privados, Fusiones y Adquisiciones, Financiamiento de Proyectos, Reestructuras, Telecomunicaciones, Transporte, Inmobiliario, Minería, Energía.'
@@ -295,7 +304,8 @@ class App extends React.Component {
                 estatusSocio: "Socio",
                 nacSocio: "Ciudad de México. Noviembre 8, 1969.",
                 titulacionSocio: "Admitido para ejercer, México, 1994",
-                idiomaSocio: "Idioma: Español e Inglés.",
+                idiomaSocio: "Español e Inglés",
+                idiomaTitle: "Idioma:",
                 emailSocio: " mibanez@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Socios/MauricioIbanezCampos.vcf"
               },
@@ -308,7 +318,7 @@ class App extends React.Component {
                 nombre: 'Jorge Hoffmann Arias',
                 image: `${JorgeAriasRedondo}`,
                 imgTriangulo: `${triangulo}`,
-                educacion: ['Universidad Iberoamericana (Licenciatura, 1991)'],
+                educacion: ['Universidad Iberoamericana (J.D., 1991)'],
                 expProfesional: [
                   'Zitro-Lex, S.A. de C.V. (1987-1989)',
                   'Alvarez, Cantón y Peters, S.C. (1989-1991)',
@@ -326,7 +336,8 @@ class App extends React.Component {
                 estatusSocio: "Socio",
                 nacSocio: "Ciudad de México. Noviembre 7, 1967.",
                 titulacionSocio: "Admitido para ejercer, México, 1995",
-                idiomaSocio: "Idioma: Español e Inglés.",
+                idiomaSocio: "Español e Inglés",
+                idiomaTitle: "Idioma:",
                 emailSocio: "jhoffmann@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Socios/JorgeHoffmannArias.vcf"
               },
@@ -339,7 +350,8 @@ class App extends React.Component {
                 nombre: 'Jesús Mendoza Henríquez',
                 image: `${JesusMendozaRedondo}`,
                 imgTriangulo: `${triangulo}`,
-                educacion: ['Universidad Anáhuac (Licenciatura, 2000)',
+                educacion: [
+                  'Universidad Anáhuac (Licenciatura, 2000)',
                   'Pepperdine University (Juris Doctor – EEUU)',
                   'Strauss Institute for Dispute Resolution, Pepperdine',
                   'University (Maestría en Resolución Alternativa de Disputas Internacionales 2004)',
@@ -364,7 +376,8 @@ class App extends React.Component {
                 estatusSocio: "Socio",
                 nacSocio: "Ciudad de México.Diciembre 10, 1975.",
                 titulacionSocio: "Admitido para ejercer, México, 2001",
-                idiomaSocio: "Lenguage: Español e Inglés.",
+                idiomaSocio: "Español e Inglés",
+                idiomaTitle: "Idioma:",
                 emailSocio: "jmendoza@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Socios/JesusMendozaHenriquez.vcf"
               },
@@ -402,7 +415,8 @@ class App extends React.Component {
                 estatusSocio: "Socio",
                 nacSocio: "Ciudad de Nueva York. Enero 5, 1967.",
                 titulacionSocio: "Admitido para ejercer, México, 1992.",
-                idiomaSocio: " Español, Inglés, Alemán y Francés",
+                idiomaSocio: "Español, Inglés, Alemán y Francés",
+                idiomaTitle: "Idioma:",
                 emailSocio: " dandrade@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Socios/DiegoAndradeMax.vcf"
               },
@@ -469,12 +483,12 @@ class App extends React.Component {
               "AMK Healthcare",
               "Arsenal Capital Partners",
               "AXA",
-              "Beesion Technologies Méixco",
+              "Beesion Technologies México",
               "Beyond Trust Software Inc.",
               "Bristol-Myers Squibb de México",
               "Cámara Mexicana de la industria de la Construcción",
-              "Capital inmobiliario",
-              "Columbia laboratorios",
+              "Capital Inmobiliario",
+              "Columbia Laboratorios",
               "Combustibles Masal",
               "Cordstrap",
               "Corporativo Laudex",
@@ -532,7 +546,7 @@ class App extends React.Component {
               "Orca Mining",
               "Packaging Machinery",
               "Manufacturers Institute Inc.",
-              "Pandora Jewelry",
+              // "Pandora Jewelry",
               "PC Capital",
               "Peco Pallet México",
               "Pitney Bowes",
@@ -551,8 +565,7 @@ class App extends React.Component {
               "Truelock",
               "United Parcel Service (UPS)",
               "WFI",
-              "Winco",
-              "About the partners",
+              "Winco"
             ],
           },
         },
@@ -594,6 +607,7 @@ class App extends React.Component {
             dir2: 'Suite 200 - 432',
             dir3: 'The Woodlands, TX 77380',
             office: 'Office Woodlands, Texas        ',
+            idiomaTitle: "Language:"
           },
           equipoLegal:
           {
@@ -642,7 +656,8 @@ class App extends React.Component {
                 estatusSocio: "Associate",
                 nacSocio: "Buenos Aires, Argentina. June 15, 1983",
                 titulacionSocio: "Admitted, 2008.",
-                idiomaSocio: "Lenguage: Spanish, English ",
+                idiomaSocio: "Spanish, English ",
+                idiomaTitle: "Language:",
                 emailSocio: " jbugnest@ihma.law ",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/MariaJuliaBugnest.vcf"
               },
@@ -668,7 +683,8 @@ class App extends React.Component {
                 estatusSocio: "Associate",
                 nacSocio: "Born Mexico City..            ",
                 titulacionSocio: "Admitted, 2003, Mexico. ",
-                idiomaSocio: "Languages: Spanish and English (Basic).",
+                idiomaSocio: "Spanish and English (Basic)",
+                idiomaTitle: "Language:",
                 emailSocio: " echavez@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/EduardoChavezPulido.vcf"
               },
@@ -692,7 +708,8 @@ class App extends React.Component {
                 estatusSocio: "Associate",
                 nacSocio: "Mexico City, June 24, 1983.",
                 titulacionSocio: "Admitted, 2010, Mexico.            ",
-                idiomaSocio: "Lenguage: Spanish, English (middle) and French (basic)",
+                idiomaSocio: "Spanish, English (middle) and French (basic)",
+                idiomaTitle: "Language:",
                 emailSocio: "jretana@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/JosueHernandezBalderas.vcf"
 
@@ -720,7 +737,8 @@ class App extends React.Component {
                 estatusSocio: "Associate",
                 nacSocio: "Born Mexico City. November 2, 1990.            ",
                 titulacionSocio: "Admitted, 2016, Mexico.",
-                idiomaSocio: "Language: Spanish and English(basic)",
+                idiomaSocio: "Spanish and English(basic)",
+                idiomaTitle: "Language:",
                 emailSocio: "  anunez@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/AnaGabrielaNunezRodriguez.vcf"
 
@@ -749,7 +767,8 @@ class App extends React.Component {
                 estatusSocio: "Associate",
                 nacSocio: "Born Mexico City. June 24th, 1983.            ",
                 titulacionSocio: "Admitted, 2010, Mexico. ",
-                idiomaSocio: "Languages:  Spanish, English, and French(basic)",
+                idiomaSocio: "Spanish, English, and French(basic)",
+                idiomaTitle: "Language:",
                 emailSocio: " jretana@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/JonathanRetanaPerez.vcf"
               },
@@ -765,9 +784,11 @@ class App extends React.Component {
                 educacion: ['Universidad Nacional Autónoma de México (Licenciatura 1997)',
                   'Universidad Nacional Autónoma de México / Diplomado en Derecho Corporativo (2019)',
                 ],
-                expProfesional: ['BBufete De Presno y Asociados, S.C. (1994-1999)        ',
-                  'Buenfil & Hoffmann, S.C. (1999-2004)                            ',
-                  'Ibáñez, Maroto, Schriever & Hoffmann, S.C. (2004-2020)                            ',
+                expProfesional: [
+                  'Bufete De Presno y Asociados, S.C. (1994-1999)',
+                  'Buenfil & Hoffmann, S.C. (1999-2004)',
+                  'Ibáñez, Maroto, Schriever & Hoffmann, S.C. (2004-2007)',
+                  'Ibáñez, Schriever & Hoffmann, S.C. (2008-2020)'
                 ],
                 socioMiembroDe: ['American Bar Association',
                 ],
@@ -777,7 +798,8 @@ class App extends React.Component {
                 estatusSocio: "Associate",
                 nacSocio: "Born Mexico City. April 4, 1974.            ",
                 titulacionSocio: "Admitted, 1998, Mexico. ",
-                idiomaSocio: "Languages: Spanish and English",
+                idiomaSocio: "Spanish and English",
+                idiomaTitle: "Language:",
                 emailSocio: " ehoffmann@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Asociados/ErikaVelazquezBlakely.vcf"
               },
@@ -806,6 +828,9 @@ class App extends React.Component {
                 ],
                 socioMiembroDe: [
                   "Mexican Lawyers College",
+                  'The Americas Society',
+                  'Mexican Bar Association',
+                  'American Bar Association'
                 ],
                 areasDePractica: [
                   " Corporate Law, Mergers and Acquisitions, Project Finance, Private Equity, Workouts, Real Estate,      Telecommunications, Transportation, Mining, Energy.",
@@ -814,7 +839,8 @@ class App extends React.Component {
                 estatusSocio: "Partner",
                 nacSocio: "Born Mexico City. November 8, 1969.            ",
                 titulacionSocio: "Admitted, 1994, Mexico.",
-                idiomaSocio: "Language: Spanish and English",
+                idiomaSocio: "Spanish and English",
+                idiomaTitle: "Language:",
                 emailSocio: " mibanez@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Socios/MauricioIbanezCampos.vcf"
               },
@@ -827,7 +853,7 @@ class App extends React.Component {
                 nombre: 'Jorge Hoffmann Arias',
                 image: `${JorgeAriasRedondo}`,
                 imgTriangulo: `${triangulo}`,
-                educacion: ["Universidad Iberoamericana (Licenciatura, 1991)"],
+                educacion: ["Universidad Iberoamericana (J.D., 1991)"],
                 expProfesional: [
                   "Zitro-Lex, S.A. de C.V. (1987-1989)",
                   "Alvarez, Cantón y Peters, S.C. (1989-1991)",
@@ -840,7 +866,8 @@ class App extends React.Component {
                 estatusSocio: "Partner",
                 nacSocio: "Born Mexico City. November 7, 1967.            ",
                 titulacionSocio: "Admitted, 1995, Mexico. ",
-                idiomaSocio: "Languages: Spanish and English",
+                idiomaSocio: "Spanish and English",
+                idiomaTitle: "Language:",
                 emailSocio: " jhoffmann@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Socios/JorgeHoffmannArias.vcf"
               },
@@ -854,10 +881,10 @@ class App extends React.Component {
                 image: `${JesusMendozaRedondo}`,
                 imgTriangulo: `${triangulo}`,
                 educacion: [
-                  "Universidad Anáhuac (Licenciatura, 2000)",
-                  "Pepperdine University (Juris Doctor – EEUU)",
-                  "Strauss Institute for Dispute Resolution, Pepperdine",
-                  "University (Maestría en Resolución Alternativa de Disputas Internacionales 2004)",
+                  ' Universidad Anáhuac (J.D., Mexico)',
+                  'Pepperdine University (J.D., 2000)',
+                  'Strauss Institute for Dispute Resolution, Pepperdine',
+                  'University (LL.M in International Dispute Resolution, 2004),'
                 ],
                 expProfesional: [
                   "Buenfil & Hoffmann, S.C. (Clerk 1998-2000) ",
@@ -879,7 +906,8 @@ class App extends React.Component {
                 estatusSocio: "Partner",
                 nacSocio: "Born Mexico City. December 10, 1975.            ",
                 titulacionSocio: "Admitted, 2001, Mexico. ",
-                idiomaSocio: "Languages: Spanish and English",
+                idiomaSocio: "Spanish and English",
+                idiomaTitle: "Language:",
                 emailSocio: " jmendoza@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Socios/JesusMendozaHenriquez.vcf"
               },
@@ -919,7 +947,8 @@ class App extends React.Component {
                 estatusSocio: "Partner",
                 nacSocio: "Born in New York City. January 5, 1967.            ",
                 titulacionSocio: "Admitted, 1992, Mexico. ",
-                idiomaSocio: "Languages:  Spanish, English, German and French",
+                idiomaSocio: "Spanish, English, German and French",
+                idiomaTitle: "Language:",
                 emailSocio: " dandrade@ihma.law",
                 vCard: "https://s3-us-west-1.amazonaws.com/ihma.law/VCards/Socios/DiegoAndradeMax.vcf"
               },
@@ -986,12 +1015,12 @@ class App extends React.Component {
               "AMK Healthcare",
               "Arsenal Capital Partners",
               "AXA",
-              "Beesion Technologies Méixco",
+              "Beesion Technologies México",
               "Beyond Trust Software Inc.",
               "Bristol-Myers Squibb de México",
-              "Cámara Mexicana de la industria de la Construcción",
-              "Capital inmobiliario",
-              "Columbia laboratorios",
+              "Cámara Mexicana de la Industria de la Construcción",
+              "Capital Inmobiliario",
+              "Columbia Laboratorios",
               "Combustibles Masal",
               "Cordstrap",
               "Corporativo Laudex",
@@ -1049,7 +1078,7 @@ class App extends React.Component {
               "Orca Mining",
               "Packaging Machinery",
               "Manufacturers Institute Inc.",
-              "Pandora Jewelry",
+              // "Pandora Jewelry",
               "PC Capital",
               "Peco Pallet México",
               "Pitney Bowes",

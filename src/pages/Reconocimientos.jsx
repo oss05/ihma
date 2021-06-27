@@ -17,10 +17,14 @@ class Reconocimientos extends React.Component {
             <img src={ReconocimientosImg} alt="Reconocimientos" />
           </div>
           <div className="Reconocimientos__text">
-            <div className="Reconocimientos__text-titles">
-              <h1> {this.props.language.reconocimientos.title} <img src={escuadra} alt="" /> </h1>
-              {/* <h4> {this.props.language.reconocimientos.subtitle} </h4> */}
-            </div>
+            {/* <div className="Reconocimientos__text-titles">
+              <h1> {this.props.language.reconocimientos.title} <img src={escuadra} alt="" /> </h1> */}
+            {/* <h4> {this.props.language.reconocimientos.subtitle} </h4> */}
+            {/* </div> */}
+            <h1 className="AreasPractica__contenido-title">
+              <img src={escuadra} alt="" />
+              {this.props.language.reconocimientos.title}
+            </h1>
             <div className="Reconocimientos__text-details">
               {/* <p> {this.props.language.reconocimientos.details1} </p> */}
               {/* <p> {this.props.language.reconocimientos.details2} </p>
