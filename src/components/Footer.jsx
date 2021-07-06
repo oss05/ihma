@@ -33,7 +33,9 @@ class Footer extends React.Component {
                             <Link to="/alianzas" >
                                 <p> {this.props.link6} </p>
                             </Link>
-
+                            <Link to="/publicaciones" >
+                                <p> {this.props.link7} </p>
+                            </Link>
                         </div>
                     </div>
                     <div className="Footer__item">
@@ -51,7 +53,7 @@ class Footer extends React.Component {
                                         <i>Woodlands, Texas Office </i>
                                         <br />
                                         1095 Evergreen Circle Suite 200 - 432 The Woodlands, TX 77380 T. +1(281) 206 0030
-                                     </div>
+                                    </div>
                                     <div>
                                         <i>Ciudad de México Office </i>
                                         <br />
@@ -64,13 +66,13 @@ class Footer extends React.Component {
                                     <div>
                                         <i>Oficina Woodlands, Texas </i>
                                         <br />
-                                    1095 Evergreen Circle Suite 200 - 432 The Woodlands, TX 77380 T. +1(281) 206 0030
-                                 </div>
+                                        1095 Evergreen Circle Suite 200 - 432 The Woodlands, TX 77380 T. +1(281) 206 0030
+                                    </div>
                                     <div>
                                         <i>Oficina Ciudad de México</i>
                                         <br />
-                                    Bosque de Ciruelos 130 -501 Col. Bosques de las Lomas, Ciudad de México, 11700 T. +(5255) 5292 6191 +(5255) 5202 1180
-                                </div>
+                                        Bosque de Ciruelos 130 -501 Col. Bosques de las Lomas, Ciudad de México, 11700 T. +(5255) 5292 6191 +(5255) 5202 1180
+                                    </div>
                                 </Fragment>
                         }
 

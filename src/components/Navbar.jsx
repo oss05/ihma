@@ -26,7 +26,7 @@ class Navbar extends React.Component {
     };
 
     render() {
-        const { link1, link2, link3, link31, link32, link4, link5, link6, idioma } = this.props;
+        const { link1, link2, link3, link31, link32, link4, link5, link6, link7, idioma } = this.props;
         return (
             <header className="Navbar">
                 <div id="menuDesplegable" className="Navbar__desplegable">
@@ -78,10 +78,14 @@ class Navbar extends React.Component {
                             {link5} <img src={triangulo} alt="" />
                         </Link>
                     </div>
-
                     <div className="Navbar__desplegable-item">
                         <Link onClick={this.sacarMenu} to="/alianzas">
                             {link6} <img src={triangulo} alt="" />
+                        </Link>
+                    </div>
+                    <div className="Navbar__desplegable-item">
+                        <Link onClick={this.sacarMenu} to="/publicaciones">
+                            {link7} <img src={triangulo} alt="" />
                         </Link>
                     </div>
                     <div className="Navbar__desplegable-item">
@@ -138,6 +142,9 @@ class Navbar extends React.Component {
                         </li>
                         <li>
                             <Link to="/alianzas">  <span> {link6} </span>   </Link>
+                        </li>
+                        <li>
+                            <Link to="/publicaciones">  <span> {link7} </span>   </Link>
                         </li>
                     </ul>
                     <div className="Navbar__nav-language">

@@ -11,6 +11,7 @@ import EquipoLegal2 from '../pages/EquipoLegal2';
 import Clientes from '../pages/Clientes';
 import Alianzas from '../pages/Alianzas';
 import Reconocimientos from '../pages/Reconocimientos';
+import Publicaciones from '../pages/Publicaciones';
 
 import fotoEquipoLegal from '../img/leftEquipoLegal.png';
 import fotoEquipoLegal2 from '../img/rightEquipoLegal2.png';
@@ -55,7 +56,7 @@ class App extends React.Component {
             title: 'Alianzas Estratégicas',
             subtitle: 'Capacidades internacionales de IHMA',
             details1: 'Hoy vivimos en un mundo enfocado en los mercados globales y las transacciones comerciales modernas que abarcan elementos de diferentes jurisdicciones nacionales y extranjeras. La capacidad de práctica internacional de IHMA ayuda a los clientes a navegar estos mercados a menudo complejos e inciertos y sus sistemas legales. Ayudamos a los clientes a promover su interés comercial internacional en México y mercados relevantes. Los abogados de IHMA han estudiado y trabajado en el extranjero, hablan idiomas extranjeros y conocen diferentes culturas empresariales. Además, la Firma cuenta con una vasta red de abogados y firmas de abogados extranjeros en todo el mundo para ayudar a ésta a brindar soluciones integrales para sus clientes que desean aprovechar estos mercados globales y promover sus intereses comerciales internacionales.',
-            details2: 'IHMA y Leger Ketchum & Cohoon, PLLC (LKC), una firma de abogados líder en el área de Houston, con oficinas en The Woodlands, Boerne-San Antonio y Dallas, Texas, se han asociado como parte de una alianza estratégica para manejar el comercio internacional y asuntos fronterizos tanto en Estados Unidos como en México. Al unir fuerzas en una alianza estratégica, los recursos combinados de los abogados de IHMA admitidos para ejercer en México y los abogados de LKC admitidos para ejercer en Texas y otras jurisdicciones de EE. UU., nos permite brindar asesoría legal integral e integral en cualquier asunto corporativo, comercial, laboral o de otro tipo regido por los Estados Unidos. Acuerdo Estados - México - Canadá (USMCA) que reemplazó y reemplazó al NAFTA.',
+            details2: 'IHMA y Leger Ketchum & Cohoon, PLLC (LKC), una firma de abogados líder en el área de Houston, con oficinas en The Woodlands, Boerne-San Antonio y Dallas, Texas, se han asociado como parte de una alianza estratégica para manejar el comercio internacional y asuntos fronterizos tanto en Estados Unidos como en México. Al unir fuerzas en una alianza estratégica, los recursos combinados de los abogados de IHMA admitidos para ejercer en México y los abogados de LKC admitidos para ejercer en Texas y otras jurisdicciones de EE. UU., nos permite brindar asesoría legal integral e integral en cualquier asunto corporativo, comercial, laboral o de otro tipo regido bajo el tratado comercial Estados Unidos - México - Canadá (USMCA) que reemplazó y reemplazó al NAFTA.',
             details3: 'Después de trabajar durante casi dos décadas como Asesor Jurídico de varias empresas multinacionales importantes en las industrias automotriz, farmacéutica, nutricional, energética y de servicios públicos, manejando responsabilidades corporativas en México y América Latina, Diego Andrade Max se unió a IHMA en 2017 y encabezó nuestros esfuerzos para abrir una oficina enlace en Woodlands, Texas en 2018. El propósito de esta oficina es estar más cerca de nuestros clientes con sede en EE. UU. que hacen negocios en México. Para mas información sobre los servicios de nuestra firma aliada por favor visitar',
             details4: 'El siguiente paso ha sido establecer una alianza estratégica con una firma de Texas a raíz de los cuestionamientos constantes de nuestros clientes extranjeros que hacen negocios en México sobre el acceso a los servicios legales en Texas, así como los clientes, personas físicas mexicanas de alto poder adquisitivo que han buscado empresas en Texas. Nuestro socio, Diego Andrade maneja la alianza IHMA-LKC y divide su tiempo entre Houston y Ciudad de México.',
           },
@@ -100,6 +101,7 @@ class App extends React.Component {
             link4: 'Clientes',
             link5: 'Reconocimientos',
             link6: 'Alianzas Estratégicas',
+            link7: 'Noticias y Publicaciones',
             actual: 'En'
           },
           dataSocios2:
@@ -466,6 +468,33 @@ class App extends React.Component {
               "Inversiones de Capital",
             ],
           },
+          Publicaciones: {
+            id: "1",
+            enfoque: "Nuestro Enfoque:",
+            title: "Noticias y Publicaciones",
+            subtitle:
+              "Altos estándares de calidad y una amplia gama de servicios",
+            description:
+              "Cada uno de los socios, asociados y pasantes del Bufete se Especializan en una o más de las siguientes áreas de práctica:",
+            areas: [
+              {
+                name: "Anuncio Servicios Compilance",
+                link: "https://s3.us-west-1.amazonaws.com/ihma.law/boletines/esp/Anuncio-Servicios-Compilance.pdf",
+              },
+              {
+                name: "Reformas Fiscales 2021 en Mexico",
+                link: "https://s3.us-west-1.amazonaws.com/ihma.law/boletines/esp/Reformas-Fiscales-2021-en-Mexico.pdf",
+              },
+              {
+                name: "Boletín Diciembre 2020",
+                link: "https://s3.us-west-1.amazonaws.com/ihma.law/boletines/esp/Boletin-Informativo-dic.pdf",
+              },
+              {
+                name: "Boletín Noviembre 2020",
+                link: "https://s3.us-west-1.amazonaws.com/ihma.law/boletines/esp/Boletin-Informativo-Nov01.pdf",
+              },
+            ],
+          },
           clientesData: {
             titulo: "Clientes Representativos",
             descripcion:
@@ -552,11 +581,11 @@ class App extends React.Component {
               "Pitney Bowes",
               "Powermate Corp.",
               "Sagem Securité",
-              "Schneider México",
+              // "Schneider México",
               "Siemens",
               "Stewart Connector Systems",
               "Sun Capital Ventures",
-              "Takeda",
+              // "Takeda",
               "Tamoin",
               "The Carlyle Group",
               "Tower One Wireless",
@@ -629,6 +658,7 @@ class App extends React.Component {
             link4: 'Clients',
             link5: 'Awards',
             link6: 'Strategic Alliances',
+            link7: 'News and Insights',
             actual: 'Sp'
           },
           dataSocios2:
@@ -998,6 +1028,33 @@ class App extends React.Component {
               "Infrastructure",
             ],
           },
+          Publicaciones: {
+            id: "1",
+            enfoque: "Nuestro Enfoque:",
+            title: "News and Insights",
+            subtitle:
+              "Altos estándares de calidad y una amplia gama de servicios",
+            description:
+              "Cada uno de los socios, asociados y pasantes del Bufete se Especializan en una o más de las siguientes áreas de práctica:",
+            areas: [
+              {
+                name: "Announcement Servicios Compilance",
+                link: "https://s3.us-west-1.amazonaws.com/ihma.law/boletines/eng/Announcement-Servicios-Compilance.pdf",
+              },
+              {
+                name: "Tax Reforms 2021 in Mexico",
+                link: "https://s3.us-west-1.amazonaws.com/ihma.law/boletines/eng/Tax-Reforms-2021-in-Mexico.pdf",
+              },
+              {
+                name: "Newsletter December 2020",
+                link: "https://s3.us-west-1.amazonaws.com/ihma.law/boletines/eng/Boletin-Informativo-dic-eng.pdf",
+              },
+              {
+                name: "Newsletter November 2020",
+                link: "https://s3.us-west-1.amazonaws.com/ihma.law/boletines/eng/Newsletter-Nov01.pdf",
+              },
+            ],
+          },
           clientesData: {
             titulo: "Representative Clients",
             descripcion:
@@ -1084,11 +1141,11 @@ class App extends React.Component {
               "Pitney Bowes",
               "Powermate Corp.",
               "Sagem Securité",
-              "Schneider México",
+              // "Schneider México",
               "Siemens",
               "Stewart Connector Systems",
               "Sun Capital Ventures",
-              "Takeda",
+              // "Takeda",
               "Tamoin",
               "The Carlyle Group",
               "Tower One Wireless",
@@ -1219,6 +1276,12 @@ class App extends React.Component {
             <Route exact path="/reconocimientos" render={() => (
               <Reconocimientos
                 language={this.switchLanguage()}
+              />
+            )}
+            />
+            <Route exact path="/publicaciones" render={() => (
+              <Publicaciones
+                data={this.switchLanguage().Publicaciones}
               />
             )}
             />
